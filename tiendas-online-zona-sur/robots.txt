@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/tiendas-online-zona-sur/sitemap.xml

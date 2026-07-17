@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/posicionamiento-google-maps-zona-sur/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/gestion-redes-sociales-zona-sur/sitemap.xml
