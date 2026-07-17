@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/perfumes-alternativos-fabricante/sitemap.xml

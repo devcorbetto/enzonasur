@@ -141,7 +141,7 @@ function Build-Header {
               <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Ciudades</a>
                 <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="gastroenterologo-infantil-en-bogota.html" class="nav__item-link">Gastroenterólogo infantil en Bogotá</a></li>
+                  <li class="nav__item"><a href="gastroenterologo-infantil-en-quilmes.html" class="nav__item-link">Gastroenterólogo infantil en Quilmes y Zona Sur</a></li>
                   <li class="nav__item"><a href="gastroenterologo-infantil-en-medellin.html" class="nav__item-link">Gastroenterólogo infantil en Medellín</a></li>
                   <li class="nav__item"><a href="gastroenterologo-infantil-en-cali.html" class="nav__item-link">Gastroenterólogo infantil en Cali</a></li>
                   <li class="nav__item"><a href="gastroenterologo-infantil-en-barranquilla.html" class="nav__item-link">Gastroenterólogo infantil en Barranquilla</a></li>
@@ -631,7 +631,7 @@ $faqHtml
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-3">
               <div class="footer-widget-about">
-                <img src="assets/images/logo/logo-light.png" alt="Gastroenterólogo Infantil Colombia" class="mb-30">
+                <img src="assets/images/logo/logo-light.png" alt="Gastroenterólogo Infantil Argentina" class="mb-30">
                 <p class="color-gray">Consulta de gastroenterología pediátrica en $LocationLabel para dolor abdominal, estreñimiento, reflujo, diarrea crónica y otros problemas digestivos infantiles.</p>
                 <a href="#faq" class="btn btn__primary btn__primary-style2 btn__link"><span>Ver FAQ</span> <i class="icon-arrow-right"></i></a>
               </div>
@@ -641,8 +641,8 @@ $faqHtml
                 <h6 class="footer-widget__title">Enlaces internos</h6>
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="index.html">Gastroenterólogo infantil en Colombia</a></li>
-                    <li><a href="gastroenterologo-infantil-en-bogota.html">Gastroenterólogo infantil en Bogotá</a></li>
+                    <li><a href="index.html">Gastroenterólogo infantil en Argentina</a></li>
+                    <li><a href="gastroenterologo-infantil-en-quilmes.html">Gastroenterólogo infantil en Quilmes y Zona Sur</a></li>
                     <li><a href="gastroenterologo-infantil-en-medellin.html">Gastroenterólogo infantil en Medellín</a></li>
                     <li><a href="gastroenterologo-infantil-en-cali.html">Gastroenterólogo infantil en Cali</a></li>
                     <li><a href="#faq">FAQ</a></li>
@@ -668,9 +668,9 @@ $faqHtml
               <div class="footer-widget-contact" id="contacto">
                 <h6 class="footer-widget__title color-heading">Contacto</h6>
                 <ul class="contact-list list-unstyled">
-                  <li>Colombia</li>
+                  <li>Argentina</li>
                   <li><a href="tel:+57xxxxxxxxxx">+57 xxxxxxxxxx</a></li>
-                  <li><a href="mailto:contacto@digitalescolombia.com">contacto@digitalescolombia.com</a></li>
+                  <li><a href="mailto:contacto@digitalesargentina.com">contacto@digitalesargentina.com</a></li>
                 </ul>
               </div>
             </div>
@@ -682,8 +682,8 @@ $faqHtml
           <div class="row align-items-center">
             <div class="col-12">
               <p>
-                Copyright &copy; <script>document.write(new Date().getFullYear())</script> Gastroenterólogo Infantil Colombia. Todos los derechos reservados. Diseñado por 
-                <a href="https://digitalescolombia.com/" target="_blank">digitalescolombia.com</a>
+                Copyright &copy; <script>document.write(new Date().getFullYear())</script> Gastroenterólogo Infantil Argentina. Todos los derechos reservados. Diseñado por 
+                <a href="https://digitalesargentina.com/" target="_blank">digitalesargentina.com</a>
               </p>
             </div>
           </div>
@@ -713,7 +713,7 @@ function Build-BlogHeader {
                     </div>
                   </li>
                   <li><i class="icon-phone"></i><a href="tel:+57xxxxxxxxxx">Atención: +57 xxxxxxxxxx</a></li>
-                  <li><i class="icon-location"></i><a href="index.html#contacto">Colombia</a></li>
+                  <li><i class="icon-location"></i><a href="index.html#contacto">Argentina</a></li>
                   <li><i class="icon-clock"></i><a href="index.html#contacto">Lun - Vie: 8:00 am - 7:00 pm</a></li>
                 </ul>
               </div>
@@ -737,7 +737,7 @@ function Build-BlogHeader {
               <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Ciudades</a>
                 <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="gastroenterologo-infantil-en-bogota.html" class="nav__item-link">Bogotá</a></li>
+                  <li class="nav__item"><a href="gastroenterologo-infantil-en-quilmes.html" class="nav__item-link">Quilmes y Zona Sur</a></li>
                   <li class="nav__item"><a href="gastroenterologo-infantil-en-medellin.html" class="nav__item-link">Medellín</a></li>
                   <li class="nav__item"><a href="gastroenterologo-infantil-en-cali.html" class="nav__item-link">Cali</a></li>
                   <li class="nav__item"><a href="gastroenterologo-infantil-en-barranquilla.html" class="nav__item-link">Barranquilla</a></li>
@@ -768,8 +768,8 @@ function Build-BlogFooter {
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-3">
               <div class="footer-widget-about">
-                <img src="assets/images/logo/logo-light.png" alt="Gastroenterólogo Infantil Colombia" class="mb-30">
-                <p class="color-gray">Contenido orientado a dolor abdominal, estreñimiento, reflujo y salud digestiva pediátrica en Colombia.</p>
+                <img src="assets/images/logo/logo-light.png" alt="Gastroenterólogo Infantil Argentina" class="mb-30">
+                <p class="color-gray">Contenido orientado a dolor abdominal, estreñimiento, reflujo y salud digestiva pediátrica en Argentina.</p>
                 <a href="index.html#faq" class="btn btn__primary btn__primary-style2 btn__link"><span>Ver FAQ</span> <i class="icon-arrow-right"></i></a>
               </div>
             </div>
@@ -793,7 +793,7 @@ function Build-BlogFooter {
                 <h6 class="footer-widget__title">Ciudades</h6>
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="gastroenterologo-infantil-en-bogota.html">Gastroenterólogo infantil en Bogotá</a></li>
+                    <li><a href="gastroenterologo-infantil-en-quilmes.html">Gastroenterólogo infantil en Quilmes y Zona Sur</a></li>
                     <li><a href="gastroenterologo-infantil-en-medellin.html">Gastroenterólogo infantil en Medellín</a></li>
                     <li><a href="gastroenterologo-infantil-en-cali.html">Gastroenterólogo infantil en Cali</a></li>
                     <li><a href="gastroenterologo-infantil-en-barranquilla.html">Gastroenterólogo infantil en Barranquilla</a></li>
@@ -807,9 +807,9 @@ function Build-BlogFooter {
               <div class="footer-widget-contact">
                 <h6 class="footer-widget__title color-heading">Contacto</h6>
                 <ul class="contact-list list-unstyled">
-                  <li>Colombia</li>
+                  <li>Argentina</li>
                   <li><a href="tel:+57xxxxxxxxxx">+57 xxxxxxxxxx</a></li>
-                  <li><a href="mailto:contacto@digitalescolombia.com">contacto@digitalescolombia.com</a></li>
+                  <li><a href="mailto:contacto@digitalesargentina.com">contacto@digitalesargentina.com</a></li>
                 </ul>
               </div>
             </div>
@@ -821,8 +821,8 @@ function Build-BlogFooter {
           <div class="row align-items-center">
             <div class="col-12">
               <p>
-                Copyright &copy; <script>document.write(new Date().getFullYear())</script> Gastroenterólogo Infantil Colombia. Todos los derechos reservados. Diseñado por 
-                <a href="https://digitalescolombia.com/" target="_blank">digitalescolombia.com</a>
+                Copyright &copy; <script>document.write(new Date().getFullYear())</script> Gastroenterólogo Infantil Argentina. Todos los derechos reservados. Diseñado por 
+                <a href="https://digitalesargentina.com/" target="_blank">digitalesargentina.com</a>
               </p>
             </div>
           </div>
@@ -833,7 +833,7 @@ function Build-BlogFooter {
 }
 
 $indexFaqs = @(
-  @{ Question = '¿Cuándo consultar con un gastroenterólogo infantil en Colombia?'; Answer = 'Es recomendable consultar cuando el niño presenta dolor abdominal recurrente, estreñimiento persistente, diarrea crónica, vómito frecuente, reflujo, pérdida de peso, sangre en las heces, distensión abdominal, rechazo alimentario o sospecha de alergias e intolerancias alimentarias.' },
+  @{ Question = '¿Cuándo consultar con un gastroenterólogo infantil en Argentina?'; Answer = 'Es recomendable consultar cuando el niño presenta dolor abdominal recurrente, estreñimiento persistente, diarrea crónica, vómito frecuente, reflujo, pérdida de peso, sangre en las heces, distensión abdominal, rechazo alimentario o sospecha de alergias e intolerancias alimentarias.' },
   @{ Question = '¿Qué problemas atiende la gastroenterología pediátrica?'; Answer = 'La gastroenterología pediátrica atiende trastornos digestivos en bebés, niños y adolescentes, incluyendo dolor abdominal, estreñimiento, diarrea crónica, reflujo, gastritis, alergias alimentarias, intolerancias, enfermedad celíaca, malabsorción, vómito frecuente y problemas de crecimiento relacionados con la digestión.' },
   @{ Question = '¿El dolor abdominal frecuente en niños siempre es grave?'; Answer = 'No siempre. El dolor abdominal frecuente puede tener causas funcionales, alimentarias, infecciosas, inflamatorias o emocionales. Una valoración médica ayuda a identificar señales de alarma y definir si se requieren estudios o tratamiento específico.' },
   @{ Question = '¿Cuándo el estreñimiento infantil necesita valoración médica?'; Answer = 'Debe valorarse cuando el estreñimiento es persistente, causa dolor, sangrado, retención de heces, distensión abdominal, pérdida de apetito o afecta la calidad de vida del niño. También conviene consultar si no mejora con medidas básicas.' },
@@ -845,25 +845,25 @@ $indexFaqs = @(
 
 $cityData = @(
   @{
-    File = 'gastroenterologo-infantil-en-bogota.html'
-    City = 'Bogotá'
-    Slug = 'bogota'
-    Description = 'Gastroenterólogo infantil en Bogotá para dolor abdominal, estreñimiento, diarrea crónica, reflujo, alergias alimentarias e intolerancias digestivas en niños. Solicita valoración.'
-    Keywords = 'gastroenterólogo infantil en Bogotá, gastroenterología pediátrica en Bogotá, gastroenterólogo pediatra Bogotá, dolor abdominal en niños Bogotá, estreñimiento infantil Bogotá, reflujo en bebés Bogotá, alergias alimentarias niños Bogotá'
-    SchemaDescription = 'Consulta de gastroenterología infantil en Bogotá para dolor abdominal, estreñimiento, diarrea crónica, reflujo, alergias alimentarias, intolerancias y problemas digestivos en niños.'
-    HeroDesc = 'Atención especializada en Bogotá para dolor abdominal recurrente, estreñimiento, diarrea crónica, reflujo, vómito frecuente, alergias alimentarias, intolerancias y trastornos digestivos en niños y adolescentes.'
-    Slide2Desc = 'En Bogotá revisamos síntomas digestivos, antecedentes, hábitos intestinales, alimentación y estudios previos para orientar diagnósticos claros y planes de manejo personalizados.'
-    LocalVariant = 'En Bogotá orientamos a las familias con una revisión ordenada de síntomas digestivos, crecimiento, tolerancia a los alimentos y evolución clínica, para decidir cuándo basta el seguimiento y cuándo se requieren estudios adicionales.'
-    WidgetDesc = 'Acompañamos a familias en Bogotá con dudas sobre dolor abdominal, estreñimiento, reflujo, diarrea crónica, vómito frecuente y alergias alimentarias.'
+    File = 'gastroenterologo-infantil-en-quilmes.html'
+    City = 'Quilmes y Zona Sur'
+    Slug = 'quilmes'
+    Description = 'Gastroenterólogo infantil en Quilmes y Zona Sur para dolor abdominal, estreñimiento, diarrea crónica, reflujo, alergias alimentarias e intolerancias digestivas en niños. Solicita valoración.'
+    Keywords = 'gastroenterólogo infantil en Quilmes y Zona Sur, gastroenterología pediátrica en Quilmes y Zona Sur, gastroenterólogo pediatra Quilmes y Zona Sur, dolor abdominal en niños Quilmes y Zona Sur, estreñimiento infantil Quilmes y Zona Sur, reflujo en bebés Quilmes y Zona Sur, alergias alimentarias niños Quilmes y Zona Sur'
+    SchemaDescription = 'Consulta de gastroenterología infantil en Quilmes y Zona Sur para dolor abdominal, estreñimiento, diarrea crónica, reflujo, alergias alimentarias, intolerancias y problemas digestivos en niños.'
+    HeroDesc = 'Atención especializada en Quilmes y Zona Sur para dolor abdominal recurrente, estreñimiento, diarrea crónica, reflujo, vómito frecuente, alergias alimentarias, intolerancias y trastornos digestivos en niños y adolescentes.'
+    Slide2Desc = 'En Quilmes y Zona Sur revisamos síntomas digestivos, antecedentes, hábitos intestinales, alimentación y estudios previos para orientar diagnósticos claros y planes de manejo personalizados.'
+    LocalVariant = 'En Quilmes y Zona Sur orientamos a las familias con una revisión ordenada de síntomas digestivos, crecimiento, tolerancia a los alimentos y evolución clínica, para decidir cuándo basta el seguimiento y cuándo se requieren estudios adicionales.'
+    WidgetDesc = 'Acompañamos a familias en Quilmes y Zona Sur con dudas sobre dolor abdominal, estreñimiento, reflujo, diarrea crónica, vómito frecuente y alergias alimentarias.'
     Faqs = @(
-      @{ Question = '¿Cuándo consultar con un gastroenterólogo infantil en Bogotá?'; Answer = 'En Bogotá conviene solicitar valoración cuando el niño tiene dolor abdominal repetido, estreñimiento que no mejora, diarrea de varias semanas, vómitos frecuentes, distensión, reflujo o pérdida de peso.' },
-      @{ Question = '¿Qué problemas atiende la gastroenterología pediátrica en Bogotá?'; Answer = 'La consulta en Bogotá aborda dolor abdominal, estreñimiento, diarrea crónica, reflujo, gastritis, alergias alimentarias, intolerancias, celiaquía, malabsorción y otros trastornos digestivos infantiles.' },
-      @{ Question = '¿El dolor abdominal frecuente en niños siempre es grave?'; Answer = 'No necesariamente. En Bogotá se revisa si el dolor se relaciona con estreñimiento, alimentación, estrés, infecciones o señales de inflamación para decidir el estudio más adecuado.' },
-      @{ Question = '¿Cuándo el estreñimiento infantil necesita valoración médica?'; Answer = 'Si el estreñimiento en Bogotá produce dolor, sangrado, retención, distensión o afecta el apetito y la rutina del niño, es prudente pedir una consulta especializada.' },
-      @{ Question = '¿Qué señales de alarma digestiva deben preocupar a los padres?'; Answer = 'Sangre en las heces, vómito persistente, fiebre prolongada, bajo peso, anemia, dolor nocturno o diarrea con moco son hallazgos que justifican valoración prioritaria en Bogotá.' },
-      @{ Question = '¿El reflujo en bebés requiere gastroenterólogo infantil?'; Answer = 'En Bogotá se recomienda revisar el reflujo cuando hay rechazo del alimento, mala ganancia de peso, irritabilidad marcada, tos asociada o síntomas que persisten más de lo esperado.' },
-      @{ Question = '¿Cómo se estudian las alergias o intolerancias alimentarias?'; Answer = 'La consulta en Bogotá analiza qué alimentos desencadenan síntomas, cómo está creciendo el niño y si hacen falta exámenes para orientar una dieta segura y bien supervisada.' },
-      @{ Question = '¿Cómo agendar una valoración de gastroenterología infantil en Bogotá?'; Answer = 'Puedes solicitar una valoración de gastroenterología infantil en Bogotá por teléfono o a través de los enlaces de contacto para revisar disponibilidad presencial o por teleconsulta.' }
+      @{ Question = '¿Cuándo consultar con un gastroenterólogo infantil en Quilmes y Zona Sur?'; Answer = 'En Quilmes y Zona Sur conviene solicitar valoración cuando el niño tiene dolor abdominal repetido, estreñimiento que no mejora, diarrea de varias semanas, vómitos frecuentes, distensión, reflujo o pérdida de peso.' },
+      @{ Question = '¿Qué problemas atiende la gastroenterología pediátrica en Quilmes y Zona Sur?'; Answer = 'La consulta en Quilmes y Zona Sur aborda dolor abdominal, estreñimiento, diarrea crónica, reflujo, gastritis, alergias alimentarias, intolerancias, celiaquía, malabsorción y otros trastornos digestivos infantiles.' },
+      @{ Question = '¿El dolor abdominal frecuente en niños siempre es grave?'; Answer = 'No necesariamente. En Quilmes y Zona Sur se revisa si el dolor se relaciona con estreñimiento, alimentación, estrés, infecciones o señales de inflamación para decidir el estudio más adecuado.' },
+      @{ Question = '¿Cuándo el estreñimiento infantil necesita valoración médica?'; Answer = 'Si el estreñimiento en Quilmes y Zona Sur produce dolor, sangrado, retención, distensión o afecta el apetito y la rutina del niño, es prudente pedir una consulta especializada.' },
+      @{ Question = '¿Qué señales de alarma digestiva deben preocupar a los padres?'; Answer = 'Sangre en las heces, vómito persistente, fiebre prolongada, bajo peso, anemia, dolor nocturno o diarrea con moco son hallazgos que justifican valoración prioritaria en Quilmes y Zona Sur.' },
+      @{ Question = '¿El reflujo en bebés requiere gastroenterólogo infantil?'; Answer = 'En Quilmes y Zona Sur se recomienda revisar el reflujo cuando hay rechazo del alimento, mala ganancia de peso, irritabilidad marcada, tos asociada o síntomas que persisten más de lo esperado.' },
+      @{ Question = '¿Cómo se estudian las alergias o intolerancias alimentarias?'; Answer = 'La consulta en Quilmes y Zona Sur analiza qué alimentos desencadenan síntomas, cómo está creciendo el niño y si hacen falta exámenes para orientar una dieta segura y bien supervisada.' },
+      @{ Question = '¿Cómo agendar una valoración de gastroenterología infantil en Quilmes y Zona Sur?'; Answer = 'Puedes solicitar una valoración de gastroenterología infantil en Quilmes y Zona Sur por teléfono o a través de los enlaces de contacto para revisar disponibilidad presencial o por teleconsulta.' }
     )
   },
   @{
@@ -980,20 +980,20 @@ $cityData = @(
 
 $indexSource = Get-Content -Raw -Path 'index.html'
 $indexHtml = $indexSource
-$indexHtml = Replace-Block $indexHtml '<meta name="description"[\s\S]*?\/>' '<meta name="description" content="Gastroenterólogo infantil en Colombia para dolor abdominal, estreñimiento, diarrea crónica, reflujo, alergias alimentarias, intolerancias y problemas digestivos en niños. Agenda tu valoración." />'
-$indexHtml = Replace-Block $indexHtml '<meta name="keywords"[\s\S]*?\/>' '<meta name="keywords" content="gastroenterologo infantil en Colombia, gastroenterologia pediatrica Colombia, gastroenterologo pediatra, dolor abdominal en niños, estreñimiento infantil, diarrea cronica niños, reflujo en bebes, alergias alimentarias niños" />'
-$indexHtml = Replace-Block $indexHtml '<link rel="canonical" href="[^"]*" />' '<link rel="canonical" href="https://digitalescolombia.com/gastroenterologo-infantil-colombia" />'
-$indexHtml = Replace-Block $indexHtml '<title>[\s\S]*?<\/title>' '<title>Gastroenterólogo infantil en Colombia | Gastroenterología pediátrica</title>'
+$indexHtml = Replace-Block $indexHtml '<meta name="description"[\s\S]*?\/>' '<meta name="description" content="Gastroenterólogo infantil en Argentina para dolor abdominal, estreñimiento, diarrea crónica, reflujo, alergias alimentarias, intolerancias y problemas digestivos en niños. Agenda tu valoración." />'
+$indexHtml = Replace-Block $indexHtml '<meta name="keywords"[\s\S]*?\/>' '<meta name="keywords" content="gastroenterologo infantil en Argentina, gastroenterologia pediatrica Argentina, gastroenterologo pediatra, dolor abdominal en niños, estreñimiento infantil, diarrea cronica niños, reflujo en bebes, alergias alimentarias niños" />'
+$indexHtml = Replace-Block $indexHtml '<link rel="canonical" href="[^"]*" />' '<link rel="canonical" href="https://digitalesargentina.com/gastroenterologo-infantil-argentina" />'
+$indexHtml = Replace-Block $indexHtml '<title>[\s\S]*?<\/title>' '<title>Gastroenterólogo infantil en Argentina | Gastroenterología pediátrica</title>'
 
 $indexMedical = Build-MedicalClinicSchema `
-  -IdUrl 'https://digitalescolombia.com/gastroenterologo-infantil-colombia' `
-  -Name 'Gastroenterólogo infantil en Colombia' `
-  -Url 'https://digitalescolombia.com/gastroenterologo-infantil-colombia' `
-  -Description 'Consulta de gastroenterología infantil en Colombia para dolor abdominal, estreñimiento, diarrea crónica, reflujo, vómito frecuente, alergias alimentarias, intolerancias y trastornos digestivos pediátricos.' `
-  -Locality 'Colombia' `
+  -IdUrl 'https://digitalesargentina.com/gastroenterologo-infantil-argentina' `
+  -Name 'Gastroenterólogo infantil en Argentina' `
+  -Url 'https://digitalesargentina.com/gastroenterologo-infantil-argentina' `
+  -Description 'Consulta de gastroenterología infantil en Argentina para dolor abdominal, estreñimiento, diarrea crónica, reflujo, vómito frecuente, alergias alimentarias, intolerancias y trastornos digestivos pediátricos.' `
+  -Locality 'Argentina' `
   -AreaServed @(
-    @{ '@type' = 'Country'; name = 'Colombia' },
-    @{ '@type' = 'City'; name = 'Bogotá' },
+    @{ '@type' = 'Country'; name = 'Argentina' },
+    @{ '@type' = 'City'; name = 'Quilmes y Zona Sur' },
     @{ '@type' = 'City'; name = 'Medellín' },
     @{ '@type' = 'City'; name = 'Cali' },
     @{ '@type' = 'City'; name = 'Barranquilla' },
@@ -1016,14 +1016,14 @@ $indexFaqJson = Build-FaqSchema $indexFaqs
 
 $indexHtml = Replace-Block $indexHtml '<script type="application/ld\+json">[\s\S]*?"@type":\s*"MedicalClinic"[\s\S]*?<\/script>' "<script type=`"application/ld+json`">`n$indexMedical`n  </script>"
 $indexHtml = Replace-Block $indexHtml '<script type="application/ld\+json">[\s\S]*?"@type":\s*"FAQPage"[\s\S]*?<\/script>' "<script type=`"application/ld+json`">`n$indexFaqJson`n  </script>"
-$indexHtml = Replace-Block $indexHtml '<header class="header header-layout1">[\s\S]*?<\/header>' (Build-Header -IsHome -LocationText 'Colombia y teleconsulta')
+$indexHtml = Replace-Block $indexHtml '<header class="header header-layout1">[\s\S]*?<\/header>' (Build-Header -IsHome -LocationText 'Argentina y teleconsulta')
 $indexHtml = Replace-Block $indexHtml '<section id="inicio" class="slider">[\s\S]*?<footer class="footer">' ((Build-HomeSections `
-  -HeroH1 'Gastroenterólogo infantil en Colombia' `
-  -HeroAlt 'Consulta de gastroenterología infantil en Colombia' `
+  -HeroH1 'Gastroenterólogo infantil en Argentina' `
+  -HeroAlt 'Consulta de gastroenterología infantil en Argentina' `
   -Slide1Desc 'Atención especializada para dolor abdominal recurrente, estreñimiento, diarrea crónica, reflujo, vómito frecuente, alergias alimentarias, intolerancias y trastornos digestivos en bebés, niños y adolescentes.' `
   -Slide2Title 'Consulta digestiva pediátrica' `
   -Slide2Desc 'Evaluamos síntomas, antecedentes, alimentación y estudios previos para orientar diagnósticos claros y planes de manejo personalizados en salud digestiva infantil.' `
-  -LocationLabel 'Colombia' `
+  -LocationLabel 'Argentina' `
   -Faqs $indexFaqs `
   -WidgetDesc 'Resolvemos dudas sobre dolor abdominal, estreñimiento, reflujo en bebés, diarrea crónica, alergias alimentarias e intolerancias digestivas.' `
   -LocalVariant 'Valoramos al niño de forma completa para entender qué papel tienen la alimentación, los hábitos intestinales, la evolución de los síntomas y los antecedentes familiares en cada problema digestivo.') + "`n`n    <footer class=`"footer`">")
@@ -1031,7 +1031,7 @@ $indexHtml = Set-Content -Path 'index.html' -Encoding utf8 -Value $indexHtml
 
 foreach ($city in $cityData) {
   $cityHtml = Get-Content -Raw -Path 'index.html'
-  $cityUrl = "https://digitalescolombia.com/gastroenterologo-infantil-$($city.Slug)"
+  $cityUrl = "https://digitalesargentina.com/gastroenterologo-infantil-$($city.Slug)"
   $cityMedical = Build-MedicalClinicSchema `
     -IdUrl $cityUrl `
     -Name "Gastroenterólogo infantil en $($city.City)" `
@@ -1069,9 +1069,9 @@ foreach ($city in $cityData) {
 }
 
 $blogHtml = Get-Content -Raw -Path 'blog.html'
-$blogHtml = Replace-Block $blogHtml '<meta name="description" content="[^"]*" />' '<meta name="description" content="Artículos de gastroenterología pediátrica sobre dolor abdominal, estreñimiento infantil, reflujo y otros problemas digestivos en niños en Colombia." />'
-$blogHtml = Replace-Block $blogHtml '<link rel="canonical" href="[^"]*" />' '<link rel="canonical" href="https://digitalescolombia.com/blog-gastroenterologia-pediatrica-colombia" />'
-$blogHtml = Replace-Block $blogHtml '<title>[\s\S]*?<\/title>' '<title>Blog de gastroenterología pediátrica | Gastroenterólogo infantil en Colombia</title>'
+$blogHtml = Replace-Block $blogHtml '<meta name="description" content="[^"]*" />' '<meta name="description" content="Artículos de gastroenterología pediátrica sobre dolor abdominal, estreñimiento infantil, reflujo y otros problemas digestivos en niños en Argentina." />'
+$blogHtml = Replace-Block $blogHtml '<link rel="canonical" href="[^"]*" />' '<link rel="canonical" href="https://digitalesargentina.com/blog-gastroenterologia-pediatrica-argentina" />'
+$blogHtml = Replace-Block $blogHtml '<title>[\s\S]*?<\/title>' '<title>Blog de gastroenterología pediátrica | Gastroenterólogo infantil en Argentina</title>'
 $blogHtml = Replace-Block $blogHtml '<header class="header header-layout1">[\s\S]*?<\/header>' (Build-BlogHeader)
 $blogHtml = Replace-Block $blogHtml '<section class="page-title page-title-layout5 bg-overlay">[\s\S]*?<section class="blog-grid pt-120 pb-90">' @"
     <section class="page-title page-title-layout5 bg-overlay">
@@ -1169,14 +1169,14 @@ function New-Post {
     image = $ImageUrl
     author = [ordered]@{
       '@type' = 'Organization'
-      name = 'Gastroenterólogo Infantil Colombia'
+      name = 'Gastroenterólogo Infantil Argentina'
     }
     publisher = [ordered]@{
       '@type' = 'Organization'
-      name = 'Gastroenterólogo Infantil Colombia'
+      name = 'Gastroenterólogo Infantil Argentina'
       logo = [ordered]@{
         '@type' = 'ImageObject'
-        url = 'https://digitalescolombia.com/assets/images/logo/logo-dark.png'
+        url = 'https://digitalesargentina.com/assets/images/logo/logo-dark.png'
       }
     }
     datePublished = '2026-04-29'
@@ -1202,7 +1202,7 @@ function New-Post {
     <section class="blog blog-single pt-0 pb-80">
 "@
   $html = Replace-Block $html '<section class="blog blog-single pt-0 pb-80">[\s\S]*?<footer class="footer">' @"
-    <section class="blog blog-single pt-0 pb-80"><div class="container"><div class="row"><div class="col-lg-8"><div class="post-item mb-0"><div class="post__img"><img src="assets/images/blog/grid/$(if ($TargetFile -like '*estrenimiento*') {'2'} elseif ($TargetFile -like '*reflujo*') {'3'} else {'1'}).jpg" alt="$ImageAlt" loading="lazy"></div><div class="post__body pb-0"><div class="post__meta-cat"><a href="blog.html">$Category</a></div><div class="post__meta d-flex align-items-center mb-20"><span class="post__meta-date">Abril 29, 2026</span><span class="post__meta-author">$MetaAuthor</span></div><h1 class="post__title mb-30">$Headline</h1><div class="post__desc">$descHtml<p><strong>CTA:</strong> Agendar consulta con gastroenterólogo infantil y recibir orientación clara para el manejo digestivo de tu hijo en Colombia.</p></div></div></div></div><div class="col-lg-4"><aside class="sidebar"><div class="widget widget-posts"><h5 class="widget__title">Artículos relacionados</h5><div class="widget__content">$related</div></div></aside></div></div></div></section>
+    <section class="blog blog-single pt-0 pb-80"><div class="container"><div class="row"><div class="col-lg-8"><div class="post-item mb-0"><div class="post__img"><img src="assets/images/blog/grid/$(if ($TargetFile -like '*estrenimiento*') {'2'} elseif ($TargetFile -like '*reflujo*') {'3'} else {'1'}).jpg" alt="$ImageAlt" loading="lazy"></div><div class="post__body pb-0"><div class="post__meta-cat"><a href="blog.html">$Category</a></div><div class="post__meta d-flex align-items-center mb-20"><span class="post__meta-date">Abril 29, 2026</span><span class="post__meta-author">$MetaAuthor</span></div><h1 class="post__title mb-30">$Headline</h1><div class="post__desc">$descHtml<p><strong>CTA:</strong> Agendar consulta con gastroenterólogo infantil y recibir orientación clara para el manejo digestivo de tu hijo en Argentina.</p></div></div></div></div><div class="col-lg-4"><aside class="sidebar"><div class="widget widget-posts"><h5 class="widget__title">Artículos relacionados</h5><div class="widget__content">$related</div></div></aside></div></div></div></section>
     <footer class="footer">
 "@
   $html = Replace-Block $html '<footer class="footer">[\s\S]*?<\/footer>' (Build-BlogFooter)
@@ -1211,7 +1211,7 @@ function New-Post {
 
 New-Post -SourceFile 'crecimiento-infantil-cuando-consultar.html' `
   -TargetFile 'dolor-abdominal-recurrente-ninos.html' `
-  -Canonical 'https://digitalescolombia.com/dolor-abdominal-recurrente-ninos' `
+  -Canonical 'https://digitalesargentina.com/dolor-abdominal-recurrente-ninos' `
   -Title 'Dolor abdominal recurrente en niños | Gastroenterología pediátrica' `
   -MetaDescription 'Conoce cuándo el dolor abdominal recurrente en niños requiere valoración con gastroenterólogo infantil y qué señales deben vigilar los padres.' `
   -Headline 'Dolor abdominal recurrente en niños' `
@@ -1229,11 +1229,11 @@ New-Post -SourceFile 'crecimiento-infantil-cuando-consultar.html' `
   -RelatedTitles @('Estreñimiento infantil: cuándo consultar','Reflujo en bebés y niños') `
   -RelatedLinks @('estrenimiento-infantil-cuando-consultar.html','reflujo-gastroesofagico-en-bebes-y-ninos.html') `
   -RelatedAlts @('Estreñimiento infantil','Reflujo gastroesofágico en bebés y niños') `
-  -ImageUrl 'https://digitalescolombia.com/assets/images/blog/grid/1.jpg'
+  -ImageUrl 'https://digitalesargentina.com/assets/images/blog/grid/1.jpg'
 
 New-Post -SourceFile 'pubertad-precoz-en-ninos.html' `
   -TargetFile 'estrenimiento-infantil-cuando-consultar.html' `
-  -Canonical 'https://digitalescolombia.com/estrenimiento-infantil-cuando-consultar' `
+  -Canonical 'https://digitalesargentina.com/estrenimiento-infantil-cuando-consultar' `
   -Title 'Estreñimiento infantil: cuándo consultar | Gastroenterólogo infantil' `
   -MetaDescription 'El estreñimiento infantil puede requerir valoración médica cuando es persistente, doloroso o afecta la calidad de vida del niño. Conoce señales de alerta.' `
   -Headline 'Estreñimiento infantil: cuándo consultar' `
@@ -1251,11 +1251,11 @@ New-Post -SourceFile 'pubertad-precoz-en-ninos.html' `
   -RelatedTitles @('Dolor abdominal recurrente en niños','Reflujo en bebés y niños') `
   -RelatedLinks @('dolor-abdominal-recurrente-ninos.html','reflujo-gastroesofagico-en-bebes-y-ninos.html') `
   -RelatedAlts @('Dolor abdominal recurrente en niños','Reflujo gastroesofágico en bebés y niños') `
-  -ImageUrl 'https://digitalescolombia.com/assets/images/blog/grid/2.jpg'
+  -ImageUrl 'https://digitalesargentina.com/assets/images/blog/grid/2.jpg'
 
 New-Post -SourceFile 'diabetes-infantil-senales-alerta.html' `
   -TargetFile 'reflujo-gastroesofagico-en-bebes-y-ninos.html' `
-  -Canonical 'https://digitalescolombia.com/reflujo-gastroesofagico-en-bebes-y-ninos' `
+  -Canonical 'https://digitalesargentina.com/reflujo-gastroesofagico-en-bebes-y-ninos' `
   -Title 'Reflujo en bebés y niños | Cuándo consultar' `
   -MetaDescription 'Información para padres sobre reflujo gastroesofágico en bebés y niños, síntomas frecuentes y cuándo consultar con gastroenterología infantil.' `
   -Headline 'Reflujo en bebés y niños' `
@@ -1273,4 +1273,4 @@ New-Post -SourceFile 'diabetes-infantil-senales-alerta.html' `
   -RelatedTitles @('Dolor abdominal recurrente en niños','Estreñimiento infantil: cuándo consultar') `
   -RelatedLinks @('dolor-abdominal-recurrente-ninos.html','estrenimiento-infantil-cuando-consultar.html') `
   -RelatedAlts @('Dolor abdominal recurrente en niños','Estreñimiento infantil') `
-  -ImageUrl 'https://digitalescolombia.com/assets/images/blog/grid/3.jpg'
+  -ImageUrl 'https://digitalesargentina.com/assets/images/blog/grid/3.jpg'

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/termotanques-estufas-zona-sur/sitemap.xml

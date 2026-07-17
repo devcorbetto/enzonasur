@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/pintura-albanileria-zona-sur/sitemap.xml

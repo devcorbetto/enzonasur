@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://pisosflotantescapitalfederal.com/sitemap.xml
+Sitemap: https://enzonasur.com/pisos-flotantes-quilmes/sitemap.xml

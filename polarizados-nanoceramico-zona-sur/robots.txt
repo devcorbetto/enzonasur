@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/polarizados-nanoceramico-zona-sur/sitemap.xml

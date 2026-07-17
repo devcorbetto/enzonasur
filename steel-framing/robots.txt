@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/steel-framing/sitemap.xml

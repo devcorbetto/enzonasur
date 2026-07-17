@@ -300,7 +300,7 @@ https://wa.me/5411XXXXXXXX
 
 Email placeholder:
 
-contacto@tudominio.com
+contacto@enzonasur.com
 
 Zona:
 
@@ -995,7 +995,7 @@ Schema del index
   "name": "Electricista en Zona Sur",
   "url": "https://enzonasur.com/electricista-zona-sur/",
   "telephone": "+54 11 XXXX-XXXX",
-  "email": "contacto@tudominio.com",
+  "email": "contacto@enzonasur.com",
   "description": "Servicio de electricista en Zona Sur para urgencias, instalaciones eléctricas, tableros, térmicas, disyuntores, iluminación, mantenimiento y reparaciones en hogares, comercios y consorcios.",
   "areaServed": [
     {
@@ -1047,7 +1047,7 @@ Schema para landing Lanús
   "name": "Electricista en Lanús",
   "url": "https://enzonasur.com/electricista-en-lanus.html",
   "telephone": "+54 11 XXXX-XXXX",
-  "email": "contacto@tudominio.com",
+  "email": "contacto@enzonasur.com",
   "description": "Servicio de electricista en Lanús para urgencias, instalaciones eléctricas, tableros, térmicas, disyuntores, iluminación, mantenimiento y reparaciones.",
   "areaServed": [
     {

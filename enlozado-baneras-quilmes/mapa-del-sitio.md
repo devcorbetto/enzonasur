@@ -7,16 +7,16 @@
 
 ## Landings locales
 - /enlozado-baneras-quilmes.html
-- /enlozado-baneras-quilmesllito.html
-- /enlozado-baneras-belgrano.html
-- /enlozado-baneras-recoleta.html
-- /enlozado-baneras-almagro.html
-- /enlozado-baneras-villa-urquiza.html
-- /enlozado-baneras-flores.html
-- /enlozado-baneras-nunez.html
+- /enlozado-baneras-berazategui.html
+- /enlozado-baneras-bernal.html
+- /enlozado-baneras-avellaneda.html
+- /enlozado-baneras-adrogue.html
+- /enlozado-baneras-temperley.html
+- /enlozado-baneras-jose-marmol.html
+- /enlozado-baneras-wilde.html
 - /enlozado-baneras-devoto.html
-- /enlozado-baneras-villa-crespo.html
-- /enlozado-baneras-balvanera.html
+- /enlozado-baneras-remedios-de-escalada.html
+- /enlozado-baneras-sarandi.html
 - /enlozado-baneras-san-telmo.html
 
 ## Landings por servicio

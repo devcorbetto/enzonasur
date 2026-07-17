@@ -1,0 +1,86 @@
+    <!-- =========================
+        Header
+    =========================== -->
+    <header class="header header-layout2">
+      <div class="header-topbar">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="d-flex align-items-center justify-content-between">
+                <p class="topbar__text color-primary mb-0">
+                  <i class="fas fa-exclamation-circle"></i>
+                  <span>Atendemos más de 5,000 pacientes al año en Quilmes, Zona Sur. </span>
+                  <a href="#" class="color-white">
+                    <span>Escucha sus historias reales</span>
+                    <i class="icon-arrow-right"></i>
+                  </a>
+                </p>
+                <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
+                  <li>
+                    <i class="icon-phone color-primary"></i>
+                    <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20agendar%20una%20cita%20odontol%C3%B3gica%20en%20Quilmes%2C%20Zona%20Sur.">WhatsApp: +54 11 1234-5678</a>
+                  </li>
+                  <li>
+                    <i class="icon-location color-primary"></i>
+                    <a href="#">Ubicación: Quilmes, Zona Sur</a>
+                  </li>
+                  <li>
+                    <i class="icon-clock color-primary"></i>
+                    <a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
+                  </li>
+                </ul><!-- /.contact__list -->
+              </div>
+            </div><!-- /.col-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.header-top -->
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item">
+                <a href="index.html" class="nav__item-link active">Inicio</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="servicios.html" class="nav__item-link">Servicios</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="urgencias-odontologicas-quilmes.html" class="nav__item-link">Urgencias</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="diseno-de-sonrisa-quilmes.html" class="nav__item-link">Diseño de Sonrisa</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="implantes-dentales-quilmes.html" class="nav__item-link">Implantes</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="preguntas-frecuentes.html" class="nav__item-link">FAQs</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="blog.html" class="nav__item-link">Blog</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="contacto.html" class="nav__item-link">Contacto</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+            <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
+          </div><!-- /.navbar-collapse -->
+          <div class="d-none d-xl-flex align-items-center position-relative ml-30">
+            <a href="https://wa.me/5491112345678?text=Hola,%20quiero%20agendar%20una%20cita%20odontol%C3%B3gica%20en%20Quilmes%2C%20Zona%20Sur." class="btn btn__primary btn__rounded">
+              <i class="icon-calendar"></i>
+              <span>Agendar Cita</span>
+            </a>
+          </div>
+          <button class="action__btn-search ml-30"><i class="fa fa-search"></i></button>
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
+
+    <!-- ============================

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/muebles-de-hierro-y-madera/sitemap.xml

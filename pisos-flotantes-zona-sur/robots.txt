@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://pisosflotanteszonasur.com/sitemap.xml
+Sitemap: https://enzonasur.com/pisos-flotantes-zona-sur/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/psicologo-zona-sur-monte-grande/sitemap.xml

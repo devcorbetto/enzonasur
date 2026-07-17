@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/entrenador-boxeo-zona-sur/sitemap.xml
