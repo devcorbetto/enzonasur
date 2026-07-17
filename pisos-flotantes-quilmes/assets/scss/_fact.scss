@@ -1,0 +1,133 @@
+.facts-wrapper {
+    &.style1 {
+        .facts-title {
+            color: $title-color;
+            text-align: center;
+            font-family: $title-font;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.44px;
+            margin-bottom: 30px;
+        }
+
+        .facts-box-wrapper {
+            &.style1 {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+
+                .facts-box {
+                    &:nth-child(even) {
+                        margin-top: 160px;
+                    }
+
+                    h3 {
+                        color: $theme-color;
+                        text-align: center;
+                        font-family: $title-font;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: -1.08px;
+
+                        .counter-number {
+                            color: $theme-color;
+                            text-align: center;
+                            font-family: $title-font;
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            letter-spacing: -1.08px;
+                        }
+                    }
+
+                    .text {
+                        color: $title-color;
+                        text-align: center;
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+
+
+                    @include breakpoint (max-md) {
+                        &:nth-child(even) {
+                            margin-top: 0px;
+                        }
+                    }
+                }
+
+                @include breakpoint (max-md) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.values-wrapper {
+    &.style1 {
+        .values-title {
+            color: $title-color;
+            text-align: center;
+            font-family: $title-font;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.44px;
+            margin-bottom: 40px;
+        }
+
+        .values-box {
+            &.style1 {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .icon {
+                    display: block;
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    text-align: center;
+                    background: $theme-color;
+                    border-radius: 50%;
+                }
+
+                .content {
+                    max-width: 410px;
+
+                    h3 {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+
+                    p {
+                        color: $text-color;
+                        font-family: $body-font;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+
+                    @include breakpoint (max-md) {
+                        max-width: 230px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Diseño web, SEO y WordPress en Argentina | En Zona Sur</title>
+  <meta name="description" content="Agencia de diseño web, SEO y WordPress en Argentina. Creamos sitios profesionales, rápidos y preparados para posicionar en Google y generar más consultas." />
+  <link rel="canonical" href="https://enzonasur.com/web/" />
+
+  <meta property="og:title" content="Diseño web, SEO y WordPress en Argentina | En Zona Sur" />
+  <meta property="og:description" content="Creamos sitios profesionales, rápidos y preparados para posicionar en Google y generar más consultas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://enzonasur.com/web/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diseño web, SEO y WordPress en Argentina" />
+  <meta name="twitter:description" content="Diseño web, SEO y WordPress para empresas que quieren crecer en Argentina." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #07111f;
+      --bg-darker: #030712;
+      --bg-light: #f8fafc;
+      --white: #ffffff;
+      --text-dark: #101828;
+      --text-muted: #667085;
+      --text-light: #e5e7eb;
+      --border-light: #e5e7eb;
+      --border-dark: rgba(255, 255, 255, 0.12);
+      --accent: #4f8cff;
+      --accent-2: #22d3ee;
+      --accent-3: #8b5cf6;
+      --radius-sm: 14px;
+      --radius-md: 22px;
+      --radius-lg: 32px;
+      --shadow-soft: 0 20px 60px rgba(15, 23, 42, 0.12);
+      --shadow-dark: 0 30px 90px rgba(0, 0, 0, 0.35);
+      --container: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--container));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 110px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    .eyebrow.dark {
+      color: var(--accent-2);
+    }
+
+    .section-title {
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      margin: 0;
+      max-width: 850px;
+    }
+
+    .section-text {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 22px 0 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-3));
+      box-shadow: 0 16px 36px rgba(79, 140, 255, 0.35);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 22px 48px rgba(79, 140, 255, 0.42);
+    }
+
+    .btn-secondary {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(12px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .btn-light {
+      background: #fff;
+      color: var(--text-dark);
+      border-color: var(--border-light);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .btn-light:hover {
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      transition: background 0.25s ease, border-color 0.25s ease, backdrop-filter 0.25s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    .site-header.is-scrolled {
+      background: rgba(3, 7, 18, 0.78);
+      backdrop-filter: blur(18px);
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .header-inner {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: #fff;
+      position: relative;
+      z-index: 102;
+    }
+
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      box-shadow: 0 14px 30px rgba(34, 211, 238, 0.25);
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .desktop-nav a {
+      transition: color 0.2s ease;
+    }
+
+    .desktop-nav a:hover {
+      color: #fff;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 102;
+      cursor: pointer;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.96);
+      backdrop-filter: blur(18px);
+      z-index: 101;
+      display: none;
+      padding: 110px 24px 32px;
+    }
+
+    .mobile-menu.is-open {
+      display: block;
+    }
+
+    .mobile-menu nav {
+      display: grid;
+      gap: 20px;
+    }
+
+    .mobile-menu a {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .mobile-menu .btn {
+      margin-top: 28px;
+      width: 100%;
+    }
+
+    .hero {
+      min-height: 100svh;
+      padding: 112px 0 64px;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(79, 140, 255, 0.34), transparent 34%),
+        radial-gradient(circle at 78% 20%, rgba(34, 211, 238, 0.22), transparent 28%),
+        radial-gradient(circle at 70% 78%, rgba(139, 92, 246, 0.26), transparent 32%),
+        linear-gradient(180deg, #030712 0%, #07111f 55%, #0a1423 100%);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent 82%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+      gap: 72px;
+      align-items: center;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 22px;
+      backdrop-filter: blur(14px);
+    }
+
+    .hero-kicker span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      box-shadow: 0 0 22px var(--accent-2);
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 4.45vw, 56px);
+      line-height: 1;
+      letter-spacing: -0.045em;
+      margin: 0;
+      max-width: 880px;
+    }
+
+    .hero h1 strong {
+      background: linear-gradient(135deg, #fff 15%, #9ed8ff 45%, #b8a8ff 80%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-text {
+      margin: 22px 0 0;
+      max-width: 680px;
+      color: rgba(255, 255, 255, 0.73);
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .hero-trust {
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .dashboard {
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 34px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.045));
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-dark);
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .dashboard::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(34, 211, 238, 0.16);
+      filter: blur(40px);
+      top: -110px;
+      right: -100px;
+    }
+
+    .dashboard-top {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px 22px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .dashboard-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #99f6e4;
+    }
+
+    .dashboard-status span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #2dd4bf;
+      box-shadow: 0 0 18px #2dd4bf;
+    }
+
+    .dashboard-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .metric-card {
+      min-height: 150px;
+      padding: 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .metric-card.large {
+      grid-column: span 2;
+      min-height: 190px;
+    }
+
+    .metric-card h3 {
+      margin: 0 0 12px;
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: -0.02em;
+    }
+
+    .metric-number {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      margin: 0;
+      color: #fff;
+    }
+
+    .metric-label {
+      margin: 8px 0 0;
+      font-size: 13px;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.62);
+    }
+
+    .mock-bars {
+      display: grid;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .mock-bars span {
+      display: block;
+      height: 9px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      overflow: hidden;
+    }
+
+    .mock-bars span::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: var(--w);
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    }
+
+    .floating-pill {
+      position: absolute;
+      z-index: 3;
+      right: -18px;
+      bottom: 52px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(3, 7, 18, 0.82);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      font-size: 13px;
+      font-weight: 800;
+      backdrop-filter: blur(16px);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 120;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #25d366;
+      box-shadow: 0 18px 42px rgba(37, 211, 102, 0.34);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 22px 52px rgba(37, 211, 102, 0.42);
+    }
+
+    .authority-grid {
+      margin-top: 54px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .feature-card,
+    .benefit-card,
+    .service-card,
+    .case-card,
+    .process-card {
+      border: 1px solid var(--border-light);
+      background: #fff;
+      border-radius: var(--radius-md);
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .feature-card:hover,
+    .benefit-card:hover,
+    .service-card:hover,
+    .case-card:hover,
+    .process-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-soft);
+      border-color: rgba(79, 140, 255, 0.28);
+    }
+
+    .feature-card {
+      padding: 26px;
+    }
+
+    .icon-box {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      background: rgba(79, 140, 255, 0.1);
+      margin-bottom: 22px;
+    }
+
+    .feature-card h3,
+    .benefit-card h3,
+    .service-card h3,
+    .case-card h3,
+    .process-card h3 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -0.045em;
+    }
+
+    .feature-card p,
+    .benefit-card p,
+    .service-card p,
+    .case-card p,
+    .process-card p {
+      margin: 12px 0 0;
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-size: 15px;
+    }
+
+    .dark-section {
+      background:
+        radial-gradient(circle at 20% 10%, rgba(79, 140, 255, 0.18), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.18), transparent 34%),
+        var(--bg-darker);
+      color: #fff;
+    }
+
+    .dark-section .section-text {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .services-grid {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 30px;
+      min-height: 280px;
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.045));
+      border-color: rgba(255, 255, 255, 0.12);
+      box-shadow: none;
+      color: #fff;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -40px -70px auto;
+      width: 180px;
+      height: 180px;
+      background: rgba(34, 211, 238, 0.12);
+      filter: blur(34px);
+      border-radius: 50%;
+    }
+
+    .service-card.main {
+      grid-column: span 2;
+    }
+
+    .service-card.secondary {
+      grid-column: span 3;
+      min-height: 220px;
+    }
+
+    .service-card .icon-box {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .service-card p {
+      color: rgba(255, 255, 255, 0.68);
+    }
+
+    .service-link {
+      position: absolute;
+      left: 30px;
+      bottom: 26px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .split-grid {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .split-card {
+      padding: 34px;
+      border-radius: var(--radius-lg);
+      background: #fff;
+      border: 1px solid var(--border-light);
+      box-shadow: 0 16px 45px rgba(15, 23, 42, 0.06);
+    }
+
+    .split-card h3 {
+      font-size: 28px;
+      letter-spacing: -0.055em;
+      margin: 0 0 26px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .check-list i {
+      flex: 0 0 auto;
+      width: 23px;
+      height: 23px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(79, 140, 255, 0.1);
+      color: var(--accent);
+      margin-top: -1px;
+    }
+
+    .process-grid {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .process-card {
+      padding: 24px;
+      position: relative;
+    }
+
+    .process-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-3));
+      margin-bottom: 22px;
+    }
+
+    .seo-block {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .city-panel {
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: var(--shadow-dark);
+    }
+
+    .city-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .city-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.82);
+      font-weight: 800;
+      font-size: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .city-link:hover {
+      background: rgba(255, 255, 255, 0.14);
+      transform: translateY(-2px);
+    }
+
+    .benefits-grid {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .benefit-card {
+      padding: 26px;
+    }
+
+    .cases-grid {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .case-card {
+      overflow: hidden;
+    }
+
+    .case-visual {
+      min-height: 190px;
+      padding: 18px;
+      background:
+        radial-gradient(circle at 25% 25%, rgba(79, 140, 255, 0.32), transparent 30%),
+        radial-gradient(circle at 80% 65%, rgba(34, 211, 238, 0.24), transparent 32%),
+        #0f172a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .case-browser {
+      height: 18px;
+      display: flex;
+      gap: 6px;
+    }
+
+    .case-browser span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.36);
+    }
+
+    .case-lines {
+      display: grid;
+      gap: 10px;
+    }
+
+    .case-lines span {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .case-body {
+      padding: 26px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(79, 140, 255, 0.1);
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    .faq-wrap {
+      max-width: 900px;
+      margin: 56px auto 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.04);
+    }
+
+    .faq-question {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      text-align: left;
+      cursor: pointer;
+      color: var(--text-dark);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .faq-question svg {
+      flex: 0 0 auto;
+      transition: transform 0.2s ease;
+    }
+
+    .faq-question[aria-expanded="true"] svg {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 24px 24px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .faq-answer.is-open {
+      display: block;
+    }
+
+    .cta-section {
+      padding: 110px 0;
+      background: #fff;
+    }
+
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 36px;
+      padding: 68px;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(34, 211, 238, 0.24), transparent 28%),
+        radial-gradient(circle at 80% 65%, rgba(139, 92, 246, 0.28), transparent 34%),
+        linear-gradient(135deg, #07111f, #0f172a);
+      color: #fff;
+      box-shadow: var(--shadow-dark);
+    }
+
+    .cta-box h2 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(36px, 5vw, 68px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    .cta-box p {
+      margin: 22px 0 0;
+      max-width: 680px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.75;
+      font-size: 18px;
+    }
+
+    .cta-actions {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .cta-note {
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 80px 0 34px;
+      background: var(--bg-darker);
+      color: #fff;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr repeat(4, 1fr);
+      gap: 38px;
+    }
+
+    .footer p {
+      color: rgba(255, 255, 255, 0.58);
+      line-height: 1.7;
+      margin: 18px 0 0;
+      max-width: 360px;
+    }
+
+    .footer h3 {
+      margin: 0 0 18px;
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .footer ul {
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 14px;
+      transition: color 0.2s ease;
+    }
+
+    .footer a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      margin-top: 54px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: rgba(255, 255, 255, 0.44);
+      font-size: 13px;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+
+    @media (max-width: 1024px) {
+      .hero-inner,
+      .seo-block {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        max-width: 620px;
+      }
+
+      .authority-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-card.main,
+      .service-card.secondary {
+        grid-column: span 1;
+      }
+
+      .benefits-grid,
+      .cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 820px) {
+      .desktop-nav,
+      .header-actions .btn {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .section {
+        padding: 82px 0;
+      }
+
+      .hero {
+        padding: 112px 0 66px;
+      }
+
+      .hero-inner {
+        gap: 46px;
+      }
+
+      .hero h1 {
+        font-size: clamp(34px, 9.8vw, 48px);
+        line-height: 1;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      .hero-visual {
+        display: none;
+      }
+
+      .dashboard-grid,
+      .split-grid,
+      .city-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metric-card.large {
+        grid-column: auto;
+      }
+
+      .authority-grid,
+      .services-grid,
+      .process-grid,
+      .benefits-grid,
+      .cases-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-pill {
+        right: 14px;
+        bottom: 22px;
+      }
+
+      .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+      }
+
+      .cta-box {
+        padding: 42px 26px;
+        border-radius: 28px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: min(100% - 28px, var(--container));
+      }
+
+      .header-inner {
+        height: 70px;
+      }
+
+      .hero-actions,
+      .cta-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .section-title {
+        font-size: clamp(32px, 12vw, 48px);
+      }
+
+      .split-card,
+      .service-card,
+      .feature-card,
+      .benefit-card,
+      .case-body {
+        padding: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "En Zona Sur",
+    "url": "https://enzonasur.com/web/",
+    "description": "Agencia de diseño web, SEO y WordPress para empresas, profesionales y marcas en Argentina.",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Argentina"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "En Zona Sur",
+    "url": "https://enzonasur.com/web/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://enzonasur.com/web?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta una página web profesional en Argentina?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El costo depende del alcance, la cantidad de secciones, el nivel de diseño, las funcionalidades y la estrategia SEO necesaria. Podemos trabajar desde una landing profesional hasta un sitio completo preparado para escalar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Trabajan con empresas de cualquier provincia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Podemos trabajar de forma remota con empresas, profesionales y marcas de cualquier ciudad de Argentina."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Pueden mejorar una web existente?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Podemos auditar una web actual, detectar problemas de diseño, velocidad, SEO o conversión, y proponer mejoras concretas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Hacen páginas en WordPress?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Diseñamos, optimizamos y mantenemos sitios WordPress, incluyendo webs institucionales, landing pages y sitios con Elementor o WooCommerce."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿También trabajan SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. La estructura de cada sitio se piensa desde el inicio para facilitar la indexación, mejorar el contenido y preparar la web para competir en Google."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda un proyecto web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del tamaño del proyecto. Una landing puede resolverse más rápido, mientras que un sitio completo con estrategia SEO y varias páginas internas requiere más planificación."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Pueden crear landings por ciudad o servicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Podemos crear una estructura escalable de landings SEO por servicio, ciudad o línea de negocio, cuidando que cada página tenga contenido útil y diferente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El sitio queda preparado para Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Trabajamos estructura semántica, velocidad, etiquetas meta, contenido, enlaces internos y datos estructurados cuando corresponde."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="https://enzonasur.com/web/" class="logo" aria-label="En Zona Sur">
+        <span class="logo-mark">
+          <i data-lucide="sparkles" size="18"></i>
+        </span>
+        En Zona Sur
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#medicos">Médicos</a>
+        <a href="#wordpress">WordPress</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contacto" class="btn btn-secondary">Solicitar diagnóstico</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <i data-lucide="menu" size="22"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <nav aria-label="Navegación mobile">
+        <a href="#servicios">Servicios</a>
+        <a href="#medicos">Médicos</a>
+        <a href="#wordpress">WordPress</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-primary">Solicitar diagnóstico</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="hero-kicker reveal">
+            <span></span>
+            Agencia web enfocada en SEO y conversión
+          </div>
+
+          <h1 class="reveal">
+            Diseño web, SEO y WordPress para empresas que quieren crecer en <strong>Argentina</strong>
+          </h1>
+
+          <p class="hero-text reveal">
+            Creamos sitios web profesionales, rápidos y preparados para posicionar en Google.
+            Ayudamos a empresas, profesionales y marcas a transformar su presencia digital
+            en una herramienta real de ventas.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#contacto" class="btn btn-primary">
+              Solicitar diagnóstico gratuito
+              <i data-lucide="arrow-right" size="18"></i>
+            </a>
+            <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+          </div>
+
+          <p class="hero-trust reveal">
+            Webs profesionales · SEO local · WordPress · Landing pages · Estrategia digital
+          </p>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="dashboard">
+            <div class="dashboard-top">
+              <span>Panel de crecimiento</span>
+              <span class="dashboard-status"><span></span> SEO ready</span>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="metric-card large">
+                <h3>Estructura digital</h3>
+                <p class="metric-number">+ claridad</p>
+                <p class="metric-label">
+                  Mensajes, servicios y llamados a la acción ordenados para que el usuario entienda rápido qué ofrecés.
+                </p>
+                <div class="mock-bars">
+                  <span style="--w: 82%;"></span>
+                  <span style="--w: 64%;"></span>
+                  <span style="--w: 74%;"></span>
+                </div>
+              </article>
+
+              <article class="metric-card">
+                <h3>Consultas</h3>
+                <p class="metric-number">CTA</p>
+                <p class="metric-label">Botones y recorridos pensados para contacto.</p>
+              </article>
+
+              <article class="metric-card">
+                <h3>Base técnica</h3>
+                <p class="metric-number">SEO</p>
+                <p class="metric-label">HTML semántico, velocidad y estructura escalable.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="floating-pill">Mobile first · WordPress · Argentina</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="autoridad">
+      <div class="container">
+        <span class="eyebrow reveal">Estrategia digital</span>
+        <h2 class="section-title reveal">Tu web debería trabajar para tu negocio</h2>
+        <p class="section-text reveal">
+          Una web no debería ser solo una carta de presentación. Debería ayudarte a generar consultas,
+          explicar mejor tus servicios y convertir visitas en oportunidades reales.
+        </p>
+
+        <div class="authority-grid">
+          <article class="feature-card reveal">
+            <div class="icon-box"><i data-lucide="pen-tool" size="22"></i></div>
+            <h3>Diseño estratégico</h3>
+            <p>Diseñamos pensando en claridad, confianza y conversión, no solo en estética.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="icon-box"><i data-lucide="search" size="22"></i></div>
+            <h3>SEO desde la estructura</h3>
+            <p>Organizamos contenidos, títulos, enlaces y secciones para competir mejor en Google.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="icon-box"><i data-lucide="zap" size="22"></i></div>
+            <h3>Sitios rápidos y claros</h3>
+            <p>Priorizamos rendimiento, experiencia mobile y navegación simple.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="icon-box"><i data-lucide="target" size="22"></i></div>
+            <h3>Pensado para convertir</h3>
+            <p>Cada sección debe ayudar al usuario a entender, confiar y avanzar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="servicios">
+      <div class="container">
+        <span class="eyebrow dark reveal">Servicios</span>
+        <h2 class="section-title reveal">Servicios digitales para crecer con una presencia profesional</h2>
+        <p class="section-text reveal">
+          Combinamos diseño, desarrollo, contenido y SEO para crear sitios preparados para competir
+          en Google y convertir visitas en consultas.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card main reveal">
+            <div class="icon-box"><i data-lucide="layout-template" size="22"></i></div>
+            <h3>Diseño web y SEO</h3>
+            <p>Sitios profesionales para empresas, marcas y profesionales que necesitan una presencia digital clara, moderna y orientada a resultados.</p>
+            <a class="service-link" href="#servicios">Ver diseño web en Argentina <i data-lucide="arrow-right" size="16"></i></a>
+          </article>
+
+          <article class="service-card main reveal" id="medicos">
+            <div class="icon-box"><i data-lucide="stethoscope" size="22"></i></div>
+            <h3>Webs para médicos</h3>
+            <p>Páginas web para médicos, clínicas y consultorios que necesitan transmitir confianza, mostrar servicios y facilitar el contacto con pacientes.</p>
+            <a class="service-link" href="#medicos">Ver webs para médicos <i data-lucide="arrow-right" size="16"></i></a>
+          </article>
+
+          <article class="service-card main reveal" id="wordpress">
+            <div class="icon-box"><i data-lucide="blocks" size="22"></i></div>
+            <h3>WordPress</h3>
+            <p>Diseño, optimización y mantenimiento de sitios WordPress para empresas que necesitan una web rápida, segura y fácil de administrar.</p>
+            <a class="service-link" href="/diseno-wordpress-argentina.html">Ver servicios WordPress <i data-lucide="arrow-right" size="16"></i></a>
+          </article>
+
+          <article class="service-card secondary reveal">
+            <div class="icon-box"><i data-lucide="mouse-pointer-click" size="22"></i></div>
+            <h3>Landing pages</h3>
+            <p>Páginas enfocadas en campañas, servicios puntuales y captación de leads.</p>
+            <a class="service-link" href="/landing-pages-argentina.html">Ver landing pages <i data-lucide="arrow-right" size="16"></i></a>
+          </article>
+
+          <article class="service-card secondary reveal">
+            <div class="icon-box"><i data-lucide="shield-check" size="22"></i></div>
+            <h3>Mantenimiento web</h3>
+            <p>Soporte, mejoras, seguridad y optimización continua para sitios existentes.</p>
+            <a class="service-link" href="/mantenimiento-web-argentina.html">Ver mantenimiento <i data-lucide="arrow-right" size="16"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow reveal">Problema y solución</span>
+        <h2 class="section-title reveal">Muchas empresas tienen una web, pero no una herramienta comercial</h2>
+        <p class="section-text reveal">
+          Una página lenta, desactualizada o mal estructurada puede hacer que pierdas consultas todos los días.
+          Nuestro enfoque combina diseño, contenido, SEO técnico y experiencia de usuario para que tu sitio
+          no solo se vea bien, sino que también trabaje para tu negocio.
+        </p>
+
+        <div class="split-grid">
+          <article class="split-card reveal">
+            <h3>Problemas comunes</h3>
+            <ul class="check-list">
+              <li><i data-lucide="x" size="14"></i> Web lenta o antigua</li>
+              <li><i data-lucide="x" size="14"></i> Mensaje poco claro</li>
+              <li><i data-lucide="x" size="14"></i> Mala experiencia mobile</li>
+              <li><i data-lucide="x" size="14"></i> Poca visibilidad en Google</li>
+              <li><i data-lucide="x" size="14"></i> Pocas consultas desde la web</li>
+            </ul>
+          </article>
+
+          <article class="split-card reveal">
+            <h3>Cómo lo resolvemos</h3>
+            <ul class="check-list">
+              <li><i data-lucide="check" size="14"></i> Estructura clara</li>
+              <li><i data-lucide="check" size="14"></i> Diseño orientado a conversión</li>
+              <li><i data-lucide="check" size="14"></i> SEO técnico desde el inicio</li>
+              <li><i data-lucide="check" size="14"></i> Contenido útil y profesional</li>
+              <li><i data-lucide="check" size="14"></i> CTAs visibles y estratégicos</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#fff;">
+      <div class="container">
+        <span class="eyebrow reveal">Proceso</span>
+        <h2 class="section-title reveal">Un proceso claro para construir una web que pueda crecer</h2>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <span class="process-number">1</span>
+            <h3>Diagnóstico</h3>
+            <p>Analizamos tu negocio, tu web actual y tus oportunidades digitales.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">2</span>
+            <h3>Estrategia</h3>
+            <p>Definimos estructura, mensajes, servicios, keywords y objetivos.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">3</span>
+            <h3>Diseño y desarrollo</h3>
+            <p>Creamos una web profesional, responsive y preparada para SEO.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">4</span>
+            <h3>Optimización</h3>
+            <p>Mejoramos velocidad, contenido, indexación y conversión.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">5</span>
+            <h3>Lanzamiento</h3>
+            <p>Publicamos, medimos y seguimos optimizando.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section">
+      <div class="container seo-block">
+        <div>
+          <span class="eyebrow dark reveal">SEO Argentina</span>
+          <h2 class="section-title reveal">Una estrategia pensada para competir en Google en Argentina</h2>
+          <p class="section-text reveal">
+            Creamos páginas y estructuras SEO preparadas para posicionar servicios por país, provincia y ciudad.
+            Esto permite captar búsquedas locales como diseño web en Córdoba, agencia SEO en Rosario o mantenimiento
+            WordPress en Buenos Aires.
+          </p>
+          <p class="section-text reveal">
+            Esta estructura puede escalar progresivamente hacia nuevas ciudades, servicios y páginas especializadas
+            sin perder claridad ni calidad de contenido.
+          </p>
+        </div>
+
+        <div class="city-panel reveal">
+          <div class="city-grid">
+            <a class="city-link" href="diseno-web-buenos-aires.html">Buenos Aires <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-quilmes.html">Quilmes <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-cordoba.html">Córdoba <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rosario.html">Rosario <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-mendoza.html">Mendoza <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-la-plata.html">La Plata <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-mar-del-plata.html">Mar del Plata <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-miguel-de-tucuman.html">San Miguel de Tucumán <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-salta.html">Salta <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-santa-fe.html">Santa Fe <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-neuquen.html">Neuquén <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-bahia-blanca.html">Bahía Blanca <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-resistencia.html">Resistencia <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-posadas.html">Posadas <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-parana.html">Paraná <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-juan.html">San Juan <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-luis.html">San Luis <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-corrientes.html">Corrientes <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-formosa.html">Formosa <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-santiago-del-estero.html">Santiago del Estero <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-quilmes.html">Quilmes <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-lomas-de-zamora.html">Lomas de Zamora <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-moron.html">Morón <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-isidro.html">San Isidro <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-tigre.html">Tigre <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-avellaneda.html">Avellaneda <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-lanus.html">Lanús <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-pilar.html">Pilar <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-fernando.html">San Fernando <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-vicente-lopez.html">Vicente López <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-general-san-martin.html">General San Martín <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-moreno.html">Moreno <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-merlo.html">Merlo <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-jose-c-paz.html">José C. Paz <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-nicolas-de-los-arroyos.html">San Nicolás de los Arroyos <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-tandil.html">Tandil <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-olavarria.html">Olavarría <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-junin.html">Junín <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rio-cuarto.html">Río Cuarto <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-villa-maria.html">Villa María <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-comodoro-rivadavia.html">Comodoro Rivadavia <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-trelew.html">Trelew <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-puerto-madryn.html">Puerto Madryn <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-carlos-de-bariloche.html">San Carlos de Bariloche <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-viedma.html">Viedma <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-general-roca.html">General Roca <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-cipolletti.html">Cipolletti <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-santa-rosa.html">Santa Rosa <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rafaela.html">Rafaela <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-reconquista.html">Reconquista <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-gualeguaychu.html">Gualeguaychú <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-concordia.html">Concordia <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-rafael.html">San Rafael <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-godoy-cruz.html">Godoy Cruz <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rio-gallegos.html">Río Gallegos <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-ushuaia.html">Ushuaia <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rio-grande.html">Río Grande <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-fernando-del-valle-de-catamarca.html">San Fernando del Valle de Catamarca <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-la-rioja.html">La Rioja <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-villa-mercedes.html">Villa Mercedes <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-pergamino.html">Pergamino <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-zarate.html">Zárate <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-campana.html">Campana <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-necochea.html">Necochea <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-chivilcoy.html">Chivilcoy <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-azul.html">Azul <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-tres-arroyos.html">Tres Arroyos <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-venado-tuerto.html">Venado Tuerto <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-villa-gobernador-galvez.html">Villa Gobernador Gálvez <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-santo-tome.html">Santo Tomé <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-esperanza.html">Esperanza <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-francisco.html">San Francisco <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-alta-gracia.html">Alta Gracia <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-villa-carlos-paz.html">Villa Carlos Paz <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-goya.html">Goya <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-clorinda.html">Clorinda <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-obera.html">Oberá <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-eldorado.html">Eldorado <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-puerto-iguazu.html">Puerto Iguazú <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-ramon-de-la-nueva-oran.html">San Ramón de la Nueva Orán <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rawson.html">Rawson <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-esquel.html">Esquel <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-caleta-olivia.html">Caleta Olivia <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-pico-truncado.html">Pico Truncado <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-cutral-co.html">Cutral Có <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-plaza-huincul.html">Plaza Huincul <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-zapala.html">Zapala <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-villa-regina.html">Villa Regina <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-allen.html">Allen <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-cinco-saltos.html">Cinco Saltos <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-general-pico.html">General Pico <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-toay.html">Toay <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-firmat.html">Firmat <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-canada-de-gomez.html">Cañada de Gómez <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-casilda.html">Casilda <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-bell-ville.html">Bell Ville <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-marcos-juarez.html">Marcos Juárez <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-villa-dolores.html">Villa Dolores <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rio-tercero.html">Río Tercero <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-jesus-maria.html">Jesús María <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-mercedes.html">Mercedes <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-lujan.html">Luján <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-chascomus.html">Chascomús <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-balcarce.html">Balcarce <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-dolores.html">Dolores <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-lincoln.html">Lincoln <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-nueve-de-julio.html">Nueve de Julio <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-pehuajo.html">Pehuajó <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-trenque-lauquen.html">Trenque Lauquen <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rio-segundo.html">Río Segundo <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-arroyito.html">Arroyito <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-la-calera.html">La Calera <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-cosquin.html">Cosquín <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-las-varillas.html">Las Varillas <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-sunchales.html">Sunchales <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-villa-constitucion.html">Villa Constitución <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-arroyo-seco.html">Arroyo Seco <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-fray-luis-beltran.html">Fray Luis Beltrán <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-granadero-baigorria.html">Granadero Baigorria <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-yerba-buena.html">Yerba Buena <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-ramos-mejia.html">Ramos Mejía <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-justo.html">San Justo <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-gregorio-de-laferrere.html">Gregorio de Laferrere <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-gonzalez-catan.html">González Catán <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-isidro-casanova.html">Isidro Casanova <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-haedo.html">Haedo <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-castelar.html">Castelar <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-ituzaingo.html">Ituzaingó <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-hurlingham.html">Hurlingham <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-el-palomar.html">El Palomar <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-berazategui.html">Berazategui <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-florencio-varela.html">Florencio Varela <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-ezeiza.html">Ezeiza <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-canuelas.html">Cañuelas <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-ensenada.html">Ensenada <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-berisso.html">Berisso <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-pedro.html">San Pedro <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-baradero.html">Baradero <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-chacabuco.html">Chacabuco <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-bragado.html">Bragado <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-banfield.html">Banfield <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-temperley.html">Temperley <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-adrogue.html">Adrogué <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-burzaco.html">Burzaco <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-longchamps.html">Longchamps <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-monte-grande.html">Monte Grande <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-luis-guillon.html">Luis Guillón <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-lavallol.html">Lavallol <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-claypole.html">Claypole <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-rafael-calzada.html">Rafael Calzada <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-san-vicente.html">San Vicente <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-alejandro-korn.html">Alejandro Korn <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-guernica.html">Guernica <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-glew.html">Glew <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-ministro-rivadavia.html">Ministro Rivadavia <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-dock-sud.html">Dock Sud <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-sarandi.html">Sarandí <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-wilde.html">Wilde <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-don-bosco.html">Don Bosco <i data-lucide="arrow-up-right" size="16"></i></a>
+            <a class="city-link" href="diseno-web-bernal.html">Bernal <i data-lucide="arrow-up-right" size="16"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow reveal">Beneficios</span>
+        <h2 class="section-title reveal">Beneficios de trabajar con una agencia orientada a SEO y conversión</h2>
+
+        <div class="benefits-grid">
+          <article class="benefit-card reveal">
+            <div class="icon-box"><i data-lucide="message-square-text" size="22"></i></div>
+            <h3>Más claridad</h3>
+            <p>Tu cliente entiende rápido qué hacés, cómo lo ayudás y cómo contactarte.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="icon-box"><i data-lucide="trending-up" size="22"></i></div>
+            <h3>Mejor posicionamiento</h3>
+            <p>Una estructura preparada para crecer con páginas, ciudades y servicios.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="icon-box"><i data-lucide="inbox" size="22"></i></div>
+            <h3>Más consultas</h3>
+            <p>CTAs visibles y recorridos pensados para generar oportunidades reales.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="icon-box"><i data-lucide="megaphone" size="22"></i></div>
+            <h3>Lista para campañas</h3>
+            <p>Una web adaptable a Google Ads, Meta Ads, landings y acciones comerciales.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="icon-box"><i data-lucide="smartphone" size="22"></i></div>
+            <h3>Experiencia mobile</h3>
+            <p>Diseño responsive cuidado para usuarios que navegan desde el celular.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="icon-box"><i data-lucide="layers-3" size="22"></i></div>
+            <h3>Escalable</h3>
+            <p>Base preparada para sumar landings por ciudad, servicio o línea de negocio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos" style="background:#fff;">
+      <div class="container">
+        <span class="eyebrow reveal">Proyectos</span>
+        <h2 class="section-title reveal">Proyectos pensados para verse bien y funcionar mejor</h2>
+        <p class="section-text reveal">
+          Diseñamos sitios con foco en claridad, rendimiento y conversión. Cada proyecto debe ayudar
+          a explicar mejor el negocio y facilitar el contacto.
+        </p>
+
+        <div class="cases-grid">
+          <article class="case-card reveal">
+            <div class="case-visual">
+              <div class="case-browser"><span></span><span></span><span></span></div>
+              <div class="case-lines">
+                <span style="width:78%;"></span>
+                <span style="width:56%;"></span>
+                <span style="width:88%;"></span>
+              </div>
+            </div>
+            <div class="case-body">
+              <span class="badge">Institucional</span>
+              <h3>Sitio institucional</h3>
+              <p>Arquitectura clara para presentar servicios, generar confianza y abrir conversaciones comerciales.</p>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-visual">
+              <div class="case-browser"><span></span><span></span><span></span></div>
+              <div class="case-lines">
+                <span style="width:66%;"></span>
+                <span style="width:86%;"></span>
+                <span style="width:52%;"></span>
+              </div>
+            </div>
+            <div class="case-body">
+              <span class="badge">Captación</span>
+              <h3>Landing de conversión</h3>
+              <p>Página enfocada en un servicio, una oferta y una acción clara para campañas o SEO.</p>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-visual">
+              <div class="case-browser"><span></span><span></span><span></span></div>
+              <div class="case-lines">
+                <span style="width:84%;"></span>
+                <span style="width:48%;"></span>
+                <span style="width:70%;"></span>
+              </div>
+            </div>
+            <div class="case-body">
+              <span class="badge">Médicos</span>
+              <h3>Web médica profesional</h3>
+              <p>Diseño pensado para transmitir confianza, ordenar servicios y facilitar turnos o consultas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faqs">
+      <div class="container">
+        <span class="eyebrow reveal">FAQs</span>
+        <h2 class="section-title reveal" style="text-align:center; margin-inline:auto;">Preguntas frecuentes</h2>
+
+        <div class="faq-wrap reveal">
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿Cuánto cuesta una página web profesional en Argentina?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              El costo depende del alcance, la cantidad de secciones, el nivel de diseño, las funcionalidades y la estrategia SEO necesaria. Podemos trabajar desde una landing profesional hasta un sitio completo preparado para escalar.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿Trabajan con empresas de cualquier provincia?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              Sí. Podemos trabajar de forma remota con empresas, profesionales y marcas de cualquier ciudad de Argentina.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿Pueden mejorar una web existente?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              Sí. Podemos auditar una web actual, detectar problemas de diseño, velocidad, SEO o conversión, y proponer mejoras concretas.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿Hacen páginas en WordPress?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              Sí. Diseñamos, optimizamos y mantenemos sitios WordPress, incluyendo webs institucionales, landing pages y sitios con Elementor o WooCommerce.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿También trabajan SEO?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              Sí. La estructura de cada sitio se piensa desde el inicio para facilitar la indexación, mejorar el contenido y preparar la web para competir en Google.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿Cuánto tarda un proyecto web?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              Depende del tamaño del proyecto. Una landing puede resolverse más rápido, mientras que un sitio completo con estrategia SEO y varias páginas internas requiere más planificación.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿Pueden crear landings por ciudad o servicio?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              Sí. Podemos crear una estructura escalable de landings SEO por servicio, ciudad o línea de negocio, cuidando que cada página tenga contenido útil y diferente.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              ¿El sitio queda preparado para Google?
+              <i data-lucide="chevron-down" size="20"></i>
+            </button>
+            <div class="faq-answer">
+              Sí. Trabajamos estructura semántica, velocidad, etiquetas meta, contenido, enlaces internos y datos estructurados cuando corresponde.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contacto">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2>¿Querés convertir tu web en una herramienta real de ventas?</h2>
+          <p>
+            Podemos revisar tu situación actual y proponerte una estructura clara para mejorar tu presencia digital,
+            captar más consultas y preparar tu negocio para crecer en Google.
+          </p>
+
+          <div class="cta-actions">
+            <a href="mailto:hola@enzonasur.com" class="btn btn-primary">
+              Solicitar diagnóstico gratuito
+              <i data-lucide="arrow-right" size="18"></i>
+            </a>
+            <span class="cta-note">Diagnóstico inicial · Estrategia clara · Sin compromiso</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="https://enzonasur.com/web/" class="logo">
+            <span class="logo-mark">
+              <i data-lucide="sparkles" size="18"></i>
+            </span>
+            En Zona Sur
+          </a>
+          <p>
+            Agencia de diseño web, SEO y WordPress para empresas, profesionales y marcas en Argentina.
+          </p>
+        </div>
+
+        <div>
+          <h3>Servicios</h3>
+          <ul>
+            <li><a href="#servicios">Diseño web</a></li>
+            <li><a href="/agencia-seo-argentina.html">SEO</a></li>
+            <li><a href="/diseno-wordpress-argentina.html">WordPress</a></li>
+            <li><a href="/landing-pages-argentina.html">Landing pages</a></li>
+            <li><a href="/mantenimiento-web-argentina.html">Mantenimiento web</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Líneas</h3>
+          <ul>
+            <li><a href="#servicios">General</a></li>
+            <li><a href="#medicos">Médicos</a></li>
+            <li><a href="/diseno-wordpress-argentina.html">WordPress</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Ciudades</h3>
+          <ul>
+            <li><a href="diseno-web-buenos-aires.html">Buenos Aires</a></li>
+            <li><a href="diseno-web-quilmes.html">Quilmes</a></li>
+            <li><a href="diseno-web-cordoba.html">Córdoba</a></li>
+            <li><a href="diseno-web-rosario.html">Rosario</a></li>
+            <li><a href="diseno-web-mendoza.html">Mendoza</a></li>
+            <li><a href="diseno-web-la-plata.html">La Plata</a></li>
+            <li><a href="diseno-web-mar-del-plata.html">Mar del Plata</a></li>
+            <li><a href="diseno-web-san-miguel-de-tucuman.html">San Miguel de Tucumán</a></li>
+            <li><a href="diseno-web-salta.html">Salta</a></li>
+            <li><a href="diseno-web-santa-fe.html">Santa Fe</a></li>
+            <li><a href="diseno-web-neuquen.html">Neuquén</a></li>
+            <li><a href="diseno-web-bahia-blanca.html">Bahía Blanca</a></li>
+            <li><a href="diseno-web-resistencia.html">Resistencia</a></li>
+            <li><a href="diseno-web-posadas.html">Posadas</a></li>
+            <li><a href="diseno-web-parana.html">Paraná</a></li>
+            <li><a href="diseno-web-san-juan.html">San Juan</a></li>
+            <li><a href="diseno-web-san-luis.html">San Luis</a></li>
+            <li><a href="diseno-web-corrientes.html">Corrientes</a></li>
+            <li><a href="diseno-web-formosa.html">Formosa</a></li>
+            <li><a href="diseno-web-santiago-del-estero.html">Santiago del Estero</a></li>
+            <li><a href="diseno-web-quilmes.html">Quilmes</a></li>
+            <li><a href="diseno-web-lomas-de-zamora.html">Lomas de Zamora</a></li>
+            <li><a href="diseno-web-moron.html">Morón</a></li>
+            <li><a href="diseno-web-san-isidro.html">San Isidro</a></li>
+            <li><a href="diseno-web-tigre.html">Tigre</a></li>
+            <li><a href="diseno-web-avellaneda.html">Avellaneda</a></li>
+            <li><a href="diseno-web-lanus.html">Lanús</a></li>
+            <li><a href="diseno-web-pilar.html">Pilar</a></li>
+            <li><a href="diseno-web-san-fernando.html">San Fernando</a></li>
+            <li><a href="diseno-web-vicente-lopez.html">Vicente López</a></li>
+            <li><a href="diseno-web-general-san-martin.html">General San Martín</a></li>
+            <li><a href="diseno-web-moreno.html">Moreno</a></li>
+            <li><a href="diseno-web-merlo.html">Merlo</a></li>
+            <li><a href="diseno-web-jose-c-paz.html">José C. Paz</a></li>
+            <li><a href="diseno-web-san-nicolas-de-los-arroyos.html">San Nicolás de los Arroyos</a></li>
+            <li><a href="diseno-web-tandil.html">Tandil</a></li>
+            <li><a href="diseno-web-olavarria.html">Olavarría</a></li>
+            <li><a href="diseno-web-junin.html">Junín</a></li>
+            <li><a href="diseno-web-rio-cuarto.html">Río Cuarto</a></li>
+            <li><a href="diseno-web-villa-maria.html">Villa María</a></li>
+            <li><a href="diseno-web-comodoro-rivadavia.html">Comodoro Rivadavia</a></li>
+            <li><a href="diseno-web-trelew.html">Trelew</a></li>
+            <li><a href="diseno-web-puerto-madryn.html">Puerto Madryn</a></li>
+            <li><a href="diseno-web-san-carlos-de-bariloche.html">San Carlos de Bariloche</a></li>
+            <li><a href="diseno-web-viedma.html">Viedma</a></li>
+            <li><a href="diseno-web-general-roca.html">General Roca</a></li>
+            <li><a href="diseno-web-cipolletti.html">Cipolletti</a></li>
+            <li><a href="diseno-web-santa-rosa.html">Santa Rosa</a></li>
+            <li><a href="diseno-web-rafaela.html">Rafaela</a></li>
+            <li><a href="diseno-web-reconquista.html">Reconquista</a></li>
+            <li><a href="diseno-web-gualeguaychu.html">Gualeguaychú</a></li>
+            <li><a href="diseno-web-concordia.html">Concordia</a></li>
+            <li><a href="diseno-web-san-rafael.html">San Rafael</a></li>
+            <li><a href="diseno-web-godoy-cruz.html">Godoy Cruz</a></li>
+            <li><a href="diseno-web-rio-gallegos.html">Río Gallegos</a></li>
+            <li><a href="diseno-web-ushuaia.html">Ushuaia</a></li>
+            <li><a href="diseno-web-rio-grande.html">Río Grande</a></li>
+            <li><a href="diseno-web-san-fernando-del-valle-de-catamarca.html">San Fernando del Valle de Catamarca</a></li>
+            <li><a href="diseno-web-la-rioja.html">La Rioja</a></li>
+            <li><a href="diseno-web-villa-mercedes.html">Villa Mercedes</a></li>
+            <li><a href="diseno-web-pergamino.html">Pergamino</a></li>
+            <li><a href="diseno-web-zarate.html">Zárate</a></li>
+            <li><a href="diseno-web-campana.html">Campana</a></li>
+            <li><a href="diseno-web-necochea.html">Necochea</a></li>
+            <li><a href="diseno-web-chivilcoy.html">Chivilcoy</a></li>
+            <li><a href="diseno-web-azul.html">Azul</a></li>
+            <li><a href="diseno-web-tres-arroyos.html">Tres Arroyos</a></li>
+            <li><a href="diseno-web-venado-tuerto.html">Venado Tuerto</a></li>
+            <li><a href="diseno-web-villa-gobernador-galvez.html">Villa Gobernador Gálvez</a></li>
+            <li><a href="diseno-web-santo-tome.html">Santo Tomé</a></li>
+            <li><a href="diseno-web-esperanza.html">Esperanza</a></li>
+            <li><a href="diseno-web-san-francisco.html">San Francisco</a></li>
+            <li><a href="diseno-web-alta-gracia.html">Alta Gracia</a></li>
+            <li><a href="diseno-web-villa-carlos-paz.html">Villa Carlos Paz</a></li>
+            <li><a href="diseno-web-goya.html">Goya</a></li>
+            <li><a href="diseno-web-clorinda.html">Clorinda</a></li>
+            <li><a href="diseno-web-obera.html">Oberá</a></li>
+            <li><a href="diseno-web-eldorado.html">Eldorado</a></li>
+            <li><a href="diseno-web-puerto-iguazu.html">Puerto Iguazú</a></li>
+            <li><a href="diseno-web-san-ramon-de-la-nueva-oran.html">San Ramón de la Nueva Orán</a></li>
+            <li><a href="diseno-web-rawson.html">Rawson</a></li>
+            <li><a href="diseno-web-esquel.html">Esquel</a></li>
+            <li><a href="diseno-web-caleta-olivia.html">Caleta Olivia</a></li>
+            <li><a href="diseno-web-pico-truncado.html">Pico Truncado</a></li>
+            <li><a href="diseno-web-cutral-co.html">Cutral Có</a></li>
+            <li><a href="diseno-web-plaza-huincul.html">Plaza Huincul</a></li>
+            <li><a href="diseno-web-zapala.html">Zapala</a></li>
+            <li><a href="diseno-web-villa-regina.html">Villa Regina</a></li>
+            <li><a href="diseno-web-allen.html">Allen</a></li>
+            <li><a href="diseno-web-cinco-saltos.html">Cinco Saltos</a></li>
+            <li><a href="diseno-web-general-pico.html">General Pico</a></li>
+            <li><a href="diseno-web-toay.html">Toay</a></li>
+            <li><a href="diseno-web-firmat.html">Firmat</a></li>
+            <li><a href="diseno-web-canada-de-gomez.html">Cañada de Gómez</a></li>
+            <li><a href="diseno-web-casilda.html">Casilda</a></li>
+            <li><a href="diseno-web-bell-ville.html">Bell Ville</a></li>
+            <li><a href="diseno-web-marcos-juarez.html">Marcos Juárez</a></li>
+            <li><a href="diseno-web-villa-dolores.html">Villa Dolores</a></li>
+            <li><a href="diseno-web-rio-tercero.html">Río Tercero</a></li>
+            <li><a href="diseno-web-jesus-maria.html">Jesús María</a></li>
+            <li><a href="diseno-web-mercedes.html">Mercedes</a></li>
+            <li><a href="diseno-web-lujan.html">Luján</a></li>
+            <li><a href="diseno-web-chascomus.html">Chascomús</a></li>
+            <li><a href="diseno-web-balcarce.html">Balcarce</a></li>
+            <li><a href="diseno-web-dolores.html">Dolores</a></li>
+            <li><a href="diseno-web-lincoln.html">Lincoln</a></li>
+            <li><a href="diseno-web-nueve-de-julio.html">Nueve de Julio</a></li>
+            <li><a href="diseno-web-pehuajo.html">Pehuajó</a></li>
+            <li><a href="diseno-web-trenque-lauquen.html">Trenque Lauquen</a></li>
+            <li><a href="diseno-web-rio-segundo.html">Río Segundo</a></li>
+            <li><a href="diseno-web-arroyito.html">Arroyito</a></li>
+            <li><a href="diseno-web-la-calera.html">La Calera</a></li>
+            <li><a href="diseno-web-cosquin.html">Cosquín</a></li>
+            <li><a href="diseno-web-las-varillas.html">Las Varillas</a></li>
+            <li><a href="diseno-web-sunchales.html">Sunchales</a></li>
+            <li><a href="diseno-web-villa-constitucion.html">Villa Constitución</a></li>
+            <li><a href="diseno-web-arroyo-seco.html">Arroyo Seco</a></li>
+            <li><a href="diseno-web-fray-luis-beltran.html">Fray Luis Beltrán</a></li>
+            <li><a href="diseno-web-granadero-baigorria.html">Granadero Baigorria</a></li>
+            <li><a href="diseno-web-yerba-buena.html">Yerba Buena</a></li>
+            <li><a href="diseno-web-ramos-mejia.html">Ramos Mejía</a></li>
+            <li><a href="diseno-web-san-justo.html">San Justo</a></li>
+            <li><a href="diseno-web-gregorio-de-laferrere.html">Gregorio de Laferrere</a></li>
+            <li><a href="diseno-web-gonzalez-catan.html">González Catán</a></li>
+            <li><a href="diseno-web-isidro-casanova.html">Isidro Casanova</a></li>
+            <li><a href="diseno-web-haedo.html">Haedo</a></li>
+            <li><a href="diseno-web-castelar.html">Castelar</a></li>
+            <li><a href="diseno-web-ituzaingo.html">Ituzaingó</a></li>
+            <li><a href="diseno-web-hurlingham.html">Hurlingham</a></li>
+            <li><a href="diseno-web-el-palomar.html">El Palomar</a></li>
+            <li><a href="diseno-web-berazategui.html">Berazategui</a></li>
+            <li><a href="diseno-web-florencio-varela.html">Florencio Varela</a></li>
+            <li><a href="diseno-web-ezeiza.html">Ezeiza</a></li>
+            <li><a href="diseno-web-canuelas.html">Cañuelas</a></li>
+            <li><a href="diseno-web-ensenada.html">Ensenada</a></li>
+            <li><a href="diseno-web-berisso.html">Berisso</a></li>
+            <li><a href="diseno-web-san-pedro.html">San Pedro</a></li>
+            <li><a href="diseno-web-baradero.html">Baradero</a></li>
+            <li><a href="diseno-web-chacabuco.html">Chacabuco</a></li>
+            <li><a href="diseno-web-bragado.html">Bragado</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:hola@enzonasur.com">hola@enzonasur.com</a></li>
+            <li><a href="#contacto">Solicitar diagnóstico</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 En Zona Sur. Todos los derechos reservados.</span>
+        <span>Diseño web, SEO y WordPress en Argentina.</span>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/541159777341"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i data-lucide="message-circle" size="28"></i>
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+
+      const header = document.getElementById("siteHeader");
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+
+      function updateHeader() {
+        if (window.scrollY > 20) {
+          header.classList.add("is-scrolled");
+        } else {
+          header.classList.remove("is-scrolled");
+        }
+      }
+
+      updateHeader();
+      window.addEventListener("scroll", updateHeader, { passive: true });
+
+      function closeMenu() {
+        document.body.classList.remove("menu-open");
+        mobileMenu.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.innerHTML = '<i data-lucide="menu" size="22"></i>';
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      function openMenu() {
+        document.body.classList.add("menu-open");
+        mobileMenu.classList.add("is-open");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.innerHTML = '<i data-lucide="x" size="22"></i>';
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      menuToggle.addEventListener("click", function () {
+        const isOpen = mobileMenu.classList.contains("is-open");
+        isOpen ? closeMenu() : openMenu();
+      });
+
+      mobileLinks.forEach(function (link) {
+        link.addEventListener("click", closeMenu);
+      });
+
+      const faqButtons = document.querySelectorAll(".faq-question");
+
+      faqButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const answer = button.nextElementSibling;
+          const isOpen = button.getAttribute("aria-expanded") === "true";
+
+          faqButtons.forEach(function (otherButton) {
+            otherButton.setAttribute("aria-expanded", "false");
+            otherButton.nextElementSibling.classList.remove("is-open");
+          });
+
+          if (!isOpen) {
+            button.setAttribute("aria-expanded", "true");
+            answer.classList.add("is-open");
+          }
+        });
+      });
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (window.gsap && !reduceMotion) {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".hero .reveal", {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          stagger: 0.12,
+          ease: "power3.out"
+        });
+
+        gsap.to(".dashboard", {
+          y: -12,
+          duration: 3,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut"
+        });
+
+        gsap.utils.toArray(".section .reveal, .cta-box.reveal").forEach(function (element) {
+          gsap.to(element, {
+            opacity: 1,
+            y: 0,
+            duration: 0.85,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: element,
+              start: "top 86%",
+              once: true
+            }
+          });
+        });
+      } else {
+        document.querySelectorAll(".reveal").forEach(function (element) {
+          element.style.opacity = "1";
+          element.style.transform = "none";
+        });
+      }
+    });
+  </script>
+</body>
+</html>

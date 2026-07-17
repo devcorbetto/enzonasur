@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">Campo cálido con papas envasadas</title>
+  <desc id="desc">Ilustración decorativa para fondo de una landing de papas envasadas.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="0.52" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#92400e"/>
+      <stop offset="0.52" stop-color="#b45309"/>
+      <stop offset="1" stop-color="#78350f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="0.56" stop-color="#fbbf24"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="720" fill="url(#sky)"/>
+  <circle cx="1140" cy="150" r="190" fill="url(#sun)" opacity=".78"/>
+  <path fill="#fef3c7" opacity=".72" d="M0 292c173-65 336-93 489-84 163 10 277 76 433 73 168-3 317-81 518-56v495H0Z"/>
+  <path fill="#fdba74" opacity=".44" d="M0 336c179-46 341-59 487-39 158 22 273 83 447 72 161-10 307-68 506-39v390H0Z"/>
+  <path fill="url(#field)" d="M0 438c177-55 336-70 478-44 154 29 277 92 448 77 173-15 328-90 514-65v314H0Z"/>
+  <g opacity=".2" stroke="#fef3c7" stroke-width="2" fill="none">
+    <path d="M-90 588c224-91 468-121 728-91 249 29 540 16 894-41"/>
+    <path d="M-70 628c233-82 480-106 741-73 270 34 550 13 848-63"/>
+    <path d="M-50 666c246-67 497-83 752-48 290 40 558 16 804-72"/>
+  </g>
+  <g opacity=".3" fill="#78350f">
+    <ellipse cx="178" cy="534" rx="42" ry="24" transform="rotate(-8 178 534)"/>
+    <ellipse cx="262" cy="580" rx="30" ry="18" transform="rotate(15 262 580)"/>
+    <ellipse cx="1038" cy="526" rx="38" ry="22" transform="rotate(11 1038 526)"/>
+    <ellipse cx="1184" cy="596" rx="48" ry="26" transform="rotate(-12 1184 596)"/>
+  </g>
+  <g filter="url(#soft)" opacity=".22">
+    <circle cx="188" cy="166" r="110" fill="#84cc16"/>
+    <circle cx="1330" cy="422" r="95" fill="#22c55e"/>
+  </g>
+</svg>

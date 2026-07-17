@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Distribución de papas en Zona Sur</title>
+  <desc id="desc">Ilustración de reparto mayorista de bolsas de papas envasadas para comercios de Zona Sur.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffbeb"/>
+      <stop offset="1" stop-color="#fed7aa"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-25%" width="130%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#7c2d12" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect width="960" height="560" rx="42" fill="url(#sky)"/>
+  <path d="M0 415c128-42 230-38 332-10 150 41 302 39 453-15 74-27 132-34 175-28v198H0V415Z" fill="#fff7ed"/>
+  <g opacity=".72">
+    <rect x="86" y="236" width="146" height="142" rx="14" fill="#f8fafc" stroke="#fdba74" stroke-width="6"/>
+    <rect x="111" y="274" width="46" height="42" rx="5" fill="#fed7aa"/>
+    <rect x="171" y="274" width="36" height="104" rx="5" fill="#f59e0b"/>
+    <text x="159" y="214" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="900" fill="#78350f">COMERCIO</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="312" y="230" width="362" height="148" rx="28" fill="#f59e0b"/>
+    <rect x="652" y="278" width="132" height="100" rx="24" fill="#ea580c"/>
+    <rect x="678" y="302" width="58" height="36" rx="8" fill="#fffbeb" opacity=".9"/>
+    <rect x="346" y="260" width="210" height="72" rx="16" fill="#78350f"/>
+    <text x="451" y="305" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="900" fill="#fffbeb">PAPAS</text>
+    <text x="451" y="334" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="800" fill="#fde68a">Zona Sur</text>
+    <circle cx="395" cy="396" r="42" fill="#78350f"/>
+    <circle cx="395" cy="396" r="20" fill="#fef3c7"/>
+    <circle cx="708" cy="396" r="42" fill="#78350f"/>
+    <circle cx="708" cy="396" r="20" fill="#fef3c7"/>
+  </g>
+  <g>
+    <rect x="560" y="142" width="66" height="88" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="5"/>
+    <ellipse cx="593" cy="184" rx="23" ry="18" fill="#f6c574"/>
+    <text x="593" y="218" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="900" fill="#92400e">5 KG</text>
+    <rect x="635" y="150" width="66" height="80" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="5"/>
+    <ellipse cx="668" cy="187" rx="23" ry="18" fill="#f6c574"/>
+    <text x="668" y="218" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="900" fill="#92400e">10 KG</text>
+  </g>
+  <g fill="none" stroke="#d97706" stroke-width="7" stroke-linecap="round" opacity=".55">
+    <path d="M232 334h56"/>
+    <path d="M246 300h66"/>
+    <path d="M742 214h88"/>
+    <path d="M770 248h62"/>
+  </g>
+</svg>

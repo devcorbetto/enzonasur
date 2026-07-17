@@ -1,0 +1,41 @@
+/*----------------------------------------------
+    # All Variables here
+----------------------------------------------*/
+:root {
+    
+    --body: #fff;
+    --black: #000;
+    --white: #fff; 
+    --theme: #C7844F;
+    --theme2: #F9F3EF; 
+    --theme3: #8A5133;  
+    --title: #2B1E16;
+    --orange: #e78c45;
+    --text: #687179;
+    --text2: #cbcbcb;
+    --border: rgba(40,30,22, 0.36);
+    --border-2: #D9D9D9; 
+    --border-3: #54595F; 
+    --border-4: #E0E0E0;  
+    --border-5: #424242; 
+    --bg-1: #161921; 
+    --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+}
+
+// Theme Color - Defualt Colors
+$black: var(--black);
+$white: var(--white);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$theme-color-3: var(--theme3);
+$title-color: var(--title);
+$orange-color: var(--orange);
+$text-color: var(--text); 
+$text-color2: var(--text2); 
+$border-color: var(--border);
+$border-color-2: var(--border-2); 
+$border-color-3: var(--border-3); 
+$border-color-4: var(--border-4); 
+$border-color-5: var(--border-5); 
+$bg-color-1: var(--bg-1); 
+$shadow: var(--box-shadow);

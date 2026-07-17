@@ -1,0 +1,29 @@
+.vide-area-wrapper {
+    &.style1 {
+        position: relative;
+        margin-bottom: -280px;
+        z-index: 5;
+
+        .video-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: transparent;
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%, -50%);
+
+            .playerImg {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @include breakpoint (max-xxl) {
+            img {
+                max-width: 100%;
+            }
+        }
+
+    }
+}

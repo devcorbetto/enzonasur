@@ -1,0 +1,1106 @@
+$dodger-blue: #1FA2FF;
+$color-white: #ffffff;
+$dark-color: #1d1d1d;
+$bg-color: #252525;
+
+.switch-box {
+    position: fixed;
+    bottom: 15px;
+    right: 120px;
+    z-index: 9999;
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        border: 1.5px solid $dodger-blue;
+        transition: 0.4s;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            left: 0px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: white url('../img/night.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.round {
+            border-radius: 34px;
+            &::before {
+                border-radius: 50%;
+            }
+        }
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    input:checked + .slider {
+        background-color: $dodger-blue;
+    }
+      
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+    }
+      
+    input:checked + .slider:before {
+        transform: translateX(24px);
+        background: white url('../img/sunny.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.theme-dark {
+    $main-color: #ffffff;
+    $paragraph-color: #ffffff;
+    body {
+        color: $color-white; 
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-white; 
+    }
+    h3 {
+        color: $color-white; 
+        a {
+            color: $color-white;
+            transition: 0.7s;
+        }
+    }
+    p {
+        color: $color-white; 
+    }
+    body {
+        background: $dark-color;
+    }
+    .top-header-bg {
+        background-color: $dark-color;
+    }
+    .top-header-bg-3 {
+        background-color: $dark-color;
+    }
+    .main-nav {
+        background-color: $bg-color;
+        .navbar {
+            .navbar-brand {
+                .logo-one {
+                    display: none;
+                }
+                .logo-two {
+                    display: inline-block;
+                }
+            }
+        }
+        nav {
+            .navbar-nav  {
+                .nav-item {
+                    a {
+                        color: $color-white;
+                        i {
+                            color: $color-white;
+                        }
+                    }
+                    .dropdown-menu {
+                        background-color: $bg-color !important;
+                        li {
+                            a {
+                                color: $color-white !important;
+                                &.active {
+                                    color: $dodger-blue !important;
+                                }
+                                &:hover {
+                                    color: $dodger-blue !important;
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+        .others-options {
+            .option-item {
+                .search-btn {
+                    color: $color-white;
+                    &:hover {
+                        color: $dodger-blue;
+                        transform: translateY(-5%);
+                    }
+                }
+                .close-btn {
+                    color: $color-white;
+                    &:hover {
+                        color: $dodger-blue;
+                        transform: translateY(-5%);
+                    }
+                }
+                .add-cart-btn {
+                    .cart-btn-icon {
+                        color: $color-white;
+                        &:hover {
+                            color: $dodger-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .search-overlay {
+        &.search-popup {
+            background: #353535;
+            .search-form {
+                position: relative;
+                .search-input {
+                   background-color: $dark-color;
+                   color: $color-white;
+                }
+            }
+        }
+    }
+    .mobile-nav {
+        .logo {
+            .logo-two {
+                display: inline-block;
+            }
+            .logo-one {
+                display: none;
+            }
+        }
+    }
+    .mean-container {
+        a {
+            &.meanmenu-reveal {
+                color: $color-white !important;
+                span {
+                    background-color: $color-white !important;
+                }
+            }
+        }
+        .mean-bar {
+            background-color: $bg-color;
+        }
+        .navbar-nav {
+            background-color: $dark-color;
+        }
+        .mean-nav {
+            ul {
+                li {
+                    a {
+                        color: $color-white;
+                    }
+                    .dropdown-menu {
+                        background-color: $dark-color;
+                    }
+                }
+            }
+        }
+    }
+    .side-nav-responsive {
+        .dot-menu {
+            .circle-inner {
+                .circle {
+                    transition: 0.7s;
+                    background-color: $color-white;
+                }
+            }
+            &:hover {
+                .circle-inner {
+                    .circle {
+                        background-color: $dodger-blue;
+                    }
+                }
+            }
+        }
+    }
+    .banner-area {
+        &::before {
+            background-image: linear-gradient(#1d1d1d, #252525);
+            opacity: 0.9;
+        }
+    }
+    .banner-bottom {
+        &::before {
+           background-color: $bg-color;
+            opacity: 0.9;
+        }
+    }
+    .banner-area-two {
+        &::before{
+            background-color: $dark-color;
+            opacity: 0.8;
+        }
+    }
+    .banner-bottom-item {
+        &::before {
+            background-color: $bg-color;
+        }
+    }
+    .home-banner {
+        &::before{
+            background-color: $dark-color;
+            opacity: 0.9;
+        }
+    }
+    .inner-banner {
+        &::before {
+            background-image: linear-gradient(to right, #1d1d1d, #1d1d1d91);
+        }
+    }
+    .about-right-img {
+        .about-open-hours {
+            background-color: $bg-color;
+        }
+    }
+    .about-content {
+        .about-card {
+            .content {
+                span  {
+                    color: $dodger-blue;
+                }
+            }
+        }
+    }
+    .appointment-bg {
+        &::before {
+            background-color: $bg-color;
+        }
+    }
+    .appointment-from {
+        background-color: #0a0a0a;
+        .form-group {
+            .form-control {
+                background-color: $bg-color;
+            }
+            .nice-select {
+                &:after {
+                   border-color: $color-white;
+                }
+                .list {
+                    background-color: $bg-color;
+                    color: $color-white;
+                    .option {
+                        color: $color-white;
+                    }
+                }
+                .option {
+                    &:hover {
+                        color: $color-white;
+                        background-color: $dodger-blue;
+                    }
+                    &.focus {
+                        color: $color-white;
+                        background-color: $dodger-blue;
+                    }
+                    &.selected {
+                        &.focus {
+                            color: $color-white;
+                            background-color: $dodger-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .appointment-widget-right {
+        .appointment-hours {
+            background-color: $bg-color;
+        }
+    }
+    .service-card {
+        .service-content {
+            &::before {
+                background-color: $bg-color;
+            }
+            h3 {
+                a {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .service-item {
+        background-color: $bg-color;
+    }
+    .serve-area {
+        &::after {
+            background-color: $bg-color;
+            opacity: 0.9;
+        }
+    }
+    .consultancy-area {
+        &::after {
+            background-image: linear-gradient(#252525, #1d1d1d);
+            opacity: 0.9;
+        }
+    }
+    .consultancy-content {
+        .consultancy-form {
+            background-color: $dark-color; 
+            .form-group {
+                .form-control {
+                    background-color: $bg-color;
+                }
+                .nice-select {
+                    &:after {
+                       border-color: $color-white;
+                    }
+                    .list {
+                        background-color: $bg-color;
+                        color: $color-white;
+                        .option {
+                            color: $color-white;
+                        }
+                    }
+                    .option {
+                        &:hover {
+                            color: $color-white;
+                            background-color: $dodger-blue;
+                        }
+                        &.focus {
+                            color: $color-white;
+                            background-color: $dodger-blue;
+                        }
+                        &.selected {
+                            &.focus {
+                                color: $color-white;
+                                background-color: $dodger-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .doctors-item {
+        .content {
+            background-color: $bg-color;
+            h3 {
+                color: $color-white; 
+                a {
+                    color: $color-white;
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+    .doctor-tab {
+        .tabs {
+            li {
+                a {
+                    background-color: #000000;
+                    color: $color-white;
+                    &:focus {
+                        color: $color-white;
+                        background-color: $dodger-blue;
+                    }
+                }
+                &.active a {
+                    color: $color-white;
+                    background-color: $dodger-blue;
+                }
+                &.current a {
+                    color: $color-white;
+                    background-color: $dodger-blue;
+                }
+            }
+        }
+    }
+    .doctors-details-content {
+        span {
+            color: $dodger-blue;
+        }
+        .doctors-details-list {
+            li {
+                color: $color-white;
+            }
+        }
+        .social-link {
+            li {
+                &.title {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .search-widget {
+        .search-form {
+            .form-control {
+                background-color: $bg-color;
+                color: $color-white;
+            }
+        }
+    }
+    .service-open-hours {
+        background-color: $bg-color;
+    }
+    .emergency-area {
+        &::before {
+            background-image: linear-gradient(#252525, #1d1d1d);
+            opacity: 0.9;
+        }
+    }
+    .departments-card {
+        background-color: $bg-color;
+        .content {
+            h3 {
+                color: $color-white;
+            }
+            .departments-more {
+                color: $dodger-blue;
+                transition: 0.7s;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .blog-card {
+        .content {
+            h3 {
+                color: $color-white; 
+                a {
+                    color: $color-white;
+                    transition: 0.7s;
+                    &:hover {
+                        color: $dodger-blue;
+                    }
+                }
+            }
+            .more-btn {
+                color: $dodger-blue;
+                transition: 0.7s;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .blog-item {
+        background-color: $bg-color;
+        h3 {
+            color: $color-white; 
+            a {
+                color: $color-white;
+                transition: 0.7s;
+                &:hover {
+                    color: $dodger-blue;
+                }
+            }
+        }
+    }
+    .blog-article {
+        .blog-status {
+            ul {
+                li {
+                    color: $color-white;
+                }
+            }   
+        }
+        .blog-article-share {
+            .blog-tag {
+                ul {
+                    li {
+                        color: $color-white;
+                    }
+                }
+            }
+            .social-icon {
+                li {
+                    &.title {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        .comments-wrap {
+            .title {
+                color: $color-white;
+            }
+        }
+    }
+    .side-bar-profile {
+        background-color: $bg-color;
+    }
+    .side-bar-widget {
+        .title {
+            color: $color-white;
+        }
+        .side-bar-categories {
+            ul {
+                li {
+                    span {
+                        color: $dodger-blue;
+                    }
+                    a {
+                        &:hover {
+                            color: $dodger-blue;
+                        }
+                    }
+                }
+            }
+        }
+        .widget-popular-post {
+            .item {
+                .info {
+                    .title-text {
+                        a {
+                            color: $color-white;
+                            transition: 0.7s;
+                            &:hover {
+                                color: $dodger-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .side-bar-widget-tag {
+            li {
+                background-color: $bg-color;
+                transition: 0.7s;
+                a {
+                    color: $color-white;
+                    transition: 0.7s;
+                }
+                &:hover {
+                    background-color: $dodger-blue;
+                    a {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    .testimonials-area {
+        &::before {
+            display: none;
+        }
+        &::after {
+            background-color: $bg-color;
+            opacity: 0.7;
+        }
+    }
+    .brand-item {
+        .brand-logo-one {
+            display: none !important;
+        }
+        .brand-logo-two {
+            display: inline-block !important;
+        }
+    }
+    .brand-bg {
+        background-color: $dark-color;
+    }
+    .brand-bg2 {
+        &::before {
+            background-color: $bg-color;
+        }
+    }
+    .product-card {
+        .content {
+            h3 {
+                color: $color-white;
+            }
+        }
+    }
+    .product-desc {
+        .price {
+            color: $color-white;
+        }
+    }
+    .product-search-widget {
+        .product-search-form {
+            .form-control {
+                background-color: $bg-color;
+                color: $color-white;
+            }
+        }
+    }
+    .products-details-tab {
+        .tabs {
+            li {
+                a {
+                    background-color: #494949;
+                    color: $color-white;
+                    &:focus {
+                        color: $dodger-blue;
+                    }
+                }
+                &.active a {
+                    color: $dodger-blue;
+                }
+                &.current a {
+                    color: $dodger-blue;
+                }
+            }
+        }
+    }
+    .products-tabs-reviews {
+        ul {
+            li {
+                h3 {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .reviews-form {
+        .contact-form {
+            h3 {
+                color: $color-white;
+            }
+        }
+    }
+    .product-top-bar-ordering {
+        .nice-select {
+            background-color: $bg-color;
+            color: $color-white;
+            .list {
+                background-color: $bg-color;
+                color: $color-white;
+                .option {
+                    color: $color-white;
+                }
+            }
+            .option {
+                &:hover {
+                    color: $color-white;
+                    background-color: $dodger-blue;
+                }
+                &.focus {
+                    color: $color-white;
+                    background-color: $dodger-blue;
+                }
+                &.selected {
+                    &.focus {
+                        color: $color-white;
+                        background-color: $dodger-blue;
+                    }
+                }
+            }
+        }
+    }
+    .product-item {
+        .content {
+            h3 {
+                color : $color-white;
+            }
+        }
+    }
+    .cart-wraps-area {
+        .cart-table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            color: $color-white;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            &.product-name {
+                                a {
+                                    color: $color-white;
+                                }
+                            }
+                            &.product-thumbnail {
+                                a {
+                                    img {
+                                        background-color: $dark-color;
+                                    }
+                                }
+                            }
+                            &.product-quantity {
+                                .input-counter {
+                                    input {
+                                        color: $color-white;
+                                        background-color: $dark-color;
+                                    }
+                                }
+                            }
+                            &.product-subtotal {
+                                .remove {
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cart-calc {
+            background-color: $bg-color;
+            .cart-wraps-form {
+                h3 {
+                    color: $color-white;
+                }
+                .form-group {
+                    .form-control {
+                        background-color: $dark-color;
+                        color: $color-white;
+                    }
+                    .nice-select {
+                        background-color: $dark-color;
+                        color: $color-white;
+                    }
+                    .list {
+                        background-color: $bg-color;
+                        color: $color-white;
+                        .option {
+                            color: $color-white;
+                        }
+                    }
+                    .option {
+                        &:hover {
+                            color: $color-white;
+                            background-color: $dodger-blue;
+                        }
+                        &.focus {
+                            color: $color-white;
+                            background-color: $dodger-blue;
+                        }
+                        &.selected {
+                            &.focus {
+                                color: $color-white;
+                                background-color: $dodger-blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cart-totals {
+            background-color: $bg-color;
+            ul {
+                li {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+    .billing-details {
+        background-color: $bg-color;
+        
+        .form-group {
+            .form-control {
+                background-color: $dark-color;
+                color: $color-white;
+            }
+            .form-message {
+                background-color: $dark-color;
+                color: $color-white;
+            }
+            .nice-select {
+                background-color: $dark-color;
+                color: $color-white;
+            }
+            .list {
+                background-color: $bg-color;
+                color: $color-white;
+                .option {
+                    color: $color-white;
+                }
+            }
+            .option {
+                &:hover {
+                    color: $color-white;
+                    background-color: $dodger-blue;
+                }
+                &.focus {
+                    color: $color-white;
+                    background-color: $dodger-blue;
+                }
+                &.selected {
+                    &.focus {
+                        color: $color-white;
+                        background-color: $dodger-blue;
+                    }
+                }
+            }
+        }
+    }
+    .order-details {
+        .order-table {
+            background-color: $bg-color;
+        }
+        .payment-box {
+            background-color: $bg-color;
+            .payment-method {
+                p [type="radio"]:checked + label {
+                    color: $dodger-blue;     
+                }
+                p [type="radio"]:not(:checked) {
+                    display: none;
+                }
+                p [type="radio"]:not(:checked) + label {
+                    color: $color-white;
+                    &::after {
+                        color: $color-white;
+                    }     
+                }
+            }
+        }
+    }
+    .prescription-bg-3 {
+        &::before {
+            background-image: linear-gradient(to right, #252525, #25252566);
+        }
+    }
+    .prescription-bg-2 {
+        &::before {
+            background-image: linear-gradient(to right, #1d1d1d, #1d1d1d4a);
+        }
+    }
+    .insurance-area {
+        &::after {
+            background-color: $bg-color;
+            opacity: 0.9;
+        }
+    }
+    .faq-bg {
+        background-color: $bg-color;
+        &::after {
+            background-color: $dark-color;
+            opacity: 0.9;
+        }
+    }
+    .faq-accordion {
+        .accordion {
+            .accordion-item {
+                background-color: $dark-color;
+
+            }
+            .accordion-title {
+                color: $color-white;
+                background-color: $dark-color;
+                i {
+                    color: $color-white;
+                    border-color: $color-white;
+                }
+            }
+            .accordion-content {
+                background-color: $dark-color;
+            }
+        }
+    }
+    .case-study-area {
+        &::after {
+            background-color: $bg-color;
+        }
+    }
+    .subscribe-area {
+        &::before {
+            background-color: $dark-color;
+            opacity: 0.9;
+        }
+    }
+    .newsletter-form {
+        .form-control {
+            background-color: $bg-color;
+            color: $color-white;
+        }
+    }
+    .contact-form {
+        .form-group {
+            label {
+                color: $color-white;
+            }
+            .form-control {
+                background-color: $bg-color;
+                color: $color-white;
+            }
+            &.checkbox-option {
+                p {
+                    color: $color-white;
+                }
+            }
+        }
+        .agree-label {
+            label {
+                color: $color-white;
+                a {
+                    &:hover {
+                        color: $dodger-blue;
+                    }
+                }
+            }
+        }
+    }
+    .user-all-form {
+        .contact-form {
+            background-color: #282828;
+            .forget {
+                color: $dodger-blue;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+            .account-desc {
+                a {
+                    color: $dodger-blue;
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    .contact-widget-right {
+        background-color: $bg-color;
+        .contact-list {
+            li {
+                color: $color-white;
+                a {
+                    color: $color-white;
+                }
+                &:hover {
+                    i {
+                        color: $color-white;
+                        a {
+                            color: $dodger-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-area {
+        &::before {
+            background-color: $bg-color;
+        }
+    }
+    .footer-widget { 
+        .footer-logo {
+            .footer-logo1 {
+                display: none;
+            }
+            .footer-logo2 {
+                display: inline-block;
+            }
+        }
+        .footer-list {
+            li {
+                color: $color-white;
+                a {
+                    color: $color-white;
+                    transition: 0.9s;
+                    &:hover {
+                        color: $dodger-blue;
+                    }
+                }
+            }
+        }
+        .footer-contact-list {
+            li {
+                color: $color-white;
+                .content {
+                    a {
+                        color: $color-white;
+                        transition: 0.7s;
+                    }
+                }
+                &:hover {
+                    color: $dodger-blue;
+                    i {
+                        color: $color-white;
+                    }
+                    a {
+                        color: $dodger-blue;
+                    }
+                }
+            }
+        }
+        .open-hours-list {
+            li {
+               color: $color-white;
+            }
+        }
+    }
+    .copy-right-area {
+        background-color: $dark-color;
+        .copy-right-text {
+            p {
+                color: $color-white;
+                a {
+                    color: $color-white;
+                    transition: 0.7s;
+                    &:hover {
+                        color: $dodger-blue;
+                    }
+                }
+            }
+        }
+    }
+    .pagination-area {
+        .page-numbers {
+            color: $color-white;
+            border: 1px solid $color-white;
+            &:hover {
+                background-color: $dodger-blue;
+                color: $color-white;
+                border-color: $dodger-blue;
+            }
+            &.current {
+                background-color: $dodger-blue;
+                color: $color-white;
+                border-color: $dodger-blue;
+            }
+        }
+    }
+    .error-area {
+        .error-content {
+            h1 {
+                color: $color-white;
+            }
+            h3 {
+                color: $color-white;
+            }
+            p {
+                color: $color-white;
+            }
+        }
+    }
+    .coming-soon-area {
+        background-image: none;
+        .coming-soon-content {
+            h1 {
+                color: $color-white;
+            }
+            p {
+                color: $color-white;
+            }
+            #timer {
+                div {
+                    color: $color-white;
+                    span {
+                        color: $color-white;
+                    }
+                }
+            }
+            .newsletter-form {
+                .input-newsletter {
+                    background-color: $bg-color;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://enzonasur.com/neumologia-infantil-zona-sur/sitemap.xml

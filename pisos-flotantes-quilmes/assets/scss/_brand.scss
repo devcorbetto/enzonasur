@@ -1,0 +1,25 @@
+.brand-slider-container-wrapper {
+    &.style2 {
+        .brandSliderTwo {
+            border-bottom: 1px solid $border-color-4;
+        }
+    }
+
+    &.style1 {
+        margin-bottom: 60px;
+        margin-top: 50px;
+
+
+        .brandSliderOne {
+            padding: 80px 0;
+        }
+    }
+}
+
+
+.brandSliderOne {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}

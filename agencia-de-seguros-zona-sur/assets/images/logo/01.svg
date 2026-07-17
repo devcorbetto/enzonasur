@@ -1,0 +1,44 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGrad" x1="5" y1="4" x2="112" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2C95D1"/>
+      <stop offset="0.52" stop-color="#1E73BE"/>
+      <stop offset="1" stop-color="#23406A"/>
+    </linearGradient>
+    <linearGradient id="logoGradLight" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#92C9F0"/>
+      <stop offset="1" stop-color="#4F8FC5"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(2 4)">
+    <path d="M6 50C6 31 15 15 28 7C45 -3 68 0 82 13C95 25 100 44 94 58"
+          stroke="url(#logoGradLight)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M94 58C70 53 51 51 31 54C19 56 11 57 4 58"
+          stroke="url(#logoGrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+    <path d="M26 10L24 54" stroke="url(#logoGrad)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M20 32L36 14" stroke="url(#logoGradLight)" stroke-width="7" stroke-linecap="round"/>
+
+    <path d="M30 12C42 12 49 17 49 25C49 32 43 36 33 36"
+          stroke="url(#logoGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+    <path d="M32 30C45 30 52 36 52 45C52 52 46 56 35 56"
+          stroke="url(#logoGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+    <path d="M10 56C28 47 50 43 77 43C103 43 134 48 168 57"
+          stroke="url(#logoGradLight)" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M160 56C174 58 192 58 210 52"
+          stroke="url(#logoGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+    <path d="M187 43C187 31 194 24 206 24C215 24 221 30 223 41C225 52 219 60 207 60C199 60 192 56 187 50"
+          transform="translate(-18 0)"
+          stroke="url(#logoGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <text x="108" y="28" fill="#1E73BE" font-family="Red Hat Display, DM Sans, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="0.2">
+    Adrogue Brokers
+  </text>
+  <text x="108" y="46" fill="#23406A" font-family="DM Sans, Arial, sans-serif" font-size="8.5" font-weight="600" letter-spacing="2">
+    BROKER DE SEGUROS
+  </text>
+</svg>

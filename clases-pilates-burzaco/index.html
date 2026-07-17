@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Clases de Pilates en Burzaco | Pilates Burzaco</title>
+
+  <meta name="description" content="Clases de pilates en Burzaco, Zona Sur. Pilates reformer, movilidad, fuerza, bienestar y curso presencial de pilates. Consultá por WhatsApp o Instagram Pilates Burzaco." />
+
+  <link rel="canonical" href="https://enzonasur.com/clases-pilates-burzaco" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #17121f;
+      --violet: #8b5cf6;
+      --lavender: #ede9fe;
+      --rose: #fce7f3;
+      --cream: #fff7ed;
+      --soft: #faf5ff;
+      --green: #22c55e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: #17121f;
+      color: #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .bg-photo {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-bg {
+      background-image:
+        linear-gradient(90deg, rgba(23,18,31,.94), rgba(23,18,31,.64), rgba(23,18,31,.24)),
+        url('/clases-pilates-burzaco/assets/img/pilates-zona-sur-hero.png'),
+        linear-gradient(135deg, #17121f, #8b5cf6);
+    }
+
+    .studio-bg {
+      background-image:
+        linear-gradient(90deg, rgba(23,18,31,.10), rgba(23,18,31,.24)),
+        url('/clases-pilates-burzaco/assets/img/pilates-studio-burzaco.png'),
+        linear-gradient(135deg, #ede9fe, #fce7f3);
+    }
+
+    .course-bg {
+      background-image:
+        linear-gradient(90deg, rgba(23,18,31,.92), rgba(23,18,31,.62), rgba(23,18,31,.24)),
+        url('/clases-pilates-burzaco/assets/img/curso-pilates-presencial.png'),
+        linear-gradient(135deg, #17121f, #8b5cf6);
+    }
+
+    .cta-bg {
+      background-image:
+        linear-gradient(90deg, rgba(23,18,31,.92), rgba(23,18,31,.70), rgba(23,18,31,.32)),
+        url('/clases-pilates-burzaco/assets/img/pilates-clase-grupal-zona-sur.png'),
+        linear-gradient(135deg, #17121f, #8b5cf6);
+    }
+
+    .card-class {
+      background-image:
+        linear-gradient(180deg, rgba(23,18,31,.08), rgba(23,18,31,.86)),
+        url('/clases-pilates-burzaco/assets/img/clases-pilates-reformer.png'),
+        linear-gradient(135deg, #8b5cf6, #17121f);
+    }
+
+    .card-mobility {
+      background-image:
+        linear-gradient(180deg, rgba(23,18,31,.08), rgba(23,18,31,.86)),
+        url('/clases-pilates-burzaco/assets/img/pilates-movilidad.png'),
+        linear-gradient(135deg, #ede9fe, #17121f);
+    }
+
+    .card-course {
+      background-image:
+        linear-gradient(180deg, rgba(23,18,31,.08), rgba(23,18,31,.86)),
+        url('/clases-pilates-burzaco/assets/img/formacion-pilates.png'),
+        linear-gradient(135deg, #8b5cf6, #17121f);
+    }
+
+    .card-wellness {
+      background-image:
+        linear-gradient(180deg, rgba(23,18,31,.08), rgba(23,18,31,.86)),
+        url('/clases-pilates-burzaco/assets/img/pilates-bienestar.png'),
+        linear-gradient(135deg, #fce7f3, #17121f);
+    }
+
+    .image-card {
+      min-height: 460px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .soft-grid {
+      background-image:
+        linear-gradient(rgba(139,92,246,.10) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139,92,246,.10) 1px, transparent 1px);
+      background-size: 34px 34px;
+    }
+
+    .card-hover {
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 28px 60px rgba(23, 18, 31, 0.22);
+      border-color: rgba(139, 92, 246, 0.65);
+    }
+
+    .shine-btn {
+      position: relative;
+      overflow: hidden;
+      transform: translateZ(0);
+    }
+
+    .shine-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      transform: translateX(-130%);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.32), transparent);
+      transition: transform 650ms ease;
+    }
+
+    .shine-btn:hover::after {
+      transform: translateX(130%);
+    }
+
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 650ms ease, transform 650ms ease;
+    }
+
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .site-header {
+      transition: background 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .site-header.site-header-scrolled {
+      background: rgba(23, 18, 31, 0.96);
+      border-color: rgba(255, 255, 255, 0.10);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+      width: 64px;
+      height: 64px;
+      border-radius: 999px;
+      background: #22c55e;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 16px 35px rgba(34, 197, 94, 0.38);
+      transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.04);
+      background: #16a34a;
+      box-shadow: 0 22px 50px rgba(34, 197, 94, 0.48);
+    }
+
+    .whatsapp-float::before {
+      content: "";
+      position: absolute;
+      inset: -7px;
+      border-radius: inherit;
+      border: 2px solid rgba(34, 197, 94, 0.35);
+      opacity: 0;
+      transform: scale(0.88);
+    }
+
+    .whatsapp-float.is-pulsing::before {
+      animation: whatsappPulseRing 1.8s ease-out;
+    }
+
+    .whatsapp-float.is-pulsing {
+      animation: whatsappSoftBeat 1.8s ease-in-out;
+    }
+
+    @keyframes whatsappSoftBeat {
+      0%, 100% { transform: scale(1); }
+      18% { transform: scale(1.07); }
+      34% { transform: scale(1); }
+      50% { transform: scale(1.045); }
+      70% { transform: scale(1); }
+    }
+
+    @keyframes whatsappPulseRing {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.55);
+      }
+    }
+
+    .whatsapp-label {
+      position: fixed;
+      right: 94px;
+      bottom: 29px;
+      z-index: 998;
+      background: #ffffff;
+      color: #17121f;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(23, 18, 31, 0.18);
+      border: 1px solid rgba(23, 18, 31, 0.08);
+      opacity: 0;
+      transform: translateX(10px);
+      pointer-events: none;
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .whatsapp-wrap:hover .whatsapp-label {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    @media (max-width: 768px) {
+      .hero-bg {
+        background-image:
+          linear-gradient(180deg, rgba(23,18,31,.96), rgba(23,18,31,.78), rgba(23,18,31,.45)),
+          url('/clases-pilates-burzaco/assets/img/pilates-zona-sur-hero.png'),
+          linear-gradient(135deg, #17121f, #8b5cf6);
+      }
+
+      .image-card {
+        min-height: 360px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 58px;
+        height: 58px;
+      }
+
+      .whatsapp-label {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card-hover,
+      .shine-btn,
+      .reveal-on-scroll,
+      .whatsapp-float {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Pilates Burzaco",
+    "description": "Clases de pilates en Zona Sur y curso presencial de pilates. Entrenamiento consciente, movilidad, fuerza, bienestar y formación presencial.",
+    "url": "https://enzonasur.com/clases-pilates-burzaco",
+    "telephone": "+54 11 6686-0048",
+    "sameAs": [
+      "https://www.instagram.com/pilatesburzaco/"
+    ],
+    "areaServed": [
+      "Burzaco",
+      "Adrogué",
+      "José Mármol",
+      "Lomas de Zamora",
+      "Banfield",
+      "Temperley",
+      "Longchamps",
+      "Rafael Calzada",
+      "Zona Sur"
+    ],
+    "serviceType": [
+      "Clases de pilates",
+      "Pilates reformer",
+      "Pilates mat",
+      "Curso presencial de pilates",
+      "Entrenamiento consciente",
+      "Movilidad"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- SVG symbols -->
+  <svg width="0" height="0" class="absolute">
+    <defs>
+      <symbol id="icon-pilates" viewBox="0 0 48 48">
+        <circle cx="24" cy="9" r="4" fill="currentColor"/>
+        <path d="M24 15V27" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <path d="M14 21C18 17 30 17 34 21" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <path d="M24 27L15 39" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <path d="M24 27L33 39" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </symbol>
+
+      <symbol id="icon-mat" viewBox="0 0 48 48">
+        <rect x="9" y="12" width="30" height="24" rx="6" fill="currentColor" opacity="0.18"/>
+        <rect x="9" y="12" width="30" height="24" rx="6" stroke="currentColor" stroke-width="3"/>
+        <path d="M15 19H33" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M15 29H33" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </symbol>
+
+      <symbol id="icon-course" viewBox="0 0 48 48">
+        <rect x="10" y="7" width="28" height="34" rx="5" fill="currentColor" opacity="0.16"/>
+        <rect x="10" y="7" width="28" height="34" rx="5" stroke="currentColor" stroke-width="3"/>
+        <path d="M17 17H31" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M17 24H31" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M17 31H26" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </symbol>
+
+      <symbol id="icon-heart" viewBox="0 0 48 48">
+        <path d="M24 41C24 41 8 31 8 18C8 11 13 7 18.5 7C22 7 24 10 24 10C24 10 26 7 29.5 7C35 7 40 11 40 18C40 31 24 41 24 41Z" fill="currentColor" opacity="0.18"/>
+        <path d="M24 41C24 41 8 31 8 18C8 11 13 7 18.5 7C22 7 24 10 24 10C24 10 26 7 29.5 7C35 7 40 11 40 18C40 31 24 41 24 41Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol id="icon-location" viewBox="0 0 48 48">
+        <path d="M24 43C24 43 38 31 38 18C38 10.3 31.7 4 24 4C16.3 4 10 10.3 10 18C10 31 24 43 24 43Z" fill="currentColor" opacity="0.18"/>
+        <path d="M24 43C24 43 38 31 38 18C38 10.3 31.7 4 24 4C16.3 4 10 10.3 10 18C10 31 24 43 24 43Z" stroke="currentColor" stroke-width="3"/>
+        <circle cx="24" cy="18" r="5" fill="currentColor"/>
+      </symbol>
+
+      <symbol id="icon-check" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.16"/>
+        <path d="M15 24.5L21.5 31L34 18" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol id="icon-instagram" viewBox="0 0 48 48">
+        <rect x="10" y="10" width="28" height="28" rx="8" stroke="currentColor" stroke-width="3"/>
+        <circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="3"/>
+        <circle cx="32" cy="16" r="2" fill="currentColor"/>
+      </symbol>
+
+      <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M16.04 3C8.86 3 3.02 8.74 3.02 15.8c0 2.26.6 4.47 1.75 6.4L3 29l6.98-1.79a13.1 13.1 0 0 0 6.06 1.49C23.22 28.7 29.06 22.96 29.06 15.9S23.22 3 16.04 3Zm0 23.53c-1.86 0-3.68-.5-5.27-1.44l-.38-.22-4.14 1.06 1.1-4.01-.25-.41a10.55 10.55 0 0 1-1.61-5.61c0-5.86 4.84-10.63 10.79-10.63 5.94 0 10.78 4.77 10.78 10.63 0 5.86-4.84 10.63-10.78 10.63h-.24Zm5.92-7.94c-.32-.16-1.91-.93-2.2-1.04-.3-.1-.51-.16-.72.16-.21.31-.83 1.03-1.02 1.24-.19.21-.38.24-.7.08-.32-.16-1.37-.5-2.61-1.59-.96-.85-1.61-1.9-1.8-2.22-.19-.31-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.18.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.72-1.7-.99-2.33-.26-.61-.52-.53-.72-.54h-.61c-.21 0-.55.08-.83.39-.29.31-1.09 1.05-1.09 2.56s1.12 2.97 1.28 3.18c.16.21 2.2 3.31 5.34 4.65.75.32 1.33.51 1.78.65.75.23 1.44.2 1.98.12.6-.09 1.91-.77 2.18-1.51.27-.74.27-1.37.19-1.51-.08-.13-.29-.21-.61-.37Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header fixed top-0 left-0 right-0 z-50 border-b border-transparent bg-transparent">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
+      <a href="https://enzonasur.com/clases-pilates-burzaco" class="flex items-center gap-3 shrink-0">
+        <div class="w-12 h-12 rounded-2xl bg-violet-500 flex items-center justify-center shadow-lg shadow-black/30">
+          <svg class="w-8 h-8 text-white" aria-hidden="true">
+            <use href="#icon-pilates"></use>
+          </svg>
+        </div>
+
+        <div>
+          <p class="text-lg md:text-xl font-black text-white leading-none">Pilates Burzaco</p>
+          <p class="text-xs font-black text-violet-200">Clases · Curso presencial · Zona Sur</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-bold text-white/85">
+        <a href="#clases" class="hover:text-violet-200">Clases</a>
+        <a href="#curso" class="hover:text-violet-200">Curso</a>
+        <a href="#beneficios" class="hover:text-violet-200">Beneficios</a>
+        <a href="#zonas" class="hover:text-violet-200">Zonas</a>
+        <a href="#faq" class="hover:text-violet-200">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://www.instagram.com/pilatesburzaco/" target="_blank" rel="noopener" class="hidden md:inline-flex items-center gap-2 text-sm font-black text-violet-200 hover:text-white">
+          <svg class="w-5 h-5" aria-hidden="true">
+            <use href="#icon-instagram"></use>
+          </svg>
+          Instagram
+        </a>
+
+        <a href="https://wa.me/541166860048" class="shine-btn inline-flex items-center gap-2 bg-green-500 text-white px-4 sm:px-5 py-2.5 rounded-full font-black hover:bg-green-600 transition">
+          <svg class="w-5 h-5" aria-hidden="true">
+            <use href="#icon-whatsapp"></use>
+          </svg>
+          Consultar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg bg-photo min-h-[94vh] flex items-center pt-28 pb-16">
+    <div class="max-w-7xl mx-auto px-5 w-full">
+      <div class="max-w-4xl">
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-violet-500 text-white text-sm font-black rounded-full">
+            <svg class="w-5 h-5" aria-hidden="true"><use href="#icon-pilates"></use></svg>
+            Pilates en Zona Sur
+          </span>
+
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white border border-white/15 text-sm font-black rounded-full">
+            Curso presencial de pilates
+          </span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[0.92]">
+          Clases de pilates en Burzaco
+        </h1>
+
+        <p class="mt-6 text-xl md:text-2xl text-white/85 leading-relaxed max-w-2xl">
+          Clases de pilates y curso presencial en Burzaco. Entrenamiento consciente para mejorar movilidad, fuerza, postura, respiración y bienestar.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/541166860048" class="shine-btn inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-black text-center hover:bg-green-600 transition shadow-xl shadow-black/30">
+            <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Consultar por WhatsApp
+          </a>
+
+          <a href="https://www.instagram.com/pilatesburzaco/" target="_blank" rel="noopener" class="shine-btn inline-flex items-center justify-center gap-2 bg-white text-[#17121f] px-8 py-4 rounded-full font-black text-center hover:bg-violet-50 transition">
+            <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+            Ver Instagram
+          </a>
+        </div>
+
+        <div class="mt-10 grid sm:grid-cols-3 gap-4 max-w-4xl">
+          <div class="bg-white/10 backdrop-blur rounded-3xl p-5 border border-white/15">
+            <p class="text-violet-200 font-black text-sm">Clases</p>
+            <p class="text-white font-black text-xl">Pilates</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-3xl p-5 border border-white/15">
+            <p class="text-violet-200 font-black text-sm">Formación</p>
+            <p class="text-white font-black text-xl">Curso presencial</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur rounded-3xl p-5 border border-white/15">
+            <p class="text-violet-200 font-black text-sm">Zona</p>
+            <p class="text-white font-black text-xl">Burzaco</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banda -->
+  <section class="bg-violet-500 text-white py-8 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-6">
+      <div class="flex items-start gap-4">
+        <svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#icon-mat"></use></svg>
+        <div>
+          <h2 class="text-xl font-black">Clases guiadas</h2>
+          <p class="mt-1 text-white/85 font-semibold">Entrenamiento con foco en técnica, control y bienestar.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#icon-course"></use></svg>
+        <div>
+          <h2 class="text-xl font-black">Curso presencial</h2>
+          <p class="mt-1 text-white/85 font-semibold">Formación para quienes quieren aprender y profesionalizarse.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#icon-location"></use></svg>
+        <div>
+          <h2 class="text-xl font-black">Zona Sur</h2>
+          <p class="mt-1 text-white/85 font-semibold">Burzaco, Adrogué, Longchamps, Rafael Calzada y alrededores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro visual -->
+  <section class="bg-violet-50 text-[#17121f] py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-stretch">
+      <div class="studio-bg bg-photo rounded-[2rem] min-h-[540px] overflow-hidden relative">
+        <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur rounded-3xl p-6">
+          <p class="text-violet-700 font-black uppercase text-sm">Estudio de pilates</p>
+          <h2 class="text-3xl font-black text-[#17121f] mt-1">Un espacio para entrenar con calma y precisión</h2>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <span class="text-violet-600 font-black uppercase text-sm tracking-wide">Pilates Burzaco</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black leading-tight">
+          Clases y formación presencial en Zona Sur
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-700 leading-relaxed">
+          Pilates es una forma de entrenamiento que trabaja control, respiración, movilidad, fuerza y conciencia corporal. Las clases están pensadas para acompañar distintos niveles y objetivos.
+        </p>
+
+        <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+          Además de clases, también se ofrece curso presencial de pilates para quienes quieren formarse, aprender la metodología y dar un paso más en su camino profesional.
+        </p>
+
+        <div class="mt-7 grid sm:grid-cols-2 gap-3">
+          <span class="bg-white border border-violet-100 px-5 py-3 rounded-full font-black">Clases de pilates</span>
+          <span class="bg-white border border-violet-100 px-5 py-3 rounded-full font-black">Pilates reformer</span>
+          <span class="bg-white border border-violet-100 px-5 py-3 rounded-full font-black">Movilidad</span>
+          <span class="bg-white border border-violet-100 px-5 py-3 rounded-full font-black">Curso presencial</span>
+        </div>
+
+        <a href="https://wa.me/541166860048" class="shine-btn mt-8 inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-black hover:bg-green-600 transition w-fit">
+          <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          Consultar horarios
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clases -->
+  <section id="clases" class="bg-[#17121f] text-white py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-3xl">
+        <span class="text-violet-200 font-black uppercase text-sm tracking-wide">Clases y modalidades</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Pilates para fortalecer, alinear y moverte mejor
+        </h2>
+
+        <p class="mt-5 text-lg text-white/70">
+          Una propuesta para entrenar de forma consciente, mejorar la movilidad y construir fuerza de manera progresiva.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="card-class image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-violet-500 text-white px-3 py-1 rounded-full text-xs font-black w-fit">Clases</span>
+          <h3 class="mt-4 text-3xl font-black">Pilates reformer</h3>
+          <p class="mt-3 text-white/85">Entrenamiento guiado para trabajar fuerza, control, postura y movilidad.</p>
+        </article>
+
+        <article class="card-mobility image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-violet-500 text-white px-3 py-1 rounded-full text-xs font-black w-fit">Movimiento</span>
+          <h3 class="mt-4 text-3xl font-black">Movilidad y postura</h3>
+          <p class="mt-3 text-white/85">Sesiones para mejorar la conciencia corporal y moverte con más comodidad.</p>
+        </article>
+
+        <article class="card-course image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-violet-500 text-white px-3 py-1 rounded-full text-xs font-black w-fit">Formación</span>
+          <h3 class="mt-4 text-3xl font-black">Curso presencial</h3>
+          <p class="mt-3 text-white/85">Capacitación para aprender y formarte en pilates de manera presencial.</p>
+        </article>
+
+        <article class="card-wellness image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-violet-500 text-white px-3 py-1 rounded-full text-xs font-black w-fit">Bienestar</span>
+          <h3 class="mt-4 text-3xl font-black">Entrenamiento consciente</h3>
+          <p class="mt-3 text-white/85">Una práctica para conectar respiración, control, fuerza y movimiento.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curso presencial -->
+  <section id="curso" class="course-bg bg-photo py-28 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-4xl">
+        <span class="inline-flex bg-violet-500 text-white px-4 py-2 rounded-full text-sm font-black">
+          Curso presencial de pilates
+        </span>
+
+        <h2 class="mt-6 text-4xl md:text-7xl font-black text-white leading-tight">
+          Formate en pilates de manera presencial en Zona Sur
+        </h2>
+
+        <p class="mt-6 text-xl text-white/80 max-w-2xl">
+          Un espacio de aprendizaje para quienes quieren conocer la técnica, comprender el método y desarrollar herramientas para acompañar a otras personas desde el movimiento consciente.
+        </p>
+
+        <div class="mt-8 grid sm:grid-cols-2 gap-4 max-w-3xl">
+          <div class="bg-white/10 backdrop-blur border border-white/15 rounded-3xl p-5">
+            <p class="font-black text-violet-200">Modalidad</p>
+            <p class="mt-1 text-white font-black text-xl">Presencial</p>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur border border-white/15 rounded-3xl p-5">
+            <p class="font-black text-violet-200">Consulta</p>
+            <p class="mt-1 text-white font-black text-xl">Por WhatsApp</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/541166860048" class="shine-btn mt-8 inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-black hover:bg-green-600 transition">
+          Consultar por el curso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="beneficios" class="bg-white text-[#17121f] py-20 reveal-on-scroll soft-grid">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
+      <div>
+        <span class="text-violet-600 font-black uppercase text-sm tracking-wide">Beneficios</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black leading-tight">
+          Una práctica para entrenar sin perder conciencia del cuerpo
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-700">
+          Pilates puede ayudarte a mejorar fuerza, movilidad, estabilidad y control corporal. El trabajo se adapta al nivel y necesidades de cada persona.
+        </p>
+
+        <a href="https://wa.me/541166860048" class="shine-btn mt-8 inline-flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full font-black hover:bg-green-600 transition">
+          Consultar por clases
+        </a>
+      </div>
+
+      <div class="grid gap-5">
+        <div class="bg-violet-50 border border-violet-100 rounded-3xl p-6 card-hover">
+          <p class="text-violet-600 font-black">01</p>
+          <h3 class="mt-2 text-2xl font-black">Movilidad y flexibilidad</h3>
+          <p class="mt-2 text-slate-700">Ejercicios para mejorar rangos de movimiento y comodidad corporal.</p>
+        </div>
+
+        <div class="bg-violet-50 border border-violet-100 rounded-3xl p-6 card-hover">
+          <p class="text-violet-600 font-black">02</p>
+          <h3 class="mt-2 text-2xl font-black">Fuerza y estabilidad</h3>
+          <p class="mt-2 text-slate-700">Trabajo progresivo para fortalecer el cuerpo desde el control y la técnica.</p>
+        </div>
+
+        <div class="bg-violet-50 border border-violet-100 rounded-3xl p-6 card-hover">
+          <p class="text-violet-600 font-black">03</p>
+          <h3 class="mt-2 text-2xl font-black">Postura y respiración</h3>
+          <p class="mt-2 text-slate-700">Integración de respiración, alineación y conciencia corporal.</p>
+        </div>
+
+        <div class="bg-[#17121f] text-white border border-[#17121f] rounded-3xl p-6 card-hover">
+          <p class="text-violet-200 font-black">04</p>
+          <h3 class="mt-2 text-2xl font-black">Bienestar y constancia</h3>
+          <p class="mt-2 text-white/70">Una práctica para sostener en el tiempo con una guía cercana.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zonas -->
+  <section id="zonas" class="bg-violet-50 text-[#17121f] py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-violet-600 font-black uppercase text-sm tracking-wide">Zona de referencia</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Pilates en Burzaco y localidades cercanas
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-700">
+          Consultas abiertas para personas de Burzaco, Adrogué, José Mármol, Longchamps, Rafael Calzada y otras zonas cercanas del sur.
+        </p>
+      </div>
+
+      <div id="landingCards" class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="bg-white text-[#17121f] py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-violet-600 font-black uppercase text-sm tracking-wide">Opiniones</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Personas que eligieron moverse mejor
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-700">
+          Testimonios ficticios realistas para mostrar confianza y distintos objetivos.
+        </p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-3 gap-6">
+        <article class="bg-violet-50 border-4 border-violet-50 rounded-[2rem] p-7 card-hover">
+          <div class="text-violet-500 text-xl">★★★★★</div>
+          <p class="mt-5 text-slate-700 leading-relaxed">
+            “Empecé pilates para moverme mejor y encontré una práctica que puedo sostener. Las clases son cuidadas y claras.”
+          </p>
+          <div class="mt-6 pt-5 border-t border-violet-100">
+            <p class="font-black">Alumna en Burzaco</p>
+            <p class="text-sm text-violet-700">Clases de pilates</p>
+          </div>
+        </article>
+
+        <article class="bg-violet-50 border-4 border-violet-50 rounded-[2rem] p-7 card-hover">
+          <div class="text-violet-500 text-xl">★★★★★</div>
+          <p class="mt-5 text-slate-700 leading-relaxed">
+            “Me ayudó mucho a trabajar postura, respiración y fuerza. Es un espacio muy agradable para entrenar.”
+          </p>
+          <div class="mt-6 pt-5 border-t border-violet-100">
+            <p class="font-black">Alumna en Adrogué</p>
+            <p class="text-sm text-violet-700">Movilidad y bienestar</p>
+          </div>
+        </article>
+
+        <article class="bg-violet-50 border-4 border-violet-50 rounded-[2rem] p-7 card-hover">
+          <div class="text-violet-500 text-xl">★★★★★</div>
+          <p class="mt-5 text-slate-700 leading-relaxed">
+            “Consulté por el curso presencial y me orientaron muy bien con toda la información para empezar.”
+          </p>
+          <div class="mt-6 pt-5 border-t border-violet-100">
+            <p class="font-black">Alumna de Zona Sur</p>
+            <p class="text-sm text-violet-700">Curso presencial</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="contacto" class="cta-bg bg-photo py-28 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-4xl">
+        <span class="inline-flex bg-violet-500 text-white px-4 py-2 rounded-full text-sm font-black">
+          Consultas abiertas
+        </span>
+
+        <h2 class="mt-6 text-4xl md:text-7xl font-black text-white leading-tight">
+          ¿Querés empezar clases o consultar por el curso presencial?
+        </h2>
+
+        <p class="mt-6 text-xl text-white/80 max-w-2xl">
+          Escribí por WhatsApp para consultar horarios, disponibilidad, ubicación y detalles del curso.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/541166860048" class="shine-btn inline-flex items-center justify-center gap-2 bg-green-500 text-white px-9 py-5 rounded-full font-black hover:bg-green-600 transition text-lg">
+            <svg class="w-7 h-7" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Consultar por WhatsApp
+          </a>
+
+          <a href="https://www.instagram.com/pilatesburzaco/" target="_blank" rel="noopener" class="shine-btn inline-flex items-center justify-center gap-2 bg-white text-[#17121f] px-9 py-5 rounded-full font-black hover:bg-violet-50 transition text-lg">
+            <svg class="w-7 h-7" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+            Ver Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FAQ -->
+  <section id="faq" class="bg-violet-50 text-[#17121f] py-20 reveal-on-scroll">
+    <div class="max-w-4xl mx-auto px-5">
+      <div class="text-center">
+        <span class="text-violet-600 font-black uppercase text-sm tracking-wide">Preguntas frecuentes</span>
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">Dudas frecuentes</h2>
+      </div>
+      <div class="mt-12 space-y-4"><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Ofrecen Clases de pilates en Burzaco?</summary><p class="mt-4 text-slate-700">Sí, se puede consultar por Clases de pilates en Burzaco y zonas cercanas. La disponibilidad se confirma por WhatsApp o Instagram.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Necesito experiencia previa?</summary><p class="mt-4 text-slate-700">No necesariamente. Las clases pueden adaptarse a personas que empiezan desde cero o que ya tienen práctica previa.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Las clases son aptas para distintas edades?</summary><p class="mt-4 text-slate-700">Sí, se puede consultar según edad, objetivo y condición general para orientar la modalidad más adecuada.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Qué objetivos se trabajan en las clases?</summary><p class="mt-4 text-slate-700">Se trabaja movilidad, fuerza, postura, conciencia corporal, respiración y bienestar general, siempre de forma progresiva.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Hay clases de pilates reformer?</summary><p class="mt-4 text-slate-700">Sí, se puede consultar por pilates reformer y por otras propuestas de pilates, movilidad y entrenamiento consciente.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿También ofrecen curso presencial de pilates?</summary><p class="mt-4 text-slate-700">Sí, hay una página dedicada al curso presencial. Fechas, requisitos y modalidad se consultan directamente por WhatsApp o Instagram.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Qué información conviene enviar al consultar?</summary><p class="mt-4 text-slate-700">Conviene enviar zona, experiencia previa, objetivo, horarios posibles y si buscás clases, reformer, movilidad o curso presencial.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Puedo consultar por WhatsApp?</summary><p class="mt-4 text-slate-700">Sí. WhatsApp es el canal principal para resolver dudas, pedir disponibilidad y recibir orientación inicial.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Atienden zonas cercanas?</summary><p class="mt-4 text-slate-700">Sí, también se reciben consultas desde Adrogué, Longchamps, Rafael Calzada, José Mármol y Lomas de Zamora, según disponibilidad y modalidad.</p></details><details class="bg-white border-4 border-white rounded-2xl p-6 card-hover"><summary class="font-black cursor-pointer">¿Se puede empezar si tengo poca movilidad o mucha rigidez?</summary><p class="mt-4 text-slate-700">Sí, podés consultar tu situación. La propuesta de movilidad y postura busca avanzar de manera gradual y cuidada.</p></details></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#17121f] text-white/70 py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-4 gap-8">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-violet-500 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" aria-hidden="true"><use href="#icon-pilates"></use></svg>
+          </div>
+
+          <div>
+            <p class="font-black text-white text-xl">Pilates Burzaco</p>
+            <p class="text-sm text-violet-200 font-bold">Clases · Curso presencial · Zona Sur</p>
+          </div>
+        </div>
+
+        <p class="mt-5 text-white/60 max-w-xl">
+          Pilates en Zona Sur. Clases de pilates, entrenamiento consciente, movilidad, bienestar y curso presencial de pilates en Burzaco.
+        </p>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="https://wa.me/541166860048" class="shine-btn inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-black hover:bg-green-600 transition w-fit">
+            <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            +54 11 6686-0048
+          </a>
+
+          <a href="https://www.instagram.com/pilatesburzaco/" target="_blank" rel="noopener" class="shine-btn inline-flex items-center gap-2 bg-white text-[#17121f] px-6 py-3 rounded-full font-black hover:bg-violet-50 transition w-fit">
+            <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+            @pilatesburzaco
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-black text-white">Servicios</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="/clases-pilates-burzaco/clases-pilates-zona-sur.html" class="hover:text-violet-200">Clases de pilates</a></li>
+          <li><a href="/clases-pilates-burzaco/pilates-reformer-zona-sur.html" class="hover:text-violet-200">Pilates reformer</a></li>
+          <li><a href="/clases-pilates-burzaco/pilates-movilidad-zona-sur.html" class="hover:text-violet-200">Movilidad y postura</a></li>
+          <li><a href="/clases-pilates-burzaco/curso-pilates-presencial-zona-sur.html" class="hover:text-violet-200">Curso presencial</a></li>
+          <li><a href="#beneficios" class="hover:text-violet-200">Entrenamiento consciente</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-black text-white">Localidades</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="/clases-pilates-burzaco/pilates-burzaco.html" class="hover:text-violet-200">Burzaco</a></li>
+          <li><a href="/clases-pilates-burzaco/pilates-adrogue.html" class="hover:text-violet-200">Adrogué</a></li>
+          <li><a href="/clases-pilates-burzaco/pilates-jose-marmol.html" class="hover:text-violet-200">José Mármol</a></li>
+          <li><a href="/clases-pilates-burzaco/pilates-lomas-de-zamora.html" class="hover:text-violet-200">Lomas de Zamora</a></li>
+          <li><a href="/clases-pilates-burzaco/pilates-longchamps.html" class="hover:text-violet-200">Longchamps</a></li>
+          <li><a href="/clases-pilates-burzaco/pilates-rafael-calzada.html" class="hover:text-violet-200">Rafael Calzada</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-5 mt-10 pt-6 border-t border-white/10 text-sm text-white/40 flex flex-col md:flex-row gap-3 justify-between">
+      <p>© 2026 Pilates Burzaco</p>
+      <p>Pilates en Zona Sur y curso presencial de pilates.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <div class="whatsapp-wrap">
+    <span class="whatsapp-label">¿Consultás?</span>
+
+    <a
+      href="https://wa.me/541166860048"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Consultar por WhatsApp"
+    >
+      <svg width="32" height="32" aria-hidden="true">
+        <use href="#icon-whatsapp"></use>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Landings dinámicas -->
+  <script>
+    const localidades = [
+      {
+        nombre: "Burzaco",
+        slug: "pilates-burzaco",
+        titulo: "Pilates en Burzaco",
+        texto: "Clases de pilates y curso presencial para personas de Burzaco y alrededores.",
+        cercanas: "Adrogué, Longchamps, Rafael Calzada, José Mármol"
+      },
+      {
+        nombre: "Adrogué",
+        slug: "pilates-adrogue",
+        titulo: "Pilates en Adrogué",
+        texto: "Clases de pilates, movilidad y entrenamiento consciente para personas de Adrogué.",
+        cercanas: "Burzaco, José Mármol, Temperley, Rafael Calzada"
+      },
+      {
+        nombre: "José Mármol",
+        slug: "pilates-jose-marmol",
+        titulo: "Pilates en José Mármol",
+        texto: "Pilates para mejorar movilidad, postura y bienestar en José Mármol y zonas cercanas.",
+        cercanas: "Adrogué, Rafael Calzada, Burzaco, Temperley"
+      },
+      {
+        nombre: "Lomas de Zamora",
+        slug: "pilates-lomas-de-zamora",
+        titulo: "Pilates en Lomas de Zamora",
+        texto: "Clases de pilates y entrenamiento consciente para personas de Lomas de Zamora.",
+        cercanas: "Banfield, Temperley, Turdera, Adrogué"
+      },
+      {
+        nombre: "Longchamps",
+        slug: "pilates-longchamps",
+        titulo: "Pilates en Longchamps",
+        texto: "Pilates en Zona Sur para personas de Longchamps, Burzaco y alrededores.",
+        cercanas: "Burzaco, Glew, Rafael Calzada, Adrogué"
+      },
+      {
+        nombre: "Rafael Calzada",
+        slug: "pilates-rafael-calzada",
+        titulo: "Pilates en Rafael Calzada",
+        texto: "Clases de pilates, movilidad y bienestar para personas de Rafael Calzada.",
+        cercanas: "José Mármol, Burzaco, Adrogué, Longchamps"
+      }
+    ];
+
+    const container = document.getElementById("landingCards");
+    const icons = ["#icon-pilates", "#icon-mat", "#icon-course", "#icon-heart", "#icon-check", "#icon-location"];
+
+    localidades.forEach((item, index) => {
+      const card = document.createElement("article");
+      const icon = icons[index % icons.length];
+
+      card.className = "card-hover bg-white text-[#17121f] border-4 border-white rounded-[2rem] p-7";
+
+      card.innerHTML = `
+        <div class="flex items-center justify-between gap-4">
+          <div class="w-16 h-16 rounded-2xl bg-violet-500 text-white flex items-center justify-center">
+            <svg class="w-10 h-10" aria-hidden="true">
+              <use href="${icon}"></use>
+            </svg>
+          </div>
+
+          <span class="bg-[#17121f] text-white px-3 py-1 rounded-full text-xs font-black">
+            Zona Sur
+          </span>
+        </div>
+
+        <h3 class="mt-6 text-2xl font-black">
+          ${item.titulo}
+        </h3>
+
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          ${item.texto}
+        </p>
+
+        <p class="mt-4 text-sm text-violet-700 font-bold">
+          Cercanas: ${item.cercanas}
+        </p>
+
+        <a href="/clases-pilates-burzaco/${item.slug}.html" class="shine-btn mt-6 inline-flex bg-violet-500 text-white px-6 py-3 rounded-full font-black hover:bg-violet-600 transition">
+          Ver landing local →
+        </a>
+      `;
+
+      container.appendChild(card);
+    });
+  </script>
+
+  <!-- Interacciones -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector("header");
+      const whatsapp = document.querySelector(".whatsapp-float");
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+        revealObserver.observe(el);
+      });
+
+      const handleScroll = () => {
+        if (window.scrollY > 20) {
+          header?.classList.add("site-header-scrolled");
+        } else {
+          header?.classList.remove("site-header-scrolled");
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      handleScroll();
+
+      const pulseWhatsApp = () => {
+        if (!whatsapp) return;
+
+        whatsapp.classList.add("is-pulsing");
+
+        setTimeout(() => {
+          whatsapp.classList.remove("is-pulsing");
+        }, 1900);
+      };
+
+      setTimeout(() => {
+        pulseWhatsApp();
+        setInterval(pulseWhatsApp, 9000);
+      }, 3500);
+    });
+  </script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Ofrecen Clases de pilates en Burzaco?","acceptedAnswer":{"@type":"Answer","text":"Sí, se puede consultar por Clases de pilates en Burzaco y zonas cercanas. La disponibilidad se confirma por WhatsApp o Instagram."}},{"@type":"Question","name":"¿Necesito experiencia previa?","acceptedAnswer":{"@type":"Answer","text":"No necesariamente. Las clases pueden adaptarse a personas que empiezan desde cero o que ya tienen práctica previa."}},{"@type":"Question","name":"¿Las clases son aptas para distintas edades?","acceptedAnswer":{"@type":"Answer","text":"Sí, se puede consultar según edad, objetivo y condición general para orientar la modalidad más adecuada."}},{"@type":"Question","name":"¿Qué objetivos se trabajan en las clases?","acceptedAnswer":{"@type":"Answer","text":"Se trabaja movilidad, fuerza, postura, conciencia corporal, respiración y bienestar general, siempre de forma progresiva."}},{"@type":"Question","name":"¿Hay clases de pilates reformer?","acceptedAnswer":{"@type":"Answer","text":"Sí, se puede consultar por pilates reformer y por otras propuestas de pilates, movilidad y entrenamiento consciente."}},{"@type":"Question","name":"¿También ofrecen curso presencial de pilates?","acceptedAnswer":{"@type":"Answer","text":"Sí, hay una página dedicada al curso presencial. Fechas, requisitos y modalidad se consultan directamente por WhatsApp o Instagram."}},{"@type":"Question","name":"¿Qué información conviene enviar al consultar?","acceptedAnswer":{"@type":"Answer","text":"Conviene enviar zona, experiencia previa, objetivo, horarios posibles y si buscás clases, reformer, movilidad o curso presencial."}},{"@type":"Question","name":"¿Puedo consultar por WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Sí. WhatsApp es el canal principal para resolver dudas, pedir disponibilidad y recibir orientación inicial."}},{"@type":"Question","name":"¿Atienden zonas cercanas?","acceptedAnswer":{"@type":"Answer","text":"Sí, también se reciben consultas desde Adrogué, Longchamps, Rafael Calzada, José Mármol y Lomas de Zamora, según disponibilidad y modalidad."}},{"@type":"Question","name":"¿Se puede empezar si tengo poca movilidad o mucha rigidez?","acceptedAnswer":{"@type":"Answer","text":"Sí, podés consultar tu situación. La propuesta de movilidad y postura busca avanzar de manera gradual y cuidada."}}]}</script></body>
+</html>

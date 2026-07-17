@@ -1,0 +1,49 @@
+.history-wrapper {
+    &.style1 {
+        .history-title {
+            color: $title-color;
+            font-family: $title-font;
+            text-align: center;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.44px;
+            margin-bottom: 60px;
+        }
+
+        .history-thumb {
+            @include breakpoint (max-xxl) {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .history-content {
+            h2 {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -1.44px;
+                margin-bottom: 20px;
+
+                @include breakpoint (max-md) {
+                    font-size: 37px;
+                }
+            }
+
+            .text {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+}

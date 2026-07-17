@@ -1,0 +1,322 @@
+.about-container-wrapper {
+    &.style1 {
+        position: relative;
+
+        .shape1 {
+            position: absolute;
+            top: 10px;
+            left: 60px;
+            z-index: 1;
+
+            @include breakpoint (max-md) {
+                display: none;
+            }
+        }
+
+        .shape2 {
+            position: absolute;
+            bottom: -30px;
+            right: 32px;
+            z-index: 1;
+
+            @include breakpoint (max-xl4) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.about-wrapper {
+    &.style1 {
+        .about-thumb {
+            position: relative;
+
+            .thumb1 {
+                position: relative;
+                margin-right: 129px;
+
+                @include breakpoint (max-md) {
+                    max-width: 100%;
+                }
+            }
+
+            .thumb2 {
+                position: absolute;
+                top: 80px;
+                bottom: 58px;
+                right: 0px;
+
+                @include breakpoint (max-xxl) {
+                    left: 0;
+                }
+
+                @include breakpoint (max-md) {
+                    max-width: 100%;
+                }
+            }
+
+            .thumbShape {
+                position: absolute;
+                top: 10px;
+                right: 0px;
+                height: 100%;
+
+                @include breakpoint (max-xxl) {
+                    left: 0;
+                }
+
+                @include breakpoint (max-md) {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .video-wrap {
+                position: absolute;
+                bottom: 26px;
+                left: 163px;
+                background: transparent;
+                width: 100px;
+                height: 100px;
+
+                .playerImg {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+
+            @include breakpoint (max-md) {
+                margin-bottom: 90px;
+            }
+        }
+
+        .about-content {
+            .section-title {
+                padding-bottom: 40px;
+                border-bottom: 1px solid #D9D9D9;
+
+                .desc {
+                    color: $text-color;
+                    font-family: $title-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+
+            .exp-area {
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+
+            .fancy-box-area {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    &.style2 {
+        .about-thumb {
+            position: relative;
+
+            .thumb1 {
+                position: relative;
+                margin-left: 156px;
+            }
+
+            .thumb2 {
+                position: absolute;
+                bottom: -70px;
+                left: 0px;
+
+            }
+
+            .thumbShape1 {
+                position: absolute;
+                top: 50px;
+                left: 0px;
+            }
+
+            .thumbShape2 {
+                position: absolute;
+                top: 0px;
+                left: 110px;
+            }
+
+            @include breakpoint (max-xl) {
+                margin-bottom: 70px;
+            }
+        }
+
+        .about-content {
+            .section-title {
+                padding-bottom: 30px;
+                border-bottom: 1px solid #D9D9D9;
+
+                h2 {
+                    margin-bottom: 22px;
+                }
+
+                .desc {
+                    color: $text-color;
+                    font-family: $title-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+
+            h3 {
+                color: $theme-color;
+                font-family: $title-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.72px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+
+            .exp-area {
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+
+            .fancy-box-area {
+                margin-bottom: 60px;
+            }
+
+            .progress-wrap {
+                &.style2 {
+                    margin-bottom: 30px;
+
+                    .progress-meta {
+                        .title {
+                            color: $title-color;
+                            font-family: $title-font;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: -0.54px;
+                        }
+
+                        .percentage {
+                            color: $title-color;
+                            font-family: $title-font;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: -0.54px;
+                        }
+                    }
+
+                    .progress-container {
+                        height: 2px;
+                        background-color: transparent !important;
+
+                        .progress-bar {
+                            height: 2px;
+                            background-color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.style3 {
+        .about-thumb {
+            position: relative;
+
+            .main-thumb {
+                position: relative;
+                z-index: 2;
+
+                @include breakpoint (max-md) {
+                    max-width: 100%;
+                }
+            }
+
+            .shape {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+
+                @include breakpoint (max-xl) {
+                    left: 0;
+                }
+
+                @include breakpoint (max-md) {
+                    display: none;
+                }
+            }
+
+            .fancy-box {
+                &.style4 {
+                    position: absolute;
+                    top: 60px;
+                    right: 80px;
+                    z-index: 3;
+
+                    @include breakpoint (max-xl) {
+                        left: 0;
+                        right: inherit;
+                    }
+                }
+            }
+
+            .about-counter-wrapper {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                gap: 30px;
+
+                @include breakpoint (max-md) {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        .about-content {
+            .section-title {
+                .text {
+                    color: $text-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        .fancy-box {
+            &.style5 {
+                &.child1 {
+                    margin-bottom: 30px;
+                    padding-top: 20px;
+                    border-top: 1px solid $border-color-4;
+                }
+
+                &.child2 {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        .contact-meta {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}

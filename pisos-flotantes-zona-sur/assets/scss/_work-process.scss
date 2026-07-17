@@ -1,0 +1,129 @@
+.work-process-card {
+    &.style3 {
+        .thumb {
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px;
+
+            .main-thumb {
+                position: relative;
+                z-index: 3;
+            }
+
+            .process-number {
+                position: absolute;
+                top: 0;
+                left: 70px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                z-index: 3;
+                text-align: center;
+                color: $theme-color;
+                font-family: "Plus Jakarta Sans";
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                background: $white;
+                border: 1px solid $theme-color;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+
+                @include breakpoint (max-xl) {
+                    left: 100px;
+                }
+
+
+                @include breakpoint (max-md) {
+                    left: 70px;
+                }
+            }
+
+            .process-circle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 1;
+                text-align: center;
+                width: 250px;
+                height: 250px;
+                background-color: $white;
+                border: 1px dashed $theme-color;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+            }
+        }
+
+        .content {
+            h3 {
+                color: $title-color;
+                text-align: center;
+                font-family: $body-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.72px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: $title-color;
+                text-align: center;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px;
+            }
+
+            &.active {
+                h3 {
+                    color: $theme-color;
+                }
+
+                p {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+.work-process-container-wrapper {
+    &.style3 {
+        position: relative;
+
+        .shape1 {
+            position: absolute;
+            top: 260px;
+            left: 683px;
+
+            @include breakpoint (max-xl4) {
+                display: none;
+            }
+        }
+
+        .shape2 {
+            position: absolute;
+            top: 260px;
+            right: 683px;
+
+            @include breakpoint (max-xl4) {
+                display: none;
+            }
+        }
+    }
+}

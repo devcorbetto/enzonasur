@@ -1,0 +1,225 @@
+.skills-container-wrapper {
+    &.style2 {
+        position: relative;
+
+        .shape {
+            position: absolute;
+            top: 70px;
+            right: 70px;
+
+            @include breakpoint (max-xl) {
+                display: none;
+            }
+        }
+    }
+}
+
+.skills-wrapper {
+    &.style1 {
+        position: relative;
+        margin-right: -370px;
+        margin-top: 107px;
+
+        @include breakpoint (max-xxl) {
+            margin-top: 0;
+        }
+
+        @include breakpoint (max-xl) {
+            margin-right: 0;
+            padding: 30px 30px 0px;
+        }
+
+
+
+        .shape {
+            position: absolute;
+            top: -107px;
+            right: 0;
+        }
+
+        .skills-thumb {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .skills-content {
+            .text {
+                padding-top: 30px;
+                border-top: 1px solid $border-color;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &.style2 {
+        .skills-content {
+            .section-title {
+                .desc {
+                    padding-bottom: 25px;
+                    color: $text-color;
+                    font-family: $title-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                    border-bottom: 1px solid $border-color-4;
+                }
+            }
+
+            .checklist-wrapper {
+                margin-top: 30px;
+                flex-wrap: wrap;
+
+                @include breakpoint (max-md) {
+                    gap: 20px;
+                }
+            }
+        }
+
+        .skills-thumb {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            @include breakpoint (max-md) {
+                flex-wrap: wrap;
+
+                .thumb1 {
+                    max-width: 100%;
+                }
+
+                .thumb2 {
+                    max-width: 100%;
+                    margin-left: -100px;
+                }
+            }
+
+            @include breakpoint (max-sm) {
+                .thumb1 {
+                    max-width: 100%;
+                }
+
+                .thumb2 {
+                    max-width: 100%;
+                    margin-left: 80px;
+                }
+            }
+
+            .counter-box {
+                position: absolute;
+                bottom: 0;
+                left: -120px;
+
+                @include breakpoint (max-xxl) {
+                    left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.progress-wrap {
+    &.style1 {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .progress-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            .title {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .percentage {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            @include breakpoint (max-sm) {
+                gap: 20px;
+            }
+
+            @include breakpoint (max-xxs) {
+                gap: 15px;
+            }
+        }
+
+        .progress-container {
+            position: relative;
+            width: 100%;
+            height: 5px;
+            background-color: #D9DDFF;
+            border-radius: 10px;
+            overflow: visible;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            .progress-bar {
+                height: 5px;
+                background-color: $theme-color-3;
+                border-radius: 10px;
+                opacity: 0;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                white-space: nowrap;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+            @include breakpoint (max-md) {
+                width: 85%;
+            }
+        }
+    }
+
+}
+
+.progress-wrap {
+    &.style1 {
+        .progress-container {
+            &:before {
+                content: '';
+                display: none !important;
+            }
+
+            &:after {
+                content: '';
+                display: none !important;
+            }
+
+            height: 12px;
+
+            .progress-bar {
+                height: 12px;
+            }
+        }
+    }
+}

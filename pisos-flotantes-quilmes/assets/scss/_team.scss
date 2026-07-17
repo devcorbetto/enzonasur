@@ -1,0 +1,241 @@
+.team-card {
+    &.style2 {
+        position: relative;
+        background: $white;
+        padding: 20px;
+
+        .shape1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .shape2 {
+            position: absolute;
+            bottom: 92px;
+            left: 0;
+            z-index: 1;
+        }
+
+        .team-thumb {
+            width: 100%;
+
+            img {
+                position: relative;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+
+        .team-content {
+            text-align: center;
+            margin-top: 35px;
+
+            h3 {
+                a {
+                    color: $title-color;
+                    text-align: center;
+                    font-family: $title-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px;
+                }
+            }
+
+            p {
+                color: $text-color;
+                text-align: center;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+
+
+.team-details-wrapper {
+    .main-details {
+        padding: 30px;
+        border: 1px solid $border-color-4;
+
+        .team-thumb {
+            img {
+                @include breakpoint (max-md) {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .team-content {
+            .name {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 47px;
+                text-transform: capitalize;
+                margin-bottom: 5px;
+            }
+
+            .designation {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+
+            .text {
+                color: $text-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: -0.32px;
+                margin-bottom: 20px;
+            }
+
+            .table {
+                max-width: 463px;
+                margin-bottom: 20px;
+            }
+
+            .table> :not(caption)>*>* {
+                padding: 0px;
+                color: var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color)));
+                background-color: var(--bs-table-bg);
+                border-bottom-width: 0px;
+                box-shadow: none;
+                padding-bottom: 10px;
+            }
+
+            .info-list {
+                .info {
+                    color: $text-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+
+                .title {
+                    color: $title-color;
+                    font-family: $title-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px;
+                }
+
+            }
+        }
+    }
+
+    .optional-details {
+        margin-top: 50px;
+
+        .description-content {
+            .team-details-title {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 47px;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+            }
+
+            .text {
+                color: #6C6E76;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
+
+        .skills-content {
+            .team-details-title {
+                color: $title-color;
+                font-family: $title-font;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 47px;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+            }
+
+            .text {
+                color: #6C6E76;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                margin-bottom: 20px;
+            }
+
+            .progress-wrap {
+                margin-bottom: 20px;
+
+                .progress-container {
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+
+                    .progress-bar {
+                        background-color: $theme-color;
+                        border-radius: 0;
+                        -webkit-border-radius: 0;
+                        -moz-border-radius: 0;
+                        -ms-border-radius: 0;
+                        -o-border-radius: 0;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .work-gallery {
+        .work-gallery-title {
+            color: $title-color;
+            font-family: $title-font;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 47px;
+            text-transform: capitalize;
+            margin-bottom: 50px;
+            margin-top: -0.8em;
+        }
+    }
+}
+
+
+.workGallerySliderOne {
+    .gallery-thumb {
+        max-width: 100%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

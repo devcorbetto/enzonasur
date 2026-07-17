@@ -1,0 +1,138 @@
+/*----------------------------------------------
+    # Container  style here
+----------------------------------------------*/
+@media (min-width:1400px) {
+    .header-1 {
+        .container {
+            max-width: 1620px;
+        }
+    }
+
+    .header-2,
+    .header-3 {
+        .container {
+            max-width: 1620px;
+        }
+    }
+
+    .intro-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1620px;
+            }
+        }
+    }
+
+    .blog-container-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1600px;
+            }
+        }
+    }
+
+    .shop-container-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1600px;
+            }
+        }
+    }
+
+    .skills-container-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1200px;
+            }
+        }
+    }
+
+    .service-container-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1600px;
+            }
+        }
+    }
+
+    .service-container-wrapper {
+        &.style2 {
+            .container {
+                max-width: 1680px;
+            }
+        }
+    }
+
+    .gallery-container-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1810px;
+            }
+        }
+    }
+
+    .cta-container-wrapper {
+        &.style2 {
+            .container {
+                max-width: 1350px;
+            }
+        }
+    }
+
+    .blog-container-wrapper {
+        &.style3 {
+            .container {
+                max-width: 1600px;
+            }
+        }
+    }
+
+    .work-process-container-wrapper {
+        &.style3 {
+            .container {
+                max-width: 1300px;
+            }
+        }
+    }
+
+    .map-container-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1830px;
+            }
+        }
+    }
+
+    .service-container-title-wrapper {
+        &.style2 {
+            .container {
+                max-width: 1200px;
+            }
+        }
+    }
+
+    .project-container-wrapper {
+        &.style2 {
+            .container {
+                max-width: 1900px;
+            }
+        }
+    }
+
+    .footer-top-wrapper {
+        &.style2 {
+            .container {
+                max-width: 1440px;
+            }
+        }
+    }
+
+    .subscribe-container-wrapper {
+        &.style1 {
+            .container {
+                max-width: 1360px;
+            }
+        }
+    }
+}
+ 

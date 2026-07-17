@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Personal Trainer en Adrogué, José Mármol y Lomas | Entrenamiento Personalizado</title>
+
+  <meta name="description" content="Personal trainer en Adrogué, José Mármol y Lomas de Zamora. Entrenamiento personalizado para fuerza, movilidad, hábitos saludables y progreso realista." />
+
+  <link rel="canonical" href="https://tudominio.com/" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #020617;
+      --dark-2: #0f172a;
+      --green: #22c55e;
+      --green-dark: #16a34a;
+      --lime: #bef264;
+      --soft: #f8fafc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .bg-photo {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero-bg {
+      background-image:
+        linear-gradient(90deg, rgba(2, 6, 23, 0.94), rgba(2, 6, 23, 0.66), rgba(2, 6, 23, 0.22)),
+        url('/assets/img/hero-personal-trainer-adrogue.webp'),
+        linear-gradient(135deg, #020617, #064e3b);
+      background-position: center right;
+    }
+
+    .outdoor-bg {
+      background-image:
+        linear-gradient(90deg, rgba(2, 6, 23, 0.08), rgba(2, 6, 23, 0.20)),
+        url('/assets/img/outdoor-training-zona-sur.webp'),
+        linear-gradient(135deg, #064e3b, #0f172a);
+    }
+
+    .quote-bg {
+      background-image:
+        linear-gradient(90deg, rgba(2, 6, 23, 0.92), rgba(2, 6, 23, 0.62), rgba(2, 6, 23, 0.22)),
+        url('/assets/img/personal-trainer-correcting-technique.webp'),
+        linear-gradient(135deg, #020617, #111827);
+      background-position: center right;
+    }
+
+    .cta-bg {
+      background-image:
+        linear-gradient(90deg, rgba(2, 6, 23, 0.92), rgba(2, 6, 23, 0.66), rgba(2, 6, 23, 0.32)),
+        url('/assets/img/cta-training-background.webp'),
+        linear-gradient(135deg, #020617, #064e3b);
+      background-position: center right;
+    }
+
+    .objective-strength {
+      background-image:
+        linear-gradient(180deg, rgba(2, 6, 23, 0.18), rgba(2, 6, 23, 0.88)),
+        url('/assets/img/strength-training.webp'),
+        linear-gradient(135deg, #064e3b, #0f172a);
+    }
+
+    .objective-functional {
+      background-image:
+        linear-gradient(180deg, rgba(2, 6, 23, 0.18), rgba(2, 6, 23, 0.88)),
+        url('/assets/img/training-functional.webp'),
+        linear-gradient(135deg, #0f172a, #064e3b);
+    }
+
+    .objective-mobility {
+      background-image:
+        linear-gradient(180deg, rgba(2, 6, 23, 0.18), rgba(2, 6, 23, 0.88)),
+        url('/assets/img/mobility-training.webp'),
+        linear-gradient(135deg, #064e3b, #111827);
+    }
+
+    .objective-habit {
+      background-image:
+        linear-gradient(180deg, rgba(2, 6, 23, 0.18), rgba(2, 6, 23, 0.88)),
+        url('/assets/img/dumbbells-detail.webp'),
+        linear-gradient(135deg, #0f172a, #064e3b);
+    }
+
+    .image-card {
+      min-height: 470px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.10);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .soft-grid {
+      background-image:
+        linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+      background-size: 34px 34px;
+    }
+
+    .card-hover {
+      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 28px 60px rgba(15, 23, 42, 0.22);
+      border-color: rgba(34, 197, 94, 0.65);
+    }
+
+    .shine-btn {
+      position: relative;
+      overflow: hidden;
+      transform: translateZ(0);
+    }
+
+    .shine-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      transform: translateX(-130%);
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.34), transparent);
+      transition: transform 650ms ease;
+    }
+
+    .shine-btn:hover::after {
+      transform: translateX(130%);
+    }
+
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 650ms ease, transform 650ms ease;
+    }
+
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .site-header {
+      transition: background 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    }
+
+    .site-header.site-header-scrolled {
+      background: rgba(2, 6, 23, 0.96);
+      border-color: rgba(255, 255, 255, 0.10);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.34);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+      width: 64px;
+      height: 64px;
+      border-radius: 999px;
+      background: #22c55e;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 16px 35px rgba(34, 197, 94, 0.42);
+      transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.04);
+      background: #16a34a;
+      box-shadow: 0 22px 50px rgba(34, 197, 94, 0.52);
+    }
+
+    .whatsapp-float::before {
+      content: "";
+      position: absolute;
+      inset: -7px;
+      border-radius: inherit;
+      border: 2px solid rgba(34, 197, 94, 0.35);
+      opacity: 0;
+      transform: scale(0.88);
+    }
+
+    .whatsapp-float.is-pulsing::before {
+      animation: whatsappPulseRing 1.8s ease-out;
+    }
+
+    .whatsapp-float.is-pulsing {
+      animation: whatsappSoftBeat 1.8s ease-in-out;
+    }
+
+    @keyframes whatsappSoftBeat {
+      0%, 100% { transform: scale(1); }
+      18% { transform: scale(1.07); }
+      34% { transform: scale(1); }
+      50% { transform: scale(1.045); }
+      70% { transform: scale(1); }
+    }
+
+    @keyframes whatsappPulseRing {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.55);
+      }
+    }
+
+    .whatsapp-label {
+      position: fixed;
+      right: 94px;
+      bottom: 29px;
+      z-index: 998;
+      background: white;
+      color: #0f172a;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      opacity: 0;
+      transform: translateX(10px);
+      pointer-events: none;
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .whatsapp-wrap:hover .whatsapp-label {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .back-to-top {
+      position: fixed;
+      left: 18px;
+      bottom: 22px;
+      z-index: 997;
+      width: 44px;
+      height: 44px;
+      border-radius: 999px;
+      background: #0f172a;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.28);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity 220ms ease, transform 220ms ease;
+    }
+
+    .back-to-top.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .hero-bg {
+        background-image:
+          linear-gradient(180deg, rgba(2, 6, 23, 0.94), rgba(2, 6, 23, 0.76), rgba(2, 6, 23, 0.44)),
+          url('/assets/img/hero-personal-trainer-adrogue.webp'),
+          linear-gradient(135deg, #020617, #064e3b);
+        background-position: 62% center;
+      }
+
+      .image-card {
+        min-height: 360px;
+      }
+
+      .quote-bg,
+      .cta-bg {
+        background-position: 64% center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 58px;
+        height: 58px;
+      }
+
+      .whatsapp-label {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card-hover,
+      .shine-btn,
+      .reveal-on-scroll,
+      .whatsapp-float,
+      .back-to-top {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Trainer Zona Sur",
+    "description": "Personal trainer en Adrogué, José Mármol y Lomas de Zamora. Entrenamiento personalizado para fuerza, movilidad, hábitos saludables y progreso realista.",
+    "url": "https://tudominio.com/",
+    "telephone": "+54 9 11 6631-1102",
+    "areaServed": [
+      "Adrogué",
+      "José Mármol",
+      "Lomas de Zamora",
+      "Banfield",
+      "Temperley",
+      "Burzaco",
+      "Zona Sur"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Personal trainer"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Entrenamiento personalizado"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Entrenamiento de fuerza"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- SVG symbols -->
+  <svg width="0" height="0" class="absolute">
+    <defs>
+      <symbol id="icon-dumbbell" viewBox="0 0 48 48">
+        <path d="M6 18H12V30H6V18Z" fill="currentColor" opacity="0.25"/>
+        <path d="M36 18H42V30H36V18Z" fill="currentColor" opacity="0.25"/>
+        <path d="M12 15H18V33H12V15Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M30 15H36V33H30V15Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M18 24H30" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <path d="M6 18H12V30H6V18Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M36 18H42V30H36V18Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol id="icon-run" viewBox="0 0 48 48">
+        <circle cx="29" cy="8" r="4" fill="currentColor"/>
+        <path d="M24 17L18 24L25 28L20 40" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M25 28L34 39" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <path d="M24 17L33 20L38 27" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 17L13 18" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      </symbol>
+
+      <symbol id="icon-heart" viewBox="0 0 48 48">
+        <path d="M24 41C24 41 8 31 8 18C8 11 13 7 18.5 7C22 7 24 10 24 10C24 10 26 7 29.5 7C35 7 40 11 40 18C40 31 24 41 24 41Z" fill="currentColor" opacity="0.18"/>
+        <path d="M24 41C24 41 8 31 8 18C8 11 13 7 18.5 7C22 7 24 10 24 10C24 10 26 7 29.5 7C35 7 40 11 40 18C40 31 24 41 24 41Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol id="icon-plan" viewBox="0 0 48 48">
+        <rect x="10" y="7" width="28" height="34" rx="5" fill="currentColor" opacity="0.16"/>
+        <rect x="10" y="7" width="28" height="34" rx="5" stroke="currentColor" stroke-width="3"/>
+        <path d="M17 17H31" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M17 24H31" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M17 31H26" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </symbol>
+
+      <symbol id="icon-location" viewBox="0 0 48 48">
+        <path d="M24 43C24 43 38 31 38 18C38 10.3 31.7 4 24 4C16.3 4 10 10.3 10 18C10 31 24 43 24 43Z" fill="currentColor" opacity="0.18"/>
+        <path d="M24 43C24 43 38 31 38 18C38 10.3 31.7 4 24 4C16.3 4 10 10.3 10 18C10 31 24 43 24 43Z" stroke="currentColor" stroke-width="3"/>
+        <circle cx="24" cy="18" r="5" fill="currentColor"/>
+      </symbol>
+
+      <symbol id="icon-check" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20" fill="currentColor" opacity="0.16"/>
+        <path d="M15 24.5L21.5 31L34 18" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol id="icon-whatsapp" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M16.04 3C8.86 3 3.02 8.74 3.02 15.8c0 2.26.6 4.47 1.75 6.4L3 29l6.98-1.79a13.1 13.1 0 0 0 6.06 1.49C23.22 28.7 29.06 22.96 29.06 15.9S23.22 3 16.04 3Zm0 23.53c-1.86 0-3.68-.5-5.27-1.44l-.38-.22-4.14 1.06 1.1-4.01-.25-.41a10.55 10.55 0 0 1-1.61-5.61c0-5.86 4.84-10.63 10.79-10.63 5.94 0 10.78 4.77 10.78 10.63 0 5.86-4.84 10.63-10.78 10.63h-.24Zm5.92-7.94c-.32-.16-1.91-.93-2.2-1.04-.3-.1-.51-.16-.72.16-.21.31-.83 1.03-1.02 1.24-.19.21-.38.24-.7.08-.32-.16-1.37-.5-2.61-1.59-.96-.85-1.61-1.9-1.8-2.22-.19-.31-.02-.49.14-.65.15-.14.32-.37.48-.55.16-.18.21-.31.32-.52.11-.21.05-.39-.03-.55-.08-.16-.72-1.7-.99-2.33-.26-.61-.52-.53-.72-.54h-.61c-.21 0-.55.08-.83.39-.29.31-1.09 1.05-1.09 2.56s1.12 2.97 1.28 3.18c.16.21 2.2 3.31 5.34 4.65.75.32 1.33.51 1.78.65.75.23 1.44.2 1.98.12.6-.09 1.91-.77 2.18-1.51.27-.74.27-1.37.19-1.51-.08-.13-.29-.21-.61-.37Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header fixed top-0 left-0 right-0 z-50 border-b border-white/0 bg-transparent">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
+      <a href="/" class="flex items-center gap-3 shrink-0">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-500 flex items-center justify-center shadow-lg shadow-emerald-950/40">
+          <svg class="w-8 h-8 text-slate-950" aria-hidden="true">
+            <use href="#icon-dumbbell"></use>
+          </svg>
+        </div>
+
+        <div>
+          <p class="text-lg md:text-xl font-black text-white leading-none">Trainer Zona Sur</p>
+          <p class="text-xs font-black text-emerald-300">Adrogué · José Mármol · Lomas</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-bold text-slate-200">
+        <a href="#objetivos" class="hover:text-emerald-300">Objetivos</a>
+        <a href="#modalidades" class="hover:text-emerald-300">Modalidades</a>
+        <a href="#zonas" class="hover:text-emerald-300">Zonas</a>
+        <a href="#reviews" class="hover:text-emerald-300">Opiniones</a>
+        <a href="#faq" class="hover:text-emerald-300">FAQ</a>
+      </nav>
+
+      <a href="https://wa.me/5491166311102" class="shine-btn inline-flex items-center gap-2 bg-emerald-500 text-slate-950 px-4 sm:px-5 py-2.5 rounded-full font-black hover:bg-emerald-400 transition">
+        <svg class="w-5 h-5" aria-hidden="true">
+          <use href="#icon-whatsapp"></use>
+        </svg>
+        Consultar
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg bg-photo min-h-[92vh] flex items-center pt-28 pb-16">
+    <div class="max-w-7xl mx-auto px-5 w-full">
+      <div class="max-w-4xl">
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 text-slate-950 text-sm font-black rounded-full">
+            <svg class="w-5 h-5" aria-hidden="true"><use href="#icon-dumbbell"></use></svg>
+            Personal trainer
+          </span>
+
+          <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white border border-white/15 text-sm font-black rounded-full">
+            <svg class="w-5 h-5" aria-hidden="true"><use href="#icon-location"></use></svg>
+            Adrogué · José Mármol · Lomas
+          </span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-white leading-[0.92]">
+          Entrená con un plan hecho para vos
+        </h1>
+
+        <p class="mt-6 text-xl md:text-2xl text-slate-200 leading-relaxed max-w-2xl">
+          Personal trainer en Adrogué, José Mármol y Lomas. Fuerza, movilidad, hábitos y progreso realista según tu nivel.
+        </p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/5491166311102" class="shine-btn inline-flex items-center justify-center gap-2 bg-emerald-500 text-slate-950 px-8 py-4 rounded-full font-black text-center hover:bg-emerald-400 transition shadow-xl shadow-emerald-950/30">
+            <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            Empezar por WhatsApp
+          </a>
+
+          <a href="#modalidades" class="shine-btn inline-flex items-center justify-center gap-2 bg-white text-slate-950 px-8 py-4 rounded-full font-black text-center hover:bg-slate-100 transition">
+            Ver cómo entrenamos
+          </a>
+        </div>
+
+        <div class="mt-10 grid sm:grid-cols-3 gap-4 max-w-4xl">
+          <div class="glass rounded-3xl p-5">
+            <p class="text-emerald-300 font-black text-sm">Nivel</p>
+            <p class="text-white font-black text-xl">Desde cero</p>
+          </div>
+
+          <div class="glass rounded-3xl p-5">
+            <p class="text-emerald-300 font-black text-sm">Objetivo</p>
+            <p class="text-white font-black text-xl">Fuerza y salud</p>
+          </div>
+
+          <div class="glass rounded-3xl p-5">
+            <p class="text-emerald-300 font-black text-sm">Seguimiento</p>
+            <p class="text-white font-black text-xl">Personalizado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust band -->
+  <section class="bg-emerald-500 text-slate-950 py-8 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-6">
+      <div class="flex items-start gap-4">
+        <svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#icon-check"></use></svg>
+        <div>
+          <h2 class="text-xl font-black">Entrenamiento según tu nivel</h2>
+          <p class="mt-1 text-emerald-950 font-semibold">No necesitás experiencia previa para empezar.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#icon-plan"></use></svg>
+        <div>
+          <h2 class="text-xl font-black">Rutinas posibles de sostener</h2>
+          <p class="mt-1 text-emerald-950 font-semibold">Entrenar mejor, no vivir agotado.</p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <svg class="w-10 h-10 shrink-0" aria-hidden="true"><use href="#icon-heart"></use></svg>
+        <div>
+          <h2 class="text-xl font-black">Progreso realista</h2>
+          <p class="mt-1 text-emerald-950 font-semibold">Fuerza, movilidad, hábitos y constancia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entrena donde estás -->
+  <section id="zonas" class="bg-white text-slate-950 py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-10 items-stretch">
+      <div class="outdoor-bg bg-photo rounded-[2rem] min-h-[520px] overflow-hidden relative">
+        <div class="absolute bottom-6 left-6 right-6 glass rounded-3xl p-6">
+          <p class="text-emerald-300 font-black uppercase text-sm">Zona Sur</p>
+          <h2 class="text-3xl font-black text-white mt-1">Entrená cerca, con un plan claro</h2>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <span class="text-emerald-600 font-black uppercase text-sm tracking-wide">Entrená donde estás</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black leading-tight">
+          Personal trainer para Adrogué, José Mármol y Lomas
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-600 leading-relaxed">
+          La propuesta está pensada para personas de Zona Sur que quieren entrenar con guía, técnica y continuidad, sin rutinas genéricas ni objetivos imposibles.
+        </p>
+
+        <div class="mt-7 flex flex-wrap gap-3">
+          <span class="bg-slate-950 text-white px-5 py-3 rounded-full font-black">Adrogué</span>
+          <span class="bg-slate-950 text-white px-5 py-3 rounded-full font-black">José Mármol</span>
+          <span class="bg-slate-950 text-white px-5 py-3 rounded-full font-black">Lomas de Zamora</span>
+          <span class="bg-slate-100 text-slate-950 px-5 py-3 rounded-full font-black">Banfield</span>
+          <span class="bg-slate-100 text-slate-950 px-5 py-3 rounded-full font-black">Temperley</span>
+          <span class="bg-slate-100 text-slate-950 px-5 py-3 rounded-full font-black">Zona Sur</span>
+        </div>
+
+        <a href="https://wa.me/5491166311102" class="shine-btn mt-8 inline-flex items-center justify-center gap-2 bg-emerald-500 text-slate-950 px-8 py-4 rounded-full font-black hover:bg-emerald-400 transition w-fit">
+          <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          Consultar disponibilidad
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objetivos con fotos -->
+  <section id="objetivos" class="bg-slate-950 text-white py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-3xl">
+        <span class="text-emerald-300 font-black uppercase text-sm tracking-wide">Objetivos</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Elegí una forma de entrenar que puedas sostener
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-300">
+          El plan se adapta a tu punto de partida, tu disponibilidad y lo que querés mejorar.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="objective-strength image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-emerald-500 text-slate-950 px-3 py-1 rounded-full text-xs font-black w-fit">Fuerza</span>
+          <h3 class="mt-4 text-3xl font-black">Ganar fuerza</h3>
+          <p class="mt-3 text-slate-200">Mejorar técnica, control y seguridad al entrenar.</p>
+          <a href="https://wa.me/5491166311102" class="mt-5 text-emerald-300 font-black">Consultar →</a>
+        </article>
+
+        <article class="objective-functional image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-emerald-500 text-slate-950 px-3 py-1 rounded-full text-xs font-black w-fit">Retomar</span>
+          <h3 class="mt-4 text-3xl font-black">Volver a entrenar</h3>
+          <p class="mt-3 text-slate-200">Empezar de forma gradual, sin exigencias absurdas.</p>
+          <a href="https://wa.me/5491166311102" class="mt-5 text-emerald-300 font-black">Consultar →</a>
+        </article>
+
+        <article class="objective-mobility image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-emerald-500 text-slate-950 px-3 py-1 rounded-full text-xs font-black w-fit">Movilidad</span>
+          <h3 class="mt-4 text-3xl font-black">Moverte mejor</h3>
+          <p class="mt-3 text-slate-200">Trabajar rangos, postura y control corporal.</p>
+          <a href="https://wa.me/5491166311102" class="mt-5 text-emerald-300 font-black">Consultar →</a>
+        </article>
+
+        <article class="objective-habit image-card rounded-[2rem] p-7 flex flex-col justify-end card-hover">
+          <span class="bg-emerald-500 text-slate-950 px-3 py-1 rounded-full text-xs font-black w-fit">Hábitos</span>
+          <h3 class="mt-4 text-3xl font-black">Crear constancia</h3>
+          <p class="mt-3 text-slate-200">Rutinas posibles para sostener semana a semana.</p>
+          <a href="https://wa.me/5491166311102" class="mt-5 text-emerald-300 font-black">Consultar →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modalidades -->
+  <section id="modalidades" class="bg-slate-100 text-slate-950 py-20 reveal-on-scroll soft-grid">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-emerald-600 font-black uppercase text-sm tracking-wide">Modalidades</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Entrenamiento personalizado según tu nivel
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-600">
+          La rutina se arma según tu objetivo, experiencia, horarios y estado actual.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="bg-white border-4 border-white rounded-[2rem] p-8 card-hover">
+          <svg class="w-16 h-16 text-emerald-600 mb-5" aria-hidden="true"><use href="#icon-dumbbell"></use></svg>
+          <h3 class="text-2xl font-black">Entrenamiento de fuerza</h3>
+          <p class="mt-3 text-slate-600">Plan progresivo para mejorar fuerza general, estabilidad, técnica y control corporal.</p>
+        </article>
+
+        <article class="bg-white border-4 border-white rounded-[2rem] p-8 card-hover">
+          <svg class="w-16 h-16 text-emerald-600 mb-5" aria-hidden="true"><use href="#icon-run"></use></svg>
+          <h3 class="text-2xl font-black">Funcional y movilidad</h3>
+          <p class="mt-3 text-slate-600">Entrenamientos dinámicos para moverte mejor y mejorar condición física.</p>
+        </article>
+
+        <article class="bg-white border-4 border-white rounded-[2rem] p-8 card-hover">
+          <svg class="w-16 h-16 text-emerald-600 mb-5" aria-hidden="true"><use href="#icon-plan"></use></svg>
+          <h3 class="text-2xl font-black">Plan personalizado</h3>
+          <p class="mt-3 text-slate-600">Rutinas organizadas por frecuencia semanal, nivel, objetivo y progresión.</p>
+        </article>
+
+        <article class="bg-white border-4 border-white rounded-[2rem] p-8 card-hover">
+          <svg class="w-16 h-16 text-emerald-600 mb-5" aria-hidden="true"><use href="#icon-heart"></use></svg>
+          <h3 class="text-2xl font-black">Entrenamiento saludable</h3>
+          <p class="mt-3 text-slate-600">Enfoque en continuidad, técnica y bienestar, sin extremos ni promesas mágicas.</p>
+        </article>
+
+        <article class="bg-white border-4 border-white rounded-[2rem] p-8 card-hover">
+          <svg class="w-16 h-16 text-emerald-600 mb-5" aria-hidden="true"><use href="#icon-check"></use></svg>
+          <h3 class="text-2xl font-black">Seguimiento</h3>
+          <p class="mt-3 text-slate-600">Ajustes según progreso, sensaciones, horarios y objetivos reales.</p>
+        </article>
+
+        <article class="bg-slate-950 text-white border-4 border-emerald-500 rounded-[2rem] p-8 card-hover">
+          <svg class="w-16 h-16 text-emerald-400 mb-5" aria-hidden="true"><use href="#icon-location"></use></svg>
+          <h3 class="text-2xl font-black">Zona Sur</h3>
+          <p class="mt-3 text-slate-300">Entrenamientos para personas de Adrogué, José Mármol, Lomas y alrededores.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Primera semana -->
+  <section class="bg-white text-slate-950 py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-[0.9fr_1.1fr] gap-10 items-center">
+      <div>
+        <span class="text-emerald-600 font-black uppercase text-sm tracking-wide">Primera semana</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black leading-tight">
+          ¿Cómo sería empezar?
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-600">
+          No arrancamos con una rutina imposible. Primero ordenamos objetivo, nivel, frecuencia y una forma de entrenar que puedas sostener.
+        </p>
+
+        <a href="https://wa.me/5491166311102" class="shine-btn mt-8 inline-flex items-center justify-center gap-2 bg-emerald-500 text-slate-950 px-8 py-4 rounded-full font-black hover:bg-emerald-400 transition">
+          <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          Empezar conversación
+        </a>
+      </div>
+
+      <div class="grid gap-5">
+        <div class="bg-slate-100 border border-slate-200 rounded-3xl p-6 card-hover">
+          <p class="text-emerald-600 font-black">01</p>
+          <h3 class="mt-2 text-2xl font-black">Me contás tu objetivo</h3>
+          <p class="mt-2 text-slate-600">Fuerza, movilidad, volver a entrenar, constancia o bienestar general.</p>
+        </div>
+
+        <div class="bg-slate-100 border border-slate-200 rounded-3xl p-6 card-hover">
+          <p class="text-emerald-600 font-black">02</p>
+          <h3 class="mt-2 text-2xl font-black">Vemos tu nivel y horarios</h3>
+          <p class="mt-2 text-slate-600">La frecuencia tiene que entrar en tu semana real, no en una semana ideal.</p>
+        </div>
+
+        <div class="bg-slate-100 border border-slate-200 rounded-3xl p-6 card-hover">
+          <p class="text-emerald-600 font-black">03</p>
+          <h3 class="mt-2 text-2xl font-black">Armamos un plan posible</h3>
+          <p class="mt-2 text-slate-600">Ejercicios, técnica y progresión según tu punto de partida.</p>
+        </div>
+
+        <div class="bg-slate-950 text-white border border-slate-800 rounded-3xl p-6 card-hover">
+          <p class="text-emerald-300 font-black">04</p>
+          <h3 class="mt-2 text-2xl font-black">Ajustamos según progreso</h3>
+          <p class="mt-2 text-slate-300">El plan se adapta a cómo vas respondiendo, no al revés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote visual -->
+  <section class="quote-bg bg-photo py-28 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-4xl">
+        <span class="inline-flex bg-emerald-500 text-slate-950 px-4 py-2 rounded-full text-sm font-black">
+          Entrenamiento realista
+        </span>
+
+        <h2 class="mt-6 text-4xl md:text-7xl font-black text-white leading-tight">
+          No necesitás estar en forma para empezar. Entrenás para estar mejor.
+        </h2>
+
+        <p class="mt-6 text-xl text-slate-200 max-w-2xl">
+          La prioridad es que puedas moverte mejor, ganar confianza y sostener el hábito.
+        </p>
+
+        <a href="https://wa.me/5491166311102" class="shine-btn mt-8 inline-flex items-center justify-center gap-2 bg-white text-slate-950 px-8 py-4 rounded-full font-black hover:bg-slate-100 transition">
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="bg-slate-100 text-slate-950 py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-3xl mx-auto">
+        <span class="text-emerald-600 font-black uppercase text-sm tracking-wide">Opiniones</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Personas que empezaron con un plan claro
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-600">
+          Distintos puntos de partida, un mismo foco: entrenar mejor y sostener el hábito.
+        </p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-3 gap-6">
+        <article class="bg-white border-4 border-white rounded-[2rem] p-7 card-hover">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-xl">A</div>
+            <div>
+              <p class="font-black text-slate-950">Alumno en Adrogué</p>
+              <p class="text-sm text-slate-500">Volvió a entrenar</p>
+            </div>
+          </div>
+
+          <div class="text-emerald-500 text-xl mt-5">★★★★★</div>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            “Quería volver a entrenar sin lesionarme. Arrancamos progresivo y pude sostenerlo semana a semana.”
+          </p>
+        </article>
+
+        <article class="bg-white border-4 border-white rounded-[2rem] p-7 card-hover">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-xl">J</div>
+            <div>
+              <p class="font-black text-slate-950">Alumna en José Mármol</p>
+              <p class="text-sm text-slate-500">Fuerza y constancia</p>
+            </div>
+          </div>
+
+          <div class="text-emerald-500 text-xl mt-5">★★★★★</div>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            “Necesitaba ordenar la rutina y ganar fuerza. Me sirvió tener seguimiento y ejercicios adaptados.”
+          </p>
+        </article>
+
+        <article class="bg-white border-4 border-white rounded-[2rem] p-7 card-hover">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-xl">L</div>
+            <div>
+              <p class="font-black text-slate-950">Alumno en Lomas</p>
+              <p class="text-sm text-slate-500">Movilidad y técnica</p>
+            </div>
+          </div>
+
+          <div class="text-emerald-500 text-xl mt-5">★★★★★</div>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            “Busquilmes moverme mejor y entrenar con más técnica. El plan fue claro y fácil de seguir.”
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localidades SEO -->
+  <section class="bg-slate-950 text-white py-20 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-3xl">
+        <span class="text-emerald-300 font-black uppercase text-sm tracking-wide">Zonas</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Personal trainer por localidad
+        </h2>
+
+        <p class="mt-5 text-lg text-slate-300">
+          Páginas preparadas para posicionar búsquedas locales en Adrogué, José Mármol, Lomas y otras zonas cercanas.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="card-hover bg-white text-slate-950 border-4 border-white rounded-[2rem] p-7">
+          <span class="bg-slate-950 text-white px-3 py-1 rounded-full text-xs font-black">Zona Sur</span>
+          <h3 class="mt-6 text-2xl font-black">Personal trainer en Adrogué</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">Entrenamiento personalizado en Adrogué para fuerza, movilidad, hábitos y mejora progresiva.</p>
+          <p class="mt-4 text-sm text-emerald-700 font-bold">Cercanas: José Mármol, Burzaco, Temperley, Rafael Calzada</p>
+          <a href="/personal-trainer-adrogue/" class="shine-btn mt-6 inline-flex bg-emerald-500 text-slate-950 px-6 py-3 rounded-full font-black hover:bg-emerald-400 transition">Ver landing local →</a>
+        </article>
+
+        <article class="card-hover bg-white text-slate-950 border-4 border-white rounded-[2rem] p-7">
+          <span class="bg-slate-950 text-white px-3 py-1 rounded-full text-xs font-black">Zona Sur</span>
+          <h3 class="mt-6 text-2xl font-black">Personal trainer en José Mármol</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">Planes adaptados a tu nivel, objetivo y disponibilidad para entrenar con continuidad.</p>
+          <p class="mt-4 text-sm text-emerald-700 font-bold">Cercanas: Adrogué, Rafael Calzada, Burzaco, Temperley</p>
+          <a href="/personal-trainer-jose-marmol/" class="shine-btn mt-6 inline-flex bg-emerald-500 text-slate-950 px-6 py-3 rounded-full font-black hover:bg-emerald-400 transition">Ver landing local →</a>
+        </article>
+
+        <article class="card-hover bg-white text-slate-950 border-4 border-white rounded-[2rem] p-7">
+          <span class="bg-slate-950 text-white px-3 py-1 rounded-full text-xs font-black">Zona Sur</span>
+          <h3 class="mt-6 text-2xl font-black">Personal trainer en Lomas de Zamora</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">Entrenamiento personalizado para fuerza, constancia, movilidad y progreso realista.</p>
+          <p class="mt-4 text-sm text-emerald-700 font-bold">Cercanas: Banfield, Temperley, Turdera, Adrogué</p>
+          <a href="/personal-trainer-lomas-de-zamora/" class="shine-btn mt-6 inline-flex bg-emerald-500 text-slate-950 px-6 py-3 rounded-full font-black hover:bg-emerald-400 transition">Ver landing local →</a>
+        </article>
+
+        <article class="card-hover bg-white text-slate-950 border-4 border-white rounded-[2rem] p-7">
+          <span class="bg-slate-950 text-white px-3 py-1 rounded-full text-xs font-black">Zona Sur</span>
+          <h3 class="mt-6 text-2xl font-black">Personal trainer en Banfield</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">Planes de entrenamiento personalizados para personas de Banfield y alrededores.</p>
+          <p class="mt-4 text-sm text-emerald-700 font-bold">Cercanas: Lomas de Zamora, Temperley, Remedios de Escalada</p>
+          <a href="/personal-trainer-banfield/" class="shine-btn mt-6 inline-flex bg-emerald-500 text-slate-950 px-6 py-3 rounded-full font-black hover:bg-emerald-400 transition">Ver landing local →</a>
+        </article>
+
+        <article class="card-hover bg-white text-slate-950 border-4 border-white rounded-[2rem] p-7">
+          <span class="bg-slate-950 text-white px-3 py-1 rounded-full text-xs font-black">Zona Sur</span>
+          <h3 class="mt-6 text-2xl font-black">Personal trainer en Temperley</h3>
+          <p class="mt-4 text-slate-600 leading-relaxed">Entrenamiento de fuerza, movilidad y hábitos saludables para personas de Temperley.</p>
+          <p class="mt-4 text-sm text-emerald-700 font-bold">Cercanas: Lomas de Zamora, Banfield, Turdera, Adrogué</p>
+          <a href="/personal-trainer-temperley/" class="shine-btn mt-6 inline-flex bg-emerald-500 text-slate-950 px-6 py-3 rounded-full font-black hover:bg-emerald-400 transition">Ver landing local →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-white text-slate-950 py-20 reveal-on-scroll">
+    <div class="max-w-4xl mx-auto px-5">
+      <div class="text-center">
+        <span class="text-emerald-600 font-black uppercase text-sm tracking-wide">Preguntas frecuentes</span>
+
+        <h2 class="mt-3 text-4xl md:text-6xl font-black">
+          Dudas frecuentes
+        </h2>
+      </div>
+
+      <div class="mt-12 space-y-4">
+        <details class="bg-emerald-50 border-4 border-emerald-100 rounded-2xl p-6 card-hover">
+          <summary class="font-black cursor-pointer text-slate-950">
+            ¿Necesito experiencia previa para empezar?
+          </summary>
+          <p class="mt-4 text-slate-600">
+            No. El entrenamiento se adapta a tu nivel actual, experiencia y disponibilidad.
+          </p>
+        </details>
+
+        <details class="bg-emerald-50 border-4 border-emerald-100 rounded-2xl p-6 card-hover">
+          <summary class="font-black cursor-pointer text-slate-950">
+            ¿El plan puede ser para ganar fuerza?
+          </summary>
+          <p class="mt-4 text-slate-600">
+            Sí. Se puede trabajar fuerza de forma progresiva, cuidando técnica, descanso y continuidad.
+          </p>
+        </details>
+
+        <details class="bg-emerald-50 border-4 border-emerald-100 rounded-2xl p-6 card-hover">
+          <summary class="font-black cursor-pointer text-slate-950">
+            ¿Trabajás en Adrogué, José Mármol y Lomas?
+          </summary>
+          <p class="mt-4 text-slate-600">
+            Sí. Esta web está orientada a Adrogué, José Mármol, Lomas de Zamora y zonas cercanas de Zona Sur.
+          </p>
+        </details>
+
+        <details class="bg-emerald-50 border-4 border-emerald-100 rounded-2xl p-6 card-hover">
+          <summary class="font-black cursor-pointer text-slate-950">
+            ¿Puedo consultar por WhatsApp?
+          </summary>
+          <p class="mt-4 text-slate-600">
+            Sí. Podés escribir al +54 9 11 6631-1102 y contar tu objetivo, horarios y zona.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section id="contacto" class="cta-bg bg-photo py-28 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-4xl">
+        <span class="inline-flex bg-emerald-500 text-slate-950 px-4 py-2 rounded-full text-sm font-black">
+          Consulta rápida
+        </span>
+
+        <h2 class="mt-6 text-4xl md:text-7xl font-black text-white leading-tight">
+          ¿Querés empezar a entrenar con un plan realista?
+        </h2>
+
+        <p class="mt-6 text-xl text-slate-200 max-w-2xl">
+          Escribime por WhatsApp y contame tu objetivo, horarios y zona.
+        </p>
+
+        <a href="https://wa.me/5491166311102" class="shine-btn mt-8 inline-flex items-center justify-center gap-2 bg-emerald-500 text-slate-950 px-9 py-5 rounded-full font-black hover:bg-emerald-400 transition text-lg">
+          <svg class="w-7 h-7" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          Enviar WhatsApp ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-300 py-12 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-4 gap-8">
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500 flex items-center justify-center">
+            <svg class="w-8 h-8 text-slate-950" aria-hidden="true"><use href="#icon-dumbbell"></use></svg>
+          </div>
+
+          <div>
+            <p class="font-black text-white text-xl">Trainer Zona Sur</p>
+            <p class="text-sm text-emerald-300 font-bold">Personal trainer · Fuerza · Movilidad · Hábitos</p>
+          </div>
+        </div>
+
+        <p class="mt-5 text-slate-400 max-w-xl">
+          Personal trainer en Adrogué, José Mármol y Lomas de Zamora.
+          Entrenamiento personalizado para fuerza, movilidad, hábitos y progreso realista.
+        </p>
+
+        <a href="https://wa.me/5491166311102" class="shine-btn mt-6 inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full font-black hover:bg-green-600 transition">
+          <svg class="w-6 h-6" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+          +54 9 11 6631-1102
+        </a>
+      </div>
+
+      <div>
+        <h3 class="font-black text-white">Entrenamientos</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="#modalidades" class="hover:text-emerald-300">Entrenamiento de fuerza</a></li>
+          <li><a href="#modalidades" class="hover:text-emerald-300">Funcional y movilidad</a></li>
+          <li><a href="#modalidades" class="hover:text-emerald-300">Plan personalizado</a></li>
+          <li><a href="#modalidades" class="hover:text-emerald-300">Seguimiento</a></li>
+          <li><a href="#modalidades" class="hover:text-emerald-300">Hábitos saludables</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-black text-white">Localidades</h3>
+        <ul class="mt-4 space-y-2 text-sm">
+          <li><a href="/personal-trainer-adrogue/" class="hover:text-emerald-300">Adrogué</a></li>
+          <li><a href="/personal-trainer-jose-marmol/" class="hover:text-emerald-300">José Mármol</a></li>
+          <li><a href="/personal-trainer-lomas-de-zamora/" class="hover:text-emerald-300">Lomas de Zamora</a></li>
+          <li><a href="/personal-trainer-banfield/" class="hover:text-emerald-300">Banfield</a></li>
+          <li><a href="/personal-trainer-temperley/" class="hover:text-emerald-300">Temperley</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-5 mt-10 pt-6 border-t border-white/10 text-sm text-slate-500 flex flex-col md:flex-row gap-3 justify-between">
+      <p>© 2026 Trainer Zona Sur</p>
+      <p>Personal trainer en Adrogué, José Mármol y Lomas.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <div class="whatsapp-wrap">
+    <span class="whatsapp-label">¿Querés entrenar?</span>
+
+    <a
+      href="https://wa.me/5491166311102"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+      aria-label="Consultar por WhatsApp"
+    >
+      <svg width="32" height="32" aria-hidden="true">
+        <use href="#icon-whatsapp"></use>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" type="button" aria-label="Volver arriba">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 5L5 12M12 5L19 12M12 5V19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Interacciones -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector("header");
+      const whatsapp = document.querySelector(".whatsapp-float");
+      const backToTop = document.querySelector(".back-to-top");
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+        revealObserver.observe(el);
+      });
+
+      const handleScroll = () => {
+        if (window.scrollY > 20) {
+          header?.classList.add("site-header-scrolled");
+        } else {
+          header?.classList.remove("site-header-scrolled");
+        }
+
+        if (window.scrollY > 500) {
+          backToTop?.classList.add("is-visible");
+        } else {
+          backToTop?.classList.remove("is-visible");
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll, { passive: true });
+      handleScroll();
+
+      backToTop?.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      const pulseWhatsApp = () => {
+        if (!whatsapp) return;
+
+        whatsapp.classList.add("is-pulsing");
+
+        setTimeout(() => {
+          whatsapp.classList.remove("is-pulsing");
+        }, 1900);
+      };
+
+      setTimeout(() => {
+        pulseWhatsApp();
+        setInterval(pulseWhatsApp, 9000);
+      }, 3500);
+    });
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Necesito experiencia previa para empezar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. El entrenamiento se adapta a tu nivel actual, experiencia y disponibilidad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El plan puede ser para ganar fuerza?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Se puede trabajar fuerza de forma progresiva, cuidando técnica, descanso y continuidad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Trabajás en Adrogué, José Mármol y Lomas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Esta web está orientada a Adrogué, José Mármol, Lomas de Zamora y zonas cercanas de Zona Sur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo consultar por WhatsApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Podés escribir al +54 9 11 6631-1102 y contar tu objetivo, horarios y zona."
+        }
+      }
+    ]
+  }
+  </script>
+
+</body>
+</html>
