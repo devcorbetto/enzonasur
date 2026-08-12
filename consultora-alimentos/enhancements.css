@@ -1,0 +1,10 @@
+.resource-band{background:var(--cream)}
+.resource-band .service-card{min-height:290px}
+.editorial-note{display:flex;align-items:center;gap:14px;margin:25px 0 5px;padding:15px 18px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--muted);font-size:12px}
+.editorial-note span{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border-radius:50%;background:var(--mint);color:var(--forest);font-weight:900}
+.editorial-note strong{display:block;color:var(--ink)}
+.service-outcomes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0}
+.service-outcomes article{padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--pale)}
+.service-outcomes b{display:block;margin-bottom:6px}
+.service-outcomes p{margin:0;color:var(--muted);font-size:13px}
+@media(max-width:680px){.service-outcomes{grid-template-columns:1fr}}
