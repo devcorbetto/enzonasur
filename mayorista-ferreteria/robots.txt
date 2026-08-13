@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enzonasur.com/mayorista-ferreteria/sitemap.xml
