@@ -7,6 +7,7 @@
   <meta name="description" content="Ferretería mayorista para comercios, obras, talleres, industrias y profesionales de Zona Sur. Enviá tu lista y cotizá por WhatsApp.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#171717">
+  <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
   <link rel="canonical" href="https://enzonasur.com/mayorista-ferreteria/">
   <link rel="alternate" hreflang="es-AR" href="https://enzonasur.com/mayorista-ferreteria/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,25 +108,40 @@
       </a>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-principal">Menú</button>
       <nav class="nav" id="nav-principal" aria-label="Navegación principal">
-        <a href="#rubros">Rubros</a>
-        <a href="#mayoristas">Venta mayorista</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#rubros">Categorías</a>
+        <a href="#mayoristas">Cómo comprar</a>
         <a href="#zonas-seo">Zonas</a>
-        <a href="#preguntas">Preguntas</a>
-        <a class="nav-cta" href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20consultar%20por%20productos%20de%20ferreter%C3%ADa%20mayorista." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        <a class="nav-cta" href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20armar%20un%20pedido%20mayorista%20de%20ferreter%C3%ADa." target="_blank" rel="noopener">Mi pedido</a>
       </nav>
     </div>
   </header>
+
+  <div class="store-toolbar">
+    <div class="container store-toolbar-inner">
+      <form class="catalog-search" id="catalog-search" role="search">
+        <label class="sr-only" for="product-search">Buscar en el catálogo</label>
+        <span aria-hidden="true">⌕</span>
+        <input id="product-search" type="search" placeholder="¿Qué producto necesitás?" autocomplete="off">
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="store-actions" aria-label="Accesos de compra">
+        <a href="#catalogo"><small>Explorar</small><strong>Productos</strong></a>
+        <a class="order-shortcut" href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20enviar%20mi%20lista%20de%20productos." target="_blank" rel="noopener"><span aria-hidden="true">▤</span><div><small>Cotización</small><strong>Mi pedido</strong></div></a>
+      </div>
+    </div>
+  </div>
 
   <main id="contenido">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span></span> Ferretería mayorista · Zona Sur</p>
-          <h1>Tu pedido mayorista, acá en Zona Sur.</h1>
-          <p class="hero-lead">Herramientas e insumos para <strong>ferreterías, obras, talleres, industrias y profesionales</strong> de Zona Sur. Mandanos tu lista y consultá disponibilidad según tu localidad.</p>
+          <h1>La ferretería mayorista de Zona Sur.</h1>
+          <p class="hero-lead">Explorá el catálogo, elegí tus rubros y pedí una cotización para tu <strong>ferretería, obra, taller o empresa</strong>. Atención directa por WhatsApp.</p>
           <div class="hero-actions">
             <a class="button button-whatsapp" href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20armar%20un%20pedido%20mayorista%20de%20ferreter%C3%ADa.%20Mi%20lista%20es%3A" target="_blank" rel="noopener"><span aria-hidden="true">●</span> Enviar mi lista</a>
-            <a class="button button-ghost" href="#rubros">Ver rubros</a>
+            <a class="button button-ghost" href="#catalogo">Ver catálogo</a>
           </div>
           <ul class="trust-list" aria-label="Beneficios de la atención">
             <li><b>01</b><span>Atención para compras por cantidad</span></li>
@@ -134,16 +150,15 @@
           </ul>
         </div>
 
-        <div class="hero-board" aria-label="Rubros de ferretería mayorista">
-          <div class="board-label">Catálogo mayorista</div>
-          <div class="tool tool-hammer" aria-hidden="true"><span></span></div>
-          <div class="tool tool-wrench" aria-hidden="true"></div>
-          <div class="tool tool-screwdriver" aria-hidden="true"></div>
-          <div class="shelf shelf-one"></div>
-          <div class="shelf shelf-two"></div>
-          <div class="product-box box-one"><small>FIJACIÓN</small><strong>Tornillos<br>y tarugos</strong></div>
-          <div class="product-box box-two"><small>OBRA</small><strong>Insumos<br>y consumibles</strong></div>
-          <div class="stock-card"><span>Pedí por rubro</span><b>Lista + cantidad</b><small>Te respondemos por WhatsApp</small></div>
+        <div class="store-window" aria-label="Vista previa del catálogo mayorista">
+          <div class="store-window-head"><div><span class="live-dot"></span><b>Catálogo mayorista</b></div><small>Zona Sur</small></div>
+          <div class="mini-products">
+            <article><span class="mini-badge">Más pedido</span><div class="mini-visual" aria-hidden="true">⚒</div><small>Herramientas</small><strong>Manuales y eléctricas</strong><em>Por unidad o cantidad</em></article>
+            <article><div class="mini-visual" aria-hidden="true">ϟ</div><small>Electricidad</small><strong>Cables y protecciones</strong><em>Rollos, cajas y unidades</em></article>
+            <article><div class="mini-visual" aria-hidden="true">⬢</div><small>Fijaciones</small><strong>Tornillos y tarugos</strong><em>Cajas y presentaciones</em></article>
+            <article><div class="mini-visual" aria-hidden="true">◆</div><small>Seguridad</small><strong>Protección personal</strong><em>Equipá a tu cuadrilla</em></article>
+          </div>
+          <div class="quote-summary"><div><small>Compra asistida</small><strong>Armá una lista multirrubro</strong></div><a href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20armar%20una%20lista%20de%20productos%20de%20ferreter%C3%ADa." target="_blank" rel="noopener">Empezar pedido <span>→</span></a></div>
         </div>
       </div>
     </section>
@@ -154,6 +169,38 @@
         <p><b>Zona Sur</b><span>Cobertura realmente local</span></p>
         <p><b>Multirrubro</b><span>Todo en una misma consulta</span></p>
         <p><b>WhatsApp</b><span>11 3438-8560</span></p>
+      </div>
+    </section>
+
+    <section class="section product-catalog" id="catalogo">
+      <div class="container">
+        <div class="catalog-heading">
+          <div><p class="kicker">Catálogo online</p><h2>Productos para tu próxima compra.</h2></div>
+          <div class="catalog-meta"><span>Venta mayorista</span><span>Consulta de stock</span><span>Cotización por lista</span></div>
+        </div>
+        <p class="search-feedback" id="search-status" aria-live="polite">Mostrando productos destacados</p>
+        <div class="product-grid" id="product-grid">
+          <article class="shop-card" data-product="taladro herramienta electrica perforacion mechas">
+            <div class="shop-visual visual-tools"><span>⚒</span><small>HERRAMIENTAS</small></div><div class="shop-copy"><span class="stock-label">Consultar disponibilidad</span><h3>Herramientas eléctricas</h3><p>Taladros, amoladoras, accesorios, mechas y consumibles para uso profesional.</p><div class="shop-detail"><small>Presentación</small><strong>Unidad o cantidad</strong></div><a href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20consultar%20herramientas%20el%C3%A9ctricas%20por%20mayor." target="_blank" rel="noopener">Consultar producto <span>→</span></a></div>
+          </article>
+          <article class="shop-card" data-product="tornillos tarugos bulones fijaciones anclajes">
+            <div class="shop-visual visual-fix"><span>⬢</span><small>FIJACIONES</small></div><div class="shop-copy"><span class="stock-label">Venta por cantidad</span><h3>Tornillos y fijaciones</h3><p>Tornillos, tarugos, bulones, tuercas, arandelas y anclajes para obra y taller.</p><div class="shop-detail"><small>Presentación</small><strong>Cajas y unidades</strong></div><a href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20consultar%20tornillos%20y%20fijaciones%20por%20mayor." target="_blank" rel="noopener">Consultar producto <span>→</span></a></div>
+          </article>
+          <article class="shop-card" data-product="cables electricidad termicas llaves tomas fichas">
+            <div class="shop-visual visual-electric"><span>ϟ</span><small>ELECTRICIDAD</small></div><div class="shop-copy"><span class="stock-label">Cotización mayorista</span><h3>Materiales eléctricos</h3><p>Cables, llaves, tomas, térmicas, fichas, tableros e iluminación para instalaciones.</p><div class="shop-detail"><small>Presentación</small><strong>Rollos, cajas y unidades</strong></div><a href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20consultar%20materiales%20el%C3%A9ctricos%20por%20mayor." target="_blank" rel="noopener">Consultar producto <span>→</span></a></div>
+          </article>
+          <article class="shop-card" data-product="plomeria conexiones valvulas flexibles selladores canos">
+            <div class="shop-visual visual-plumbing"><span>◉</span><small>PLOMERÍA</small></div><div class="shop-copy"><span class="stock-label">Compra por lista</span><h3>Plomería y conexiones</h3><p>Conexiones, válvulas, flexibles, selladores y accesorios para instalaciones sanitarias.</p><div class="shop-detail"><small>Presentación</small><strong>Unidad o caja</strong></div><a href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20consultar%20productos%20de%20plomer%C3%ADa%20por%20mayor." target="_blank" rel="noopener">Consultar producto <span>→</span></a></div>
+          </article>
+          <article class="shop-card" data-product="pintura rodillos pinceles cintas lijas bandejas">
+            <div class="shop-visual visual-paint"><span>▰</span><small>PINTURA</small></div><div class="shop-copy"><span class="stock-label">Para obra y pinturería</span><h3>Accesorios de pintura</h3><p>Rodillos, pinceles, cintas, lijas, bandejas, enduidos, adhesivos y complementos.</p><div class="shop-detail"><small>Presentación</small><strong>Unidad, pack o caja</strong></div><a href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20consultar%20accesorios%20de%20pintura%20por%20mayor." target="_blank" rel="noopener">Consultar producto <span>→</span></a></div>
+          </article>
+          <article class="shop-card" data-product="seguridad epp guantes gafas mascaras proteccion personal">
+            <div class="shop-visual visual-safety"><span>◆</span><small>SEGURIDAD</small></div><div class="shop-copy"><span class="stock-label">Equipamiento de trabajo</span><h3>Protección personal</h3><p>Guantes, gafas, máscaras, protección auditiva y elementos de seguridad laboral.</p><div class="shop-detail"><small>Presentación</small><strong>Unidad, pack o caja</strong></div><a href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20consultar%20elementos%20de%20protecci%C3%B3n%20personal%20por%20mayor." target="_blank" rel="noopener">Consultar producto <span>→</span></a></div>
+          </article>
+        </div>
+        <div class="no-results" id="no-results" hidden><strong>No encontramos ese producto en la muestra.</strong><span>Mandanos el nombre o una foto y lo consultamos por vos.</span><a href="https://wa.me/5491134388560?text=Hola%2C%20busco%20un%20producto%20que%20no%20veo%20en%20el%20cat%C3%A1logo." target="_blank" rel="noopener">Consultar por WhatsApp</a></div>
+        <div class="catalog-footer"><p><strong>¿No aparece lo que buscás?</strong> Esta es una selección orientativa. Enviá tu lista completa para consultar otros productos, medidas y presentaciones.</p><a class="button button-dark" href="https://wa.me/5491134388560?text=Hola%2C%20quiero%20enviar%20una%20lista%20completa%20para%20cotizar." target="_blank" rel="noopener">Enviar lista completa</a></div>
       </div>
     </section>
 

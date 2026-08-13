@@ -238,6 +238,7 @@ foreach ($locations as $location) {
   <meta name="description" content="{$location['description']}">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
   <meta name="theme-color" content="#171717">
+  <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
   <link rel="canonical" href="{$canonical}">
   <link rel="alternate" hreflang="es-AR" href="{$canonical}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
