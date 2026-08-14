@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+date_default_timezone_set('America/Bogota');
+
 $phoneDisplay = '11 3438-8560';
 $phoneWa = '5491134388560';
 $baseUrl = 'https://enzonasur.com/mayorista-ferreteria/';
@@ -301,6 +303,18 @@ $sitemap[] = "  <url><loc>{$baseUrl}</loc><lastmod>{$today}</lastmod><changefreq
 foreach ($locations as $location) {
     $url = $baseUrl . $location['slug'] . '.html';
     $sitemap[] = "  <url><loc>{$url}</loc><lastmod>{$today}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>";
+}
+$productPages = [
+    'seguridad-industrial-zona-sur',
+    'herramientas-mayorista-zona-sur',
+    'materiales-electricos-mayorista-zona-sur',
+    'plomeria-mayorista-zona-sur',
+    'insumos-pintura-mayorista-zona-sur',
+    'fijaciones-mayorista-zona-sur',
+];
+foreach ($productPages as $slug) {
+    $url = $baseUrl . $slug . '.html';
+    $sitemap[] = "  <url><loc>{$url}</loc><lastmod>{$today}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>";
 }
 $sitemap[] = '</urlset>';
 file_put_contents(__DIR__ . '/sitemap.xml', implode("\n", $sitemap) . "\n");

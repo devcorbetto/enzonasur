@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+date_default_timezone_set('America/Bogota');
+
 $phoneDisplay = '11 3438-8560';
 $phoneWa = '5491134388560';
 $baseUrl = 'https://enzonasur.com/mayorista-ferreteria/';
@@ -353,4 +355,3 @@ HTML;
 }
 
 echo 'Generated ' . count($categories) . " product category pages.\n";
-

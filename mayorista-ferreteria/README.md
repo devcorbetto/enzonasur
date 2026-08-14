@@ -7,11 +7,14 @@ Sitio estático de EnZonaSur.com optimizado para búsquedas de ferretería mayor
 - Entrada principal: `index.html`
 - Landings geográficas: 7 páginas para Monte Grande, Burzaco, Ezeiza, Lomas de Zamora, Avellaneda, Lanús y Quilmes.
 - Generador: `generate-location-pages.php`
+- Landings por rubro: seguridad industrial, herramientas, electricidad, plomería, pintura y fijaciones.
+- Generador de rubros: `generate-product-pages.php`
 
 Para regenerar las páginas y el sitemap después de modificar zonas o contenidos:
 
 ```bash
 php generate-location-pages.php
+php generate-product-pages.php
 ```
 
 Antes de publicar, confirmar con el comercio las marcas, modalidades de entrega o retiro, mínimos de compra, dirección y horarios. La web evita afirmar esos datos mientras no estén confirmados.
