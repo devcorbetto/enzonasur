@@ -58,6 +58,7 @@ p { line-height: 1.7; }
 .store-actions small { color: var(--muted); font-size: 9px; font-weight: 800; text-transform: uppercase; }
 .store-actions strong { font-size: 12px; }
 .store-actions .order-shortcut { display: flex; align-items: center; gap: 9px; padding-left: 20px; border-left: 1px solid var(--line); }
+.order-shortcut > div { display: grid; line-height: 1.15; }
 .order-shortcut > span { display: grid; width: 36px; height: 36px; place-items: center; color: var(--white); background: var(--orange-dark); font-size: 18px; }
 
 .hero { position: relative; overflow: hidden; color: var(--white); background: var(--ink); }
