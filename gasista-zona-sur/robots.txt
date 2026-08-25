@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://enzonasur.com/gasista-zona-sur/sitemap.xml
